@@ -23,6 +23,29 @@ var expressPort = 3000;
 module.exports = function (grunt) {
 
   grunt.initConfig({
+    notify_hooks: {
+      options: {
+        enabled: true,
+        max_jshint_notifications: 5, // maximum number of notifications from jshint output
+        title: "SCOTTeVEST", // defaults to the name in package.json, or will use project directory's name
+        success: false, // whether successful grunt executions should be notified automatically
+        duration: 3 // the duration of notification in seconds, for `notify-send only
+      }
+    },
+    watch: {
+      files: 'public/scss/**/*.scss',
+      tasks: ['sass']
+    },
+    sass: {
+        options: {
+            sourceMap: true
+        },
+        dist: {
+            files: {
+                'public/css/main.css': 'public/scss/main.scss'
+            }
+        }
+    },
     express: {
       server: {
         options: {
@@ -37,7 +60,8 @@ module.exports = function (grunt) {
           src: ['public/**/*', 'views/**/*']
         },
         options: {
-          proxy: 'localhost:' + expressPort
+          proxy: 'localhost:' + expressPort,
+          watchTask: true
         }
       }
     },
@@ -134,8 +158,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-dom-munger');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-notify');
 
-  grunt.registerTask('server', ['express:server', 'browserSync', 'express-keepalive']);
-  grunt.registerTask('build', ['clean:build', 'twigRenderer:build', 'dom_munger:build', 'copy:build']);
+  grunt.task.run('notify_hooks');
+  
+  grunt.registerTask('server', ['sass', 'express:server', 'browserSync', 'watch', 'express-keepalive']);
+  grunt.registerTask('build', ['sass', 'clean:build', 'twigRenderer:build', 'dom_munger:build', 'copy:build']);
 
 };
