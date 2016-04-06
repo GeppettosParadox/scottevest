@@ -1,0 +1,10 @@
+{
+  "name": "scottevest",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "~3.0.2",
+    "jquery": "~2.2.0",
+    "requirejs": "~2.1.16"
+  }
+}
+
