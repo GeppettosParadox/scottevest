@@ -19,5 +19,8 @@
     "test",
     "tests"
   ],
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "twentytwenty": "*"
+  }
 }
