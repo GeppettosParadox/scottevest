@@ -61,7 +61,8 @@ module.exports = function (grunt) {
         },
         options: {
           proxy: 'localhost:' + expressPort,
-          watchTask: true
+          watchTask: true,
+          notify: false
         }
       }
     },

@@ -1214,7 +1214,7 @@ h6 {
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  line-height: 1.4; }
+  line-height: 1.1; }
   h1 small,
   h2 small,
   h3 small,
@@ -3428,6 +3428,94 @@ table.hover tr:nth-of-type(even):hover {
   clear: both; }
 
 .offer-bar {
-  background: #c9f908; }
+  background: #c9f908;
+  padding: 0;
+  min-height: 35px;
+  overflow: hidden; }
+  .offer-bar a {
+    text-decoration: underline; }
+  .offer-bar button {
+    float: right;
+    border: 0;
+    height: 35px; }
+  .offer-bar a, .offer-bar button {
+    color: #000; }
+  @media screen and (min-width: 40em) {
+    .offer-bar {
+      height: 45px;
+      text-align: center; }
+      .offer-bar a {
+        margin-left: .8em; }
+      .offer-bar button {
+        float: none;
+        margin-left: 1.7em;
+        height: 45px; } }
+
+.offer-bar__text,
+.offer-bar__link {
+  line-height: 2.5714285714rem; }
+  @media screen and (min-width: 40em) {
+    .offer-bar__text,
+    .offer-bar__link {
+      line-height: 3.2142857143rem; } }
+
+.offer-bar__btn {
+  margin-bottom: 0;
+  background: rgba(0, 0, 0, 0.1); }
+  .offer-bar__btn:hover {
+    background: rgba(0, 0, 0, 0.15); }
+
+.nav-bar {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+  padding: 0.5em 0 0;
+  color: #fff; }
+  .nav-bar ul {
+    background: transparent; }
+
+.launch-nav-btn {
+  height: 44px;
+  padding-left: 56px;
+  background: transparent url("../images/nav-icon.svg") no-repeat left center;
+  background-size: 40px 30px;
+  font-size: 30px;
+  line-height: 44px; }
+
+.centered-logo {
+  position: absolute;
+  text-align: center;
+  width: 129px;
+  height: 54px;
+  left: 50%;
+  transform: translate(-50%, 5px); }
+
+@media screen and (max-width: 39.9375em) {
+  .top-bar-left,
+  .top-bar-right {
+    width: 50%; } }
+
+.top-bar-right li {
+  display: inline-block; }
+
+.top-bar-right ul {
+  text-align: right; }
+
+.nav-bar__cart-btn {
+  width: 50px;
+  height: 44px;
+  background: transparent url("../images/cart-icon.svg") no-repeat center center;
+  background-size: auto 44px; }
+
+.homepage-hero {
+  position: relative;
+  top: -58px; }
+
+.homepage-hero__overlay {
+  position: absolute;
+  right: 0;
+  bottom: .5em;
+  left: 0;
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

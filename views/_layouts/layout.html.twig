@@ -2,43 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>TwigUp</title>
+    <title>{{ title }} | SCOTTeVEST</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
 
 <header>
-
     {% include '../_components/global/_offer-bar.html.twig' %}
-
-    <div class="top-bar">
-        <div class="centered-logo" style="position: absolute; left: 0; right: 0; text-align: center;">
-            <img src="http://placehold.it/100x100" alt="">
-        </div>
-        <div class="top-bar-left">
-            <a href="#">Menu</a>
-        </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li>866.555.1234</li>
-                <li><a href="#help">Help</a></li>
-                <li>Cart</li>
-            </ul>
-        </div>
-    </div>
+    {% include '../_components/global/_top-bar.html.twig' %}
 </header>
-
 
 {% block content %}{% endblock %}
 
-<div>
-    Footer
-</div>
-
-<script type="text/javascript" data-main="/scripts/main.js" src="/vendor/requirejs/require.js"></script>
 <script type="text/javascript" data-main="/scripts/jquery.js" src="/vendor/jquery/dist/jquery.js"></script>
 <script type="text/javascript" data-main="/scripts/foundation.js" src="/vendor/foundation-sites/dist/foundation.js"></script>
+<script type="text/javascript" data-main="/scripts/main.js" src="/scripts/main.js"></script>
 <script>
     $(document).foundation();
 </script>

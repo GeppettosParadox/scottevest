@@ -1,5 +1,7 @@
 {% extends "../_layouts/layout.html.twig" %}
 
+{% set title = "Travel Clothing for Men and Women" %}
+
 {% block content %}
-	<p>It`s index page! Check out <a href="/products">secondary</a>!</p>
+    {% include '_components/homepage/_hero.html.twig' %}
 {% endblock %}

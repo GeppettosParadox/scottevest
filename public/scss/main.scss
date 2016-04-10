@@ -7,4 +7,6 @@
 @import '../vendor/foundation-sites/scss/foundation';
 @import 'foundation-modules';
 
-@import 'components/offer-bar';
+@import 'components/global/offer-bar';
+@import 'components/global/nav-bar';
+@import 'components/homepage/hero';
