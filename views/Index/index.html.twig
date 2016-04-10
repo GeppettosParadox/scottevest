@@ -1,0 +1,30 @@
+{% extends "../_layouts/layout.html.twig" %}
+
+{% set title = "Travel Clothing for Men and Women" %}
+
+{% block content %}
+    {% include '_components/homepage/_hero.html.twig' %}
+    <div class="product-grid product-grid--xray container">
+        <div class="product-grid__filters row">
+            <div class="button-group text-center">
+                <a class="button active">All</a>
+                <a class="button">Men</a>
+                <a class="button">Women</a>
+            </div>
+        </div>
+        <div class="row small-up-1 medium-up-2">
+            <div class="column">
+                <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            </div>
+            <div class="column">
+                <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            </div>
+            <div class="column">
+                <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            </div>
+            <div class="column">
+                <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}

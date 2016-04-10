@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }} | SCOTTeVEST</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+    </script>
+    <script src="/vendor/picturefill/dist/picturefill.min.js" async></script>
+</head>
+
+<body>
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="#">Foundation</a></li>
+                <li><a href="#">Dot</a></li>
+                <li><a href="#">ZURB</a></li>
+                <li><a href="#">Com</a></li>
+                <li><a href="#">Slash</a></li>
+                <li><a href="#">Sites</a></li>
+            </ul>
+
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+            <header>
+                {% include '../_components/global/_offer-bar.html.twig' %}
+                {% include '../_components/global/_top-bar.html.twig' %}
+            </header>
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" data-main="/scripts/jquery.js" src="/vendor/jquery/dist/jquery.js"></script>
+<script type="text/javascript" data-main="/scripts/foundation.js" src="/vendor/foundation-sites/dist/foundation.js"></script>
+<script type="text/javascript" data-main="/scripts/main.js" src="/scripts/main.js"></script>
+<script>$(document).foundation();</script>
+
+</body>
+</html>

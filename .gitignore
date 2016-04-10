@@ -1,7 +1,2 @@
-# OS X
-*.swp
-._.*
-._*
-.DS_Store
-.sass-cache
-config.codekit
+node_modules
+build
