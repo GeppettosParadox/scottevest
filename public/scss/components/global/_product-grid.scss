@@ -1,0 +1,17 @@
+.product-grid__filters {
+    .button {
+        display: inline-block;
+        float: none;
+        color: #000;
+        font-size: 21px;
+        background: none;
+        &.active {
+            color: #5ec26a;
+            &:after {
+                content: '_';
+                display: inline-block;
+                transform: scaleX(1.5) translateX(33%);
+            }
+        }
+    }
+}

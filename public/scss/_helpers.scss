@@ -1,0 +1,9 @@
+.button {
+    &.buy {
+        &:after {
+            content: url('../images/btn-arrow.svg');
+            display: inline;
+            padding-left: .5em;
+        }
+    }
+}

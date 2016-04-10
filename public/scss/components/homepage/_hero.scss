@@ -6,7 +6,29 @@
 .homepage-hero__overlay {
     position: absolute;
     right: 0;
-    bottom: .5em;
+    bottom: 2em;
     left: 0;
     color: #fff;
+}
+
+.homepage-hero__buy {
+    margin-top: 1.5em;
+    .button {
+        margin-top: .67em;
+    }
+}
+
+.homepage-hero__buy__title,
+.homepage-hero__buy__price {
+    font-size: 1.285714286rem;
+}
+
+.homepage-hero-angle {
+    position: absolute;
+    bottom: -1px;
+    left: -4px;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    transform:rotate(360deg);
 }

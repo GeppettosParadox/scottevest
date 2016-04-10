@@ -1660,12 +1660,12 @@ select {
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: #2199e8;
+  background-color: #5ec26a;
   color: #fefefe; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #1583cc;
+    background-color: #43b250;
     color: #fefefe; }
   .button.tiny {
     font-size: 0.6rem; }
@@ -3427,6 +3427,11 @@ table.hover tr:nth-of-type(even):hover {
 .clearfix::after {
   clear: both; }
 
+.button.buy:after {
+  content: url("../images/btn-arrow.svg");
+  display: inline;
+  padding-left: .5em; }
+
 .offer-bar {
   background: #c9f908;
   padding: 0;
@@ -3514,8 +3519,39 @@ table.hover tr:nth-of-type(even):hover {
 .homepage-hero__overlay {
   position: absolute;
   right: 0;
-  bottom: .5em;
+  bottom: 2em;
   left: 0;
   color: #fff; }
+
+.homepage-hero__buy {
+  margin-top: 1.5em; }
+  .homepage-hero__buy .button {
+    margin-top: .67em; }
+
+.homepage-hero__buy__title,
+.homepage-hero__buy__price {
+  font-size: 1.285714286rem; }
+
+.homepage-hero-angle {
+  position: absolute;
+  bottom: -1px;
+  left: -4px;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  transform: rotate(360deg); }
+
+.product-grid__filters .button {
+  display: inline-block;
+  float: none;
+  color: #000;
+  font-size: 21px;
+  background: none; }
+  .product-grid__filters .button.active {
+    color: #5ec26a; }
+    .product-grid__filters .button.active:after {
+      content: '_';
+      display: inline-block;
+      transform: scaleX(1.5) translateX(33%); }
 
 /*# sourceMappingURL=main.css.map */
