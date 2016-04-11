@@ -32,11 +32,31 @@
         transition: opacity .5s ease-in-out;
     }
     &.slick-current {
+        position: relative;
         h3 {
             opacity: 1;
+            overflow: visible;
+            margin-bottom: 6em;
+            &:after {
+                position: absolute;
+                width: 2px;
+                height: 100px;
+                top: 62%;
+                content: '';
+                display: block;
+                background: #fff;
+                left: 50%;
+            }
         }
     }
     &:focus {
         outline: 0;
     }
+}
+
+.whats-inside__media {
+    position: relative;
+    margin-top: -3em;
+    text-align: center;
+    z-index: 10;
 }
