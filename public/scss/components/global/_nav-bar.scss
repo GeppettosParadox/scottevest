@@ -1,3 +1,8 @@
+header {
+    position: relative;
+    z-index: 1;
+}
+
 .nav-bar {
     position: relative;
     z-index: 10;
@@ -9,6 +14,12 @@
     }
     a {
         color: #fff;
+    }
+    @include breakpoint(medium) {
+        .columns {
+            position: relative;
+            top: 21px;
+        }
     }
 }
 
@@ -34,6 +45,10 @@
     height: 54px;
     left: 50%;
     transform: translate(-50%, 5px);
+    @include breakpoint(medium) {
+        width: 183px;
+        height: 77px;
+    }
 }
 
 .top-bar-left,
@@ -57,4 +72,9 @@
     height: 44px;
     background: transparent url("../images/cart-icon.svg") no-repeat center center;
     background-size: auto 44px;
+    @include breakpoint(medium) {
+        width: 28px;
+        height: 25px;
+        background-size: auto 25px;
+    }
 }

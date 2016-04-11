@@ -3473,6 +3473,10 @@ table.hover tr:nth-of-type(even):hover {
   .offer-bar__btn:hover {
     background: rgba(0, 0, 0, 0.15); }
 
+header {
+  position: relative;
+  z-index: 1; }
+
 .nav-bar {
   position: relative;
   z-index: 10;
@@ -3483,6 +3487,10 @@ table.hover tr:nth-of-type(even):hover {
     background: transparent; }
   .nav-bar a {
     color: #fff; }
+  @media screen and (min-width: 40em) {
+    .nav-bar .columns {
+      position: relative;
+      top: 21px; } }
 
 .launch-nav-btn {
   height: 44px;
@@ -3505,6 +3513,10 @@ table.hover tr:nth-of-type(even):hover {
   height: 54px;
   left: 50%;
   transform: translate(-50%, 5px); }
+  @media screen and (min-width: 40em) {
+    .centered-logo {
+      width: 183px;
+      height: 77px; } }
 
 @media screen and (max-width: 39.9375em) {
   .top-bar-left,
@@ -3522,6 +3534,11 @@ table.hover tr:nth-of-type(even):hover {
   height: 44px;
   background: transparent url("../images/cart-icon.svg") no-repeat center center;
   background-size: auto 44px; }
+  @media screen and (min-width: 40em) {
+    .nav-bar__cart-btn {
+      width: 28px;
+      height: 25px;
+      background-size: auto 25px; } }
 
 .off-canvas {
   background: transparent;
@@ -3572,6 +3589,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .homepage-hero {
   position: relative;
+  z-index: 0;
   top: -58px; }
   .homepage-hero picture, .homepage-hero img {
     width: 1000%; }
