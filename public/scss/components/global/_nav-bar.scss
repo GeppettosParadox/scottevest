@@ -17,8 +17,14 @@
     padding-left: 56px;
     background: transparent url("../images/nav-icon.svg") no-repeat left center;
     background-size: 40px 30px;
-    font-size: 30px;
+    font-size: 14px;
     line-height: 44px;
+    @include breakpoint(medium) {
+        height: 15px;
+        padding-left: 30px;
+        background-size: auto 15px;
+        line-height: 15px;
+    }
 }
 
 .centered-logo {

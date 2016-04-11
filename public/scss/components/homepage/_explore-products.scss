@@ -49,6 +49,9 @@
             bottom: -.5em;
             left: .1em;
         }
+        @include breakpoint(medium) {
+            top: 2em;
+        }
     }
     &--more {
         width: 100%;

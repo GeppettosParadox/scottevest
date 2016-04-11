@@ -3489,8 +3489,14 @@ table.hover tr:nth-of-type(even):hover {
   padding-left: 56px;
   background: transparent url("../images/nav-icon.svg") no-repeat left center;
   background-size: 40px 30px;
-  font-size: 30px;
+  font-size: 14px;
   line-height: 44px; }
+  @media screen and (min-width: 40em) {
+    .launch-nav-btn {
+      height: 15px;
+      padding-left: 30px;
+      background-size: auto 15px;
+      line-height: 15px; } }
 
 .centered-logo {
   position: absolute;
@@ -3646,6 +3652,9 @@ table.hover tr:nth-of-type(even):hover {
       position: absolute;
       bottom: -.5em;
       left: .1em; }
+    @media screen and (min-width: 40em) {
+      .explore-product h2 {
+        top: 2em; } }
   .explore-product--more {
     width: 100%;
     height: 0;
@@ -3684,6 +3693,8 @@ table.hover tr:nth-of-type(even):hover {
 .whats-inside__overlay {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   padding-top: 60%;
   color: #fff; }
