@@ -1,0 +1,32 @@
+<div class="product-grid product-grid--xray container">
+    <div class="product-grid__filters row">
+        <div class="button-group text-center">
+            <button class="button active" data-productcat="">All</button>
+            <button class="button" data-productcat="men">Men</button>
+            <button class="button" data-productcat="women">Women</button>
+        </div>
+    </div>
+    <div class="row small-up-1 medium-up-2 columns product-grid__products">
+        {% set product = {
+            title: 'SeV Susie Qzip',
+            imgPath: '/uploads/xray_grid/pink_vest.jpg',
+            xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
+        } %}
+        {% for i in 0..3 %}
+            <div class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
+                <div class="product-grid__header">
+                    {{ product.title }}
+                </div>
+                <div class="xray-img">
+                    <img src="{{ product.imgPath }}" alt="">
+                    <img src="{{ product.xrayImgPath }}" alt="">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="product-grid__more row">
+        <div class="small-12 columns text-center">
+            <a href="#">View all products</a>
+        </div>
+    </div>
+</div>

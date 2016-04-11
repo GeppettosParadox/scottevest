@@ -3553,6 +3553,8 @@ table.hover tr:nth-of-type(even):hover {
       content: '_';
       display: inline-block;
       transform: scaleX(1.5) translateX(33%); }
+  .product-grid__filters .button:focus {
+    outline: 0; }
 
 @media screen and (max-width: 39.9375em) {
   .product-grid .column + .column, .product-grid .columns + .column, .product-grid .column + .columns, .product-grid .columns + .columns {
@@ -3560,6 +3562,82 @@ table.hover tr:nth-of-type(even):hover {
 
 .xray-img img {
   width: 100%; }
+
+.product-grid__more {
+  margin-top: 2em; }
+  .product-grid__more a {
+    color: #5ec26a; }
+
+.explore-products {
+  position: relative;
+  margin-top: 3em; }
+
+.top-angle {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: -4px; }
+  .top-angle img {
+    width: 100%; }
+  @media screen and (min-width: 40em) {
+    .top-angle {
+      top: -1px;
+      left: 0;
+      right: 0; } }
+
+.explore-product {
+  width: 100%;
+  position: relative; }
+  .explore-product img {
+    width: 100%; }
+  .explore-product a {
+    display: block; }
+  .explore-product h2 {
+    display: inline;
+    position: absolute;
+    top: 1.11em;
+    left: 1.61em;
+    color: #fff;
+    font-size: 27px; }
+    .explore-product h2:after {
+      content: '';
+      display: block;
+      width: 215px;
+      height: 2px;
+      background: #f00;
+      position: absolute;
+      bottom: -.5em;
+      left: .1em; }
+  .explore-product--more {
+    width: 100%;
+    height: 0;
+    padding-top: 77.10083%;
+    background: #5ec26a;
+    position: relative; }
+    .explore-product--more button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 2.14rem;
+      color: #fefefe; }
+      .explore-product--more button:focus {
+        outline: 0; }
+      .explore-product--more button img {
+        width: auto;
+        display: inline-block;
+        margin-bottom: .5em; }
+
+@media screen and (min-width: 40em) {
+  .explore-products__left {
+    float: left;
+    width: 40.4166667%; }
+  .explore-products__right {
+    float: right;
+    width: 59.5833333%; } }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   content: " ";
