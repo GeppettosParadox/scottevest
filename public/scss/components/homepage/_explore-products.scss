@@ -1,6 +1,11 @@
 .explore-products {
     position: relative;
     margin-top: 3em;
+    .columns {
+        @include breakpoint(small only) {
+            padding: 0;
+        }
+    }
 }
 
 .top-angle {
@@ -37,7 +42,7 @@
         &:after {
             content: '';
             display: block;
-            width: 215px;
+            width: 100%;
             height : 2px;
             background: #f00;
             position: absolute;

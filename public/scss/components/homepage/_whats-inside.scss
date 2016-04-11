@@ -1,0 +1,18 @@
+.whats-inside {
+    margin-top: 3em;
+    position: relative;
+}
+
+.whats-inside__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 60%;
+    color: #fff;
+    h2 {
+        font-size: 27px;
+    }
+    @include breakpoint(medium) {
+        padding-top: 44.4444444%;
+    }
+}

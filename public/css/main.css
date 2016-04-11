@@ -3571,6 +3571,9 @@ table.hover tr:nth-of-type(even):hover {
 .explore-products {
   position: relative;
   margin-top: 3em; }
+  @media screen and (max-width: 39.9375em) {
+    .explore-products .columns {
+      padding: 0; } }
 
 .top-angle {
   position: absolute;
@@ -3602,7 +3605,7 @@ table.hover tr:nth-of-type(even):hover {
     .explore-product h2:after {
       content: '';
       display: block;
-      width: 215px;
+      width: 100%;
       height: 2px;
       background: #f00;
       position: absolute;
@@ -3638,6 +3641,22 @@ table.hover tr:nth-of-type(even):hover {
   .explore-products__right {
     float: right;
     width: 59.5833333%; } }
+
+.whats-inside {
+  margin-top: 3em;
+  position: relative; }
+
+.whats-inside__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 60%;
+  color: #fff; }
+  .whats-inside__overlay h2 {
+    font-size: 27px; }
+  @media screen and (min-width: 40em) {
+    .whats-inside__overlay {
+      padding-top: 44.4444444%; } }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   content: " ";
