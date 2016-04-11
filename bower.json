@@ -21,6 +21,7 @@
   ],
   "private": true,
   "devDependencies": {
-    "twentytwenty": "*"
+    "twentytwenty": "*",
+    "slick-carousel": "slick.js#^1.5.9"
   }
 }
