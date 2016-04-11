@@ -7,5 +7,5 @@ Run the following:
     npm install
     grunt build
 
-Point webroot at the newly-built /build folder, which will contain compiled
+Point webroot at the newly-built /build/html folder, which will contain compiled
 HTML and frontend assets.

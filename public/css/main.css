@@ -3653,10 +3653,27 @@ table.hover tr:nth-of-type(even):hover {
   padding-top: 60%;
   color: #fff; }
   .whats-inside__overlay h2 {
-    font-size: 27px; }
+    font-size: 27px;
+    margin-bottom: 1em; }
   @media screen and (min-width: 40em) {
     .whats-inside__overlay {
       padding-top: 44.4444444%; } }
+
+.whats-inside__icon {
+  display: inline-block;
+  transition: all .3s ease-in-out;
+  transform-origin: center center; }
+  .whats-inside__icon img {
+    margin: 0 auto; }
+  .whats-inside__icon h3 {
+    margin-top: .75em;
+    font-size: 1.142857143rem;
+    opacity: 0;
+    transition: opacity .3s ease-in-out; }
+  .whats-inside__icon.slick-current h3 {
+    opacity: 1; }
+  .whats-inside__icon:focus {
+    outline: 0; }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   content: " ";

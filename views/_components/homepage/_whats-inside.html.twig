@@ -10,5 +10,13 @@
     </picture>
     <div class="whats-inside__overlay text-center">
         <h2>What&rsquo;s Inside</h2>
+        <div class="whats-inside__icons">
+            {% for i in range(0,7) -%}
+                <div class="whats-inside__icon">
+                    <img src="/uploads/feature_icons/{{ loop.index is odd ? 'bluetooth' ? 'c-icon' }}.png" alt="">
+                    <h3>Bluetooth Pocket</h3>
+                </div>
+            {%- endfor %}
+        </div>
     </div>
 </div>
