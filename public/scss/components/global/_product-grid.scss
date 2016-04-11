@@ -31,7 +31,12 @@
 
 .xray-img {
     img {
+        left: auto;
+        right: auto;
         width: 100%;
+        @include breakpoint(medium) {
+            //width: 70%;
+        }
     }
 }
 
@@ -39,5 +44,14 @@
     margin-top: 2em;
     a {
         color: $green;
+    }
+}
+
+.product-grid__product {
+    @include breakpoint(medium) {
+        padding: 0 10%;
+        &:nth-of-type(n+3) {
+            margin-top: 2em;
+        }
     }
 }

@@ -3481,6 +3481,8 @@ table.hover tr:nth-of-type(even):hover {
   color: #fff; }
   .nav-bar ul {
     background: transparent; }
+  .nav-bar a {
+    color: #fff; }
 
 .launch-nav-btn {
   height: 44px;
@@ -3547,6 +3549,8 @@ table.hover tr:nth-of-type(even):hover {
     margin-top: 3em; } }
 
 .xray-img img {
+  left: auto;
+  right: auto;
   width: 100%; }
 
 .product-grid__more {
@@ -3554,9 +3558,17 @@ table.hover tr:nth-of-type(even):hover {
   .product-grid__more a {
     color: #5ec26a; }
 
+@media screen and (min-width: 40em) {
+  .product-grid__product {
+    padding: 0 10%; }
+    .product-grid__product:nth-of-type(n+3) {
+      margin-top: 2em; } }
+
 .homepage-hero {
   position: relative;
   top: -58px; }
+  .homepage-hero picture, .homepage-hero img {
+    width: 1000%; }
 
 .homepage-hero__overlay {
   position: absolute;
@@ -3564,6 +3576,14 @@ table.hover tr:nth-of-type(even):hover {
   bottom: 2em;
   left: 0;
   color: #fff; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .homepage-hero__overlay {
+      bottom: 3em; }
+      .homepage-hero__overlay h1 {
+        font-size: 2.57rem; } }
+  @media screen and (min-width: 64em) {
+    .homepage-hero__overlay {
+      bottom: 6em; } }
 
 .homepage-hero__buy {
   margin-top: 1.5em; }

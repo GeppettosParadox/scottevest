@@ -1,6 +1,9 @@
 .homepage-hero {
     position: relative;
     top: -58px;
+    picture, img {
+        width: 1000%;
+    }
 }
 
 .homepage-hero__overlay {
@@ -9,6 +12,15 @@
     bottom: 2em;
     left: 0;
     color: #fff;
+    @include breakpoint(medium only) {
+        bottom: 3em;
+        h1 {
+            font-size: 2.57rem;
+        }
+    }
+    @include breakpoint(large) {
+        bottom: 6em;
+    }
 }
 
 .homepage-hero__buy {
