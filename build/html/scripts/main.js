@@ -74,8 +74,12 @@ $(document).ready(function () {
         var $index = $(this).attr('data-slick-index');
         $whats_inside_icons.slick('slickGoTo', $index, false);
     });
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
+=======
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+>>>>>>> Adding build folder
 
     $(window).scroll(function() {
         var $navBar = $('.nav-bar');
@@ -86,7 +90,12 @@ $(document).ready(function () {
             $navBar.removeClass("sticky");
         }
     });
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
+=======
+=======
+>>>>>>> Adding build folder
+>>>>>>> Adding build folder
 });
 
 $(window).load(function(){

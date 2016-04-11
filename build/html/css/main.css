@@ -3435,8 +3435,12 @@ table.hover tr:nth-of-type(even):hover {
 .off-canvas-wrapper {
   overflow-y: hidden; }
 
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
+=======
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+>>>>>>> Adding build folder
 .section-heading {
   text-align: center;
   font-size: 36px;
@@ -3484,7 +3488,12 @@ table.hover tr:nth-of-type(even):hover {
 .site-footer__copyright {
   font-size: 12px; }
 
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
+=======
+=======
+>>>>>>> Adding build folder
+>>>>>>> Adding build folder
 .offer-bar {
   background: #c9f908;
   padding: 0;
@@ -3559,11 +3568,19 @@ header {
 .centered-logo {
   position: absolute;
   text-align: center;
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
   background: transparent url("../images/logo.svg") no-repeat left center;
   text-indent: -9999px;
 >>>>>>> Adds latest build
+=======
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+  background: transparent url("../images/logo.svg") no-repeat left center;
+  text-indent: -9999px;
+=======
+>>>>>>> Adding build folder
+>>>>>>> Adding build folder
   width: 129px;
   height: 54px;
   left: 50%;
@@ -3595,8 +3612,12 @@ header {
       height: 25px;
       background-size: auto 25px; } }
 
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
+=======
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+>>>>>>> Adding build folder
 .top-bar {
   padding-top: 0 !important; }
 
@@ -3626,7 +3647,12 @@ header {
   .nav-bar.sticky .nav-bar__cart-btn {
     background-image: url("../images/cart-icon-black.svg"); }
 
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
+=======
+=======
+>>>>>>> Adding build folder
+>>>>>>> Adding build folder
 .off-canvas {
   background: transparent;
   font-family: 'Arvo', georgia, serif; }
@@ -3664,6 +3690,7 @@ header {
   width: 100%; }
 
 .product-grid__more {
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
   margin-top: 2em; }
   .product-grid__more a {
@@ -3675,6 +3702,9 @@ header {
     .product-grid__product:nth-of-type(n+3) {
       margin-top: 2em; } }
 =======
+=======
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+>>>>>>> Adding build folder
   margin-top: 3em;
   margin-bottom: 5em; }
   .product-grid__more a {
@@ -3728,7 +3758,21 @@ header {
   top: 0;
   right: 0;
   background: transparent url("../images/quick-view.svg") no-repeat left center; }
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
+=======
+=======
+  margin-top: 2em; }
+  .product-grid__more a {
+    color: #5ec26a; }
+
+@media screen and (min-width: 40em) {
+  .product-grid__product {
+    padding: 0 10%; }
+    .product-grid__product:nth-of-type(n+3) {
+      margin-top: 2em; } }
+>>>>>>> Adding build folder
+>>>>>>> Adding build folder
 
 .homepage-hero {
   position: relative;
@@ -3770,8 +3814,12 @@ header {
   z-index: 0;
   transform: rotate(360deg); }
 
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
+=======
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+>>>>>>> Adding build folder
 .homepage-hero__talk-btn {
   position: absolute;
   bottom: 0;
@@ -3803,7 +3851,12 @@ header {
     .homepage-hero__talk-btn {
       right: 20px; } }
 
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
+=======
+=======
+>>>>>>> Adding build folder
+>>>>>>> Adding build folder
 .explore-products {
   position: relative;
   margin-top: 3em; }
@@ -3881,10 +3934,14 @@ header {
     float: right;
     width: 59.5833333%; } }
 
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 .whats-inside {
   margin-top: 3em;
 =======
+=======
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+>>>>>>> Adding build folder
 .quote {
   margin-top: 2em;
   margin-bottom: 4em; }
@@ -3892,7 +3949,14 @@ header {
 .whats-inside {
   margin-top: 3em;
   margin-bottom: 120px;
+<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
+=======
+=======
+.whats-inside {
+  margin-top: 3em;
+>>>>>>> Adding build folder
+>>>>>>> Adding build folder
   position: relative; }
 
 .whats-inside__overlay {
