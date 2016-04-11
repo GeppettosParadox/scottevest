@@ -1,0 +1,80 @@
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-bar {
+    position: relative;
+    z-index: 10;
+    background: transparent;
+    padding: 0.5em 0 0;
+    color: #fff;
+    ul {
+        background: transparent;
+    }
+    a {
+        color: #fff;
+    }
+    @include breakpoint(medium) {
+        .columns {
+            position: relative;
+            top: 21px;
+        }
+    }
+}
+
+.launch-nav-btn {
+    height: 44px;
+    padding-left: 56px;
+    background: transparent url("../images/nav-icon.svg") no-repeat left center;
+    background-size: 40px 30px;
+    font-size: 14px;
+    line-height: 44px;
+    @include breakpoint(medium) {
+        height: 15px;
+        padding-left: 30px;
+        background-size: auto 15px;
+        line-height: 15px;
+    }
+}
+
+.centered-logo {
+    position: absolute;
+    text-align: center;
+    width: 129px;
+    height: 54px;
+    left: 50%;
+    transform: translate(-50%, 5px);
+    @include breakpoint(medium) {
+        width: 183px;
+        height: 77px;
+    }
+}
+
+.top-bar-left,
+.top-bar-right {
+    @include breakpoint(small only) {
+        width: 50%;
+    }
+}
+
+.top-bar-right {
+    li {
+        display: inline-block;
+    }
+    ul {
+        text-align: right;
+    }
+}
+
+.nav-bar__cart-btn {
+    width: 50px;
+    height: 44px;
+    background: transparent url("../images/cart-icon.svg") no-repeat center center;
+    background-size: auto 44px;
+    @include breakpoint(medium) {
+        width: 28px;
+        height: 25px;
+        background-size: auto 25px;
+    }
+}
