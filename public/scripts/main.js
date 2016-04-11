@@ -43,7 +43,7 @@ $(document).ready(function () {
     var $whats_inside_icons = $('.whats-inside__icons');
 
     $whats_inside_icons.slick({
-        speed: 300,
+        speed: 500,
         arrows: false,
         slidesToScroll: 1,
         slidesToShow: 7,

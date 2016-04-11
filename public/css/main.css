@@ -3661,7 +3661,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .whats-inside__icon {
   display: inline-block;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
   transform-origin: center center; }
   .whats-inside__icon img {
     margin: 0 auto; }
@@ -3669,7 +3669,7 @@ table.hover tr:nth-of-type(even):hover {
     margin-top: .75em;
     font-size: 1.142857143rem;
     opacity: 0;
-    transition: opacity .3s ease-in-out; }
+    transition: opacity .5s ease-in-out; }
   .whats-inside__icon.slick-current h3 {
     opacity: 1; }
   .whats-inside__icon:focus {
