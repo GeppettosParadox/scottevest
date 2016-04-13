@@ -74,6 +74,16 @@ $(document).ready(function () {
         var $index = $(this).attr('data-slick-index');
         $whats_inside_icons.slick('slickGoTo', $index, false);
     });
+
+    $(window).scroll(function() {
+        var $navBar = $('.nav-bar');
+        if ($(this).scrollTop() > 45){
+            $navBar.addClass("sticky");
+            $navBar.slideDown(500);
+        } else {
+            $navBar.removeClass("sticky");
+        }
+    });
 });
 
 $(window).load(function(){
