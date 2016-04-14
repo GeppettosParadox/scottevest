@@ -4055,8 +4055,8 @@ header {
     width: 100%;
     max-width: none; }
   .quote__container .homepage-hero-angle {
-    transform: scaleX(-1);
-    width: 105%; }
+    transform: scale(-1.08, 1.08);
+    width: 100%; }
 
 .quote__text {
   position: absolute;
