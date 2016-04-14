@@ -29,13 +29,6 @@
     }
 }
 
-.product-grid__heading {
-    text-align: center;
-    font-size: 36px;
-    color: #606c82;
-    font-weight: bold;
-}
-
 .xray-img {
     img {
         left: auto;
@@ -48,9 +41,32 @@
 }
 
 .product-grid__more {
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom: 6em;
     a {
         color: $green;
+        font-size: 30px;
+        font-weight: bold;
+        padding-right: 20px;
+        margin: 0 30px;
+        position: relative;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 5px;
+            background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -3px;
+        }
     }
 }
 

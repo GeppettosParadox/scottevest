@@ -3435,6 +3435,12 @@ table.hover tr:nth-of-type(even):hover {
 .off-canvas-wrapper {
   overflow-y: hidden; }
 
+.section-heading {
+  text-align: center;
+  font-size: 36px;
+  color: #606c82;
+  font-weight: bold; }
+
 .offer-bar {
   background: #c9f908;
   padding: 0;
@@ -3602,21 +3608,35 @@ header {
   .product-grid .column + .column, .product-grid .columns + .column, .product-grid .column + .columns, .product-grid .columns + .columns {
     margin-top: 3em; } }
 
-.product-grid__heading {
-  text-align: center;
-  font-size: 36px;
-  color: #606c82;
-  font-weight: bold; }
-
 .xray-img img {
   left: auto;
   right: auto;
   width: 100%; }
 
 .product-grid__more {
-  margin-top: 2em; }
+  margin-top: 3em;
+  margin-bottom: 6em; }
   .product-grid__more a {
-    color: #5ec26a; }
+    color: #5ec26a;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin: 0 30px;
+    position: relative; }
+    .product-grid__more a:first-child {
+      margin-left: 0; }
+    .product-grid__more a:last-child {
+      margin-right: 0; }
+    .product-grid__more a:after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 5px;
+      background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -3px; }
 
 .product-grid__product {
   position: relative; }
