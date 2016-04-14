@@ -29,6 +29,13 @@
     }
 }
 
+.product-grid__heading {
+    text-align: center;
+    font-size: 36px;
+    color: #606c82;
+    font-weight: bold;
+}
+
 .xray-img {
     img {
         left: auto;
@@ -48,10 +55,42 @@
 }
 
 .product-grid__product {
+    position: relative;
     @include breakpoint(medium) {
         padding: 0 10%;
         &:nth-of-type(n+3) {
             margin-top: 2em;
         }
     }
+}
+
+.product-grid__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    line-height: 15px;
+    .product-grid__product-title {
+
+    }
+    .product-grid__price {
+        &--sales-price {
+            color: $red;
+            font-weight: bold;
+        }
+    }
+    .product-grid__was-price {
+        color: #9c9c9c;
+    }
+}
+
+.product-grid__quick-view-btn {
+    display: block;
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent url("../images/quick-view.svg") no-repeat left center;
+
 }

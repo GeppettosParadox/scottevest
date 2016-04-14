@@ -52,14 +52,14 @@
     right: 30px;
     display: inline-block;
     padding: 0 15px;
-    background-color: #f90808;
+    background-color: $red;
     height: 35px;
     line-height: 35px;
     color: #fff;
     font-size: 14px;
     transition: background-color .2s ease-in-out;
     &:hover {
-        background-color: scale-color(#f90808, $lightness: -15%);
+        background-color: scale-color($red, $lightness: -15%);
     }
     span {
         position: relative;
