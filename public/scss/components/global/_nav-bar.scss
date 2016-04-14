@@ -7,6 +7,7 @@ header {
     position: relative;
     z-index: 10;
     background: transparent;
+    margin-top: .5em;
     padding: 0.5em 0 0;
     color: #fff;
     ul {
@@ -47,6 +48,7 @@ header {
     height: 54px;
     left: 50%;
     transform: translate(-50%, 5px);
+    background-size: 129px auto;
     @include breakpoint(medium) {
         width: 183px;
         height: 77px;

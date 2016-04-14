@@ -1,0 +1,19 @@
+.top-bar.intl-bar {
+    background: #fff;
+    padding-top: .5em !important;
+    padding-bottom: .5em !important;
+    strong {
+        display: block;
+        font-size: 1.28rem;
+    }
+    @include breakpoint(medium) {
+        padding-top: 2.14em !important;
+        padding-bottom: 2.14em !important;
+        strong, span {
+            display: inline-block;
+        }
+        span {
+            margin-left: 1em;
+        }
+    }
+}
