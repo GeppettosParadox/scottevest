@@ -41,6 +41,7 @@
 }
 
 .product-grid__more {
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
     margin-top: 2em;
@@ -48,6 +49,9 @@
         color: $green;
 =======
 =======
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+>>>>>>> Adds latest build
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
     margin-top: 3em;
@@ -85,22 +89,73 @@
     a {
         color: $green;
 >>>>>>> Adding build folder
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 >>>>>>> Adding build folder
+=======
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+    margin-top: 2em;
+    a {
+        color: $green;
+=======
+    margin-top: 3em;
+    margin-bottom: 5em;
+    a {
+        color: $green;
+        white-space: nowrap;
+        font-size: 30px;
+        font-weight: bold;
+        padding-right: 20px;
+        margin: 0 30px 30px 30px;
+        position: relative;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 5px;
+            background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -3px;
+        }
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
     }
 }
 
 .product-grid__product {
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
     position: relative;
 >>>>>>> Adds latest build
 =======
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+>>>>>>> Adds latest build
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
     position: relative;
 =======
 >>>>>>> Adding build folder
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 >>>>>>> Adding build folder
+=======
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+=======
+    position: relative;
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
     @include breakpoint(medium) {
         padding: 0 10%;
         &:nth-of-type(n+3) {
@@ -108,12 +163,21 @@
         }
     }
 }
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
 =======
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 
 .product-grid__details {
     position: absolute;
@@ -145,9 +209,16 @@
     background: transparent url("../images/quick-view.svg") no-repeat left center;
 
 }
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
+>>>>>>> Adds latest build
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
 >>>>>>> Adds latest build
 =======
 =======
 >>>>>>> Adding build folder
 >>>>>>> Adding build folder
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build

@@ -3435,12 +3435,21 @@ table.hover tr:nth-of-type(even):hover {
 .off-canvas-wrapper {
   overflow-y: hidden; }
 
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
 =======
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 .section-heading {
   text-align: center;
   font-size: 36px;
@@ -3488,12 +3497,19 @@ table.hover tr:nth-of-type(even):hover {
 .site-footer__copyright {
   font-size: 12px; }
 
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
+>>>>>>> Adds latest build
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
 >>>>>>> Adds latest build
 =======
 =======
 >>>>>>> Adding build folder
 >>>>>>> Adding build folder
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 .offer-bar {
   background: #c9f908;
   padding: 0;
@@ -3568,6 +3584,7 @@ header {
 .centered-logo {
   position: absolute;
   text-align: center;
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
@@ -3575,12 +3592,25 @@ header {
   text-indent: -9999px;
 >>>>>>> Adds latest build
 =======
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+>>>>>>> Adds latest build
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
   background: transparent url("../images/logo.svg") no-repeat left center;
   text-indent: -9999px;
 =======
 >>>>>>> Adding build folder
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 >>>>>>> Adding build folder
+=======
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+=======
+  background: transparent url("../images/logo.svg") no-repeat left center;
+  text-indent: -9999px;
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
   width: 129px;
   height: 54px;
   left: 50%;
@@ -3612,12 +3642,21 @@ header {
       height: 25px;
       background-size: auto 25px; } }
 
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
 =======
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 .top-bar {
   padding-top: 0 !important; }
 
@@ -3647,12 +3686,21 @@ header {
   .nav-bar.sticky .nav-bar__cart-btn {
     background-image: url("../images/cart-icon-black.svg"); }
 
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
 =======
 =======
 >>>>>>> Adding build folder
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+=======
+>>>>>>> Adding build folder
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 .off-canvas {
   background: transparent;
   font-family: 'Arvo', georgia, serif; }
@@ -3690,6 +3738,7 @@ header {
   width: 100%; }
 
 .product-grid__more {
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
   margin-top: 2em; }
@@ -3703,6 +3752,9 @@ header {
       margin-top: 2em; } }
 =======
 =======
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+>>>>>>> Adds latest build
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
   margin-top: 3em;
@@ -3762,6 +3814,9 @@ header {
 >>>>>>> Adds latest build
 =======
 =======
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+>>>>>>> Adds latest build
   margin-top: 2em; }
   .product-grid__more a {
     color: #5ec26a; }
@@ -3771,8 +3826,69 @@ header {
     padding: 0 10%; }
     .product-grid__product:nth-of-type(n+3) {
       margin-top: 2em; } }
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
 >>>>>>> Adding build folder
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 >>>>>>> Adding build folder
+=======
+=======
+=======
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .product-grid__more a {
+    color: #5ec26a;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin: 0 30px 30px 30px;
+    position: relative; }
+    .product-grid__more a:first-child {
+      margin-left: 0; }
+    .product-grid__more a:last-child {
+      margin-right: 0; }
+    .product-grid__more a:after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 5px;
+      background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -3px; }
+
+.product-grid__product {
+  position: relative; }
+  @media screen and (min-width: 40em) {
+    .product-grid__product {
+      padding: 0 10%; }
+      .product-grid__product:nth-of-type(n+3) {
+        margin-top: 2em; } }
+
+.product-grid__details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  line-height: 15px; }
+  .product-grid__details .product-grid__price--sales-price {
+    color: #f90808;
+    font-weight: bold; }
+  .product-grid__details .product-grid__was-price {
+    color: #9c9c9c; }
+
+.product-grid__quick-view-btn {
+  display: block;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent url("../images/quick-view.svg") no-repeat left center; }
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 
 .homepage-hero {
   position: relative;
@@ -3814,12 +3930,21 @@ header {
   z-index: 0;
   transform: rotate(360deg); }
 
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
 =======
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 .homepage-hero__talk-btn {
   position: absolute;
   bottom: 0;
@@ -3851,12 +3976,21 @@ header {
     .homepage-hero__talk-btn {
       right: 20px; } }
 
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 >>>>>>> Adds latest build
 =======
 =======
 >>>>>>> Adding build folder
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+=======
+>>>>>>> Adding build folder
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 .explore-products {
   position: relative;
   margin-top: 3em; }
@@ -3934,6 +4068,7 @@ header {
     float: right;
     width: 59.5833333%; } }
 
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 .whats-inside {
@@ -3942,10 +4077,21 @@ header {
 =======
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+.whats-inside {
+  margin-top: 3em;
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 .quote {
   margin-top: 2em;
   margin-bottom: 4em; }
 
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
 .whats-inside {
   margin-top: 3em;
   margin-bottom: 120px;
@@ -3956,7 +4102,16 @@ header {
 .whats-inside {
   margin-top: 3em;
 >>>>>>> Adding build folder
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 >>>>>>> Adding build folder
+=======
+=======
+.whats-inside {
+  margin-top: 3em;
+  margin-bottom: 120px;
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
   position: relative; }
 
 .whats-inside__overlay {

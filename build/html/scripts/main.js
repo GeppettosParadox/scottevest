@@ -74,12 +74,21 @@ $(document).ready(function () {
         var $index = $(this).attr('data-slick-index');
         $whats_inside_icons.slick('slickGoTo', $index, false);
     });
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
 <<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
 =======
 =======
 <<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
 >>>>>>> Adding build folder
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
+<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
+=======
+<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 
     $(window).scroll(function() {
         var $navBar = $('.nav-bar');
@@ -90,12 +99,19 @@ $(document).ready(function () {
             $navBar.removeClass("sticky");
         }
     });
+<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
 <<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
+>>>>>>> Adds latest build
+=======
+<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
 >>>>>>> Adds latest build
 =======
 =======
 >>>>>>> Adding build folder
 >>>>>>> Adding build folder
+=======
+>>>>>>> Adds latest build
+>>>>>>> Adds latest build
 });
 
 $(window).load(function(){
