@@ -76,8 +76,36 @@ $(document).ready(function () {
     });
 
     $('.explore-product--more button').on('click', function() {
-        $('.explore-product--hidden').removeClass('explore-product--hidden');
-        $(this).closest('.explore-product--more').remove();
+        $('.explore-product--hidable')
+            .css('display', 'block')
+            .delay(330)
+            .removeClass('explore-product--hidden')
+        ;
+        $('.explore-product--more')
+            .addClass('explore-product--hidden')
+            .delay(330)
+            .css('display', 'none')
+        ;
+        $('.explore-product--less')
+            .removeClass('explore-product--hidden')
+            .delay(330)
+            .css('display', 'block')
+        ;
+    });
+
+    $('.explore-product--less button').on('click', function() {
+        $('.explore-product--hidable')
+            .addClass('explore-product--hidden')
+            .css('display', 'none')
+        ;
+        $('.explore-product--less')
+            .css('display', 'none')
+            .addClass('explore-product--hidden')
+        ;
+        $('.explore-product--more')
+            .css('display', '')
+            .removeClass('explore-product--hidden')
+        ;
     });
 
     $(window).scroll(function() {

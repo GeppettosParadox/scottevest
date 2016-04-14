@@ -3510,6 +3510,32 @@ a.green-more {
   .site-footer__site-nav ul > li {
     display: inline-block; }
 
+@media screen and (max-width: 39.9375em) {
+  .site-footer__shop-nav ul,
+  .site-footer__site-nav ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+    -moz-column-gap: 1em; }
+    .site-footer__shop-nav ul li,
+    .site-footer__site-nav ul li {
+      width: 100%; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .site-footer__shop-nav ul,
+  .site-footer__site-nav ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+    -moz-column-gap: 1em; }
+    .site-footer__shop-nav ul li,
+    .site-footer__site-nav ul li {
+      width: 100%; } }
+
 .site-footer__shop-nav {
   margin-bottom: 20px; }
   .site-footer__shop-nav a {
@@ -3923,9 +3949,13 @@ header {
 
 .explore-product {
   width: 100%;
-  position: relative; }
+  position: relative;
+  height: auto;
+  transform: scale(1, 1);
+  transition: opacity .2s ease-in-out, transform .33s ease-in-out; }
   .explore-product img {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   .explore-product a {
     display: block; }
   .explore-product h2 {
@@ -3969,8 +3999,44 @@ header {
         width: auto;
         display: inline-block;
         margin-bottom: .5em; }
+    @media screen and (max-width: 39.9375em) {
+      .explore-product--more--desktop {
+        transform: scale(0, 0);
+        height: 0;
+        display: none; } }
+    @media screen and (min-width: 40em) {
+      .explore-product--more--mobile {
+        transform: scale(0, 0);
+        height: 0;
+        display: none; } }
+  .explore-product--less {
+    width: 100%;
+    height: 0;
+    padding-top: 52.2033898%;
+    background: #5ec26a;
+    position: relative; }
+    .explore-product--less button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 2.14rem;
+      color: #fefefe; }
+      .explore-product--less button:focus {
+        outline: 0; }
+      .explore-product--less button img {
+        width: auto;
+        display: inline-block;
+        margin-bottom: .5em; }
   .explore-product--hidden {
+    transform: scale(0, 0);
+    height: 0;
     display: none; }
+  .explore-product:hover {
+    opacity: .8; }
 
 @media screen and (min-width: 40em) {
   .explore-products__left {
