@@ -3441,6 +3441,29 @@ table.hover tr:nth-of-type(even):hover {
   color: #606c82;
   font-weight: bold; }
 
+a.green-more {
+  color: #5ec26a;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 20px;
+  margin: 0 30px 30px 30px;
+  position: relative; }
+  a.green-more:first-child {
+    margin-left: 0; }
+  a.green-more:last-child {
+    margin-right: 0; }
+  a.green-more:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 5px;
+    background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -3px; }
+
 .site-footer {
   padding: 50px 0;
   text-align: center;
@@ -3657,28 +3680,6 @@ header {
 .product-grid__more {
   margin-top: 3em;
   margin-bottom: 5em; }
-  .product-grid__more a {
-    color: #5ec26a;
-    white-space: nowrap;
-    font-size: 30px;
-    font-weight: bold;
-    padding-right: 20px;
-    margin: 0 30px 30px 30px;
-    position: relative; }
-    .product-grid__more a:first-child {
-      margin-left: 0; }
-    .product-grid__more a:last-child {
-      margin-right: 0; }
-    .product-grid__more a:after {
-      content: "";
-      display: block;
-      width: 8px;
-      height: 5px;
-      background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      margin-top: -3px; }
 
 .product-grid__product {
   position: relative; }
@@ -3858,8 +3859,26 @@ header {
     width: 59.5833333%; } }
 
 .quote {
-  margin-top: 2em;
-  margin-bottom: 4em; }
+  max-width: 800px;
+  margin: 0 auto; }
+  .quote__container {
+    min-height: 445px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    position: relative; }
+  .quote__text {
+    color: #fff;
+    max-width: 45%;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 50px 30px; }
+  .quote__source {
+    text-align: right;
+    font-size: 16px; }
+    .quote__source:before {
+      content: "\2014"; }
+  .quote__more {
+    margin-bottom: 40px; }
 
 .whats-inside {
   margin-top: 3em;
