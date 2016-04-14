@@ -52,6 +52,7 @@ header {
     @include breakpoint(medium) {
         width: 183px;
         height: 77px;
+        background-size: 183px auto;
     }
 }
 
