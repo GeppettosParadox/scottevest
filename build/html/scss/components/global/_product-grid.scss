@@ -1,0 +1,113 @@
+.product-grid__filters {
+    .button {
+        display: inline-block;
+        float: none;
+        color: #000;
+        font-size: 21px;
+        background: none;
+        &.active {
+            color: #5ec26a;
+            &:after {
+                content: '_';
+                display: inline-block;
+                transform: scaleX(1.5) translateX(33%);
+            }
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.product-grid {
+    .column {
+        + .column {
+            @include breakpoint(small only) {
+                margin-top: 3em;
+            }
+        }
+    }
+}
+
+.xray-img {
+    img {
+        left: auto;
+        right: auto;
+        width: 100%;
+        @include breakpoint(medium) {
+            //width: 70%;
+        }
+    }
+}
+
+.product-grid__more {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    a {
+        color: $green;
+        white-space: nowrap;
+        font-size: 30px;
+        font-weight: bold;
+        padding-right: 20px;
+        margin: 0 30px 30px 30px;
+        position: relative;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 5px;
+            background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -3px;
+        }
+    }
+}
+
+.product-grid__product {
+    position: relative;
+    @include breakpoint(medium) {
+        padding: 0 10%;
+        &:nth-of-type(n+3) {
+            margin-top: 2em;
+        }
+    }
+}
+
+.product-grid__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    line-height: 15px;
+    .product-grid__product-title {
+
+    }
+    .product-grid__price {
+        &--sales-price {
+            color: $red;
+            font-weight: bold;
+        }
+    }
+    .product-grid__was-price {
+        color: #9c9c9c;
+    }
+}
+
+.product-grid__quick-view-btn {
+    display: block;
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent url("../images/quick-view.svg") no-repeat left center;
+
+}
