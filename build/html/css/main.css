@@ -3695,6 +3695,13 @@ header {
     top: 0; }
   .nav-bar.sticky .nav-bar__cart-btn {
     background-image: url("../images/cart-icon-black.svg"); }
+  @media screen and (min-width: 40em) {
+    .nav-bar.sticky .top-bar-left {
+      position: relative;
+      top: 7px; }
+    .nav-bar.sticky .top-bar-right {
+      position: relative;
+      top: 13px; } }
 
 .nav-bar .icon-telephone {
   color: #5ec26a;
@@ -3703,6 +3710,34 @@ header {
 .nav-bar .menu > li > a {
   padding-left: .3em;
   padding-right: .3em; }
+  @media screen and (min-width: 64em) {
+    .nav-bar .menu > li > a {
+      padding-left: 1em;
+      padding-right: 1em; } }
+
+@media screen and (min-width: 40em) {
+  .nav-bar.sticky .cart-button-wrap {
+    margin-left: 2em; }
+  .nav-bar:not(.sticky) ul.menu {
+    margin-right: 92px; }
+  .nav-bar:not(.sticky) .cart-button-wrap {
+    margin-left: 2em;
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+    position: absolute;
+    top: -21px;
+    right: 0; }
+    .nav-bar:not(.sticky) .cart-button-wrap button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .nav-bar:not(.sticky) .cart-button-wrap:hover {
+      background-color: #5ec26a; }
+  .cart-num {
+    position: relative;
+    bottom: 4px; } }
 
 .off-canvas {
   background: transparent;
@@ -3947,6 +3982,12 @@ header {
 
 @media screen and (min-width: 40em) {
   .quote__text {
+    font-size: 18px; }
+  .quote__source {
+    font-size: 16px; } }
+
+@media screen and (min-width: 64em) {
+  .quote__text {
     font-size: 24px; }
   .quote__source {
     font-size: 18px; } }
@@ -4011,6 +4052,15 @@ header {
   position: relative;
   margin-top: -3em;
   text-align: center; }
+
+.homepage-logos {
+  padding-bottom: 3em; }
+  @media screen and (max-width: 39.9375em) {
+    .homepage-logos .column:nth-of-type(n+3), .homepage-logos .columns:nth-of-type(n+3) {
+      margin-top: 2em; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .homepage-logos .column:nth-of-type(n+5), .homepage-logos .columns:nth-of-type(n+5) {
+      margin-top: 2em; } }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   content: " ";
