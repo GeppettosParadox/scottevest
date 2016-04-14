@@ -1,4 +1,7 @@
 <div class="product-grid product-grid--xray container">
+    <h2 class="product-grid__heading">
+        Featured products
+    </h2>
     <div class="product-grid__filters row">
         <div class="button-group text-center">
             <button class="button active" data-productcat="">All</button>
@@ -11,14 +14,27 @@
             <div class="small-up-1 medium-up-2 product-grid__products">
                 {% set product = {
                     title: 'SeV Susie Qzip',
+                    price: 120,
+                    salesPrice: 110,
                     imgPath: '/uploads/xray_grid/pink_vest.jpg',
                     xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
                 } %}
                 {% for i in 0..3 %}
                     <div class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
-                        <div class="product-grid__header">
-                            {{ product.title }}
+                        <div class="product-grid__details">
+                            <div class="product-grid__product-title">
+                                {{ product.title }}
+                            </div>
+                            <div class="product-grid__price {{ product.salesPrice ? 'product-grid__price--sales-price' }}">
+                                ${{ product.salesPrice ? product.salesPrice : product.price }}
+                            </div>
+                            {% if product.salesPrice %}
+                                <div class="product-grid__was-price">
+                                    was <del>${{ product.price }}</del>
+                                </div>
+                            {% endif %}
                         </div>
+                        <button class="product-grid__quick-view-btn"></button>
                         <div class="xray-img">
                             <img src="{{ product.imgPath }}" alt="">
                             <img src="{{ product.xrayImgPath }}" alt="">
