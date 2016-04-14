@@ -1,4 +1,10 @@
 <div class="product-grid product-grid--xray container">
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
+=======
+    <h2 class="product-grid__heading section-heading">
+        Featured products
+    </h2>
+>>>>>>> Adds latest build
     <div class="product-grid__filters row">
         <div class="button-group text-center">
             <button class="button active" data-productcat="">All</button>
@@ -11,14 +17,36 @@
             <div class="small-up-1 medium-up-2 product-grid__products">
                 {% set product = {
                     title: 'SeV Susie Qzip',
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
+=======
+                    price: 120,
+                    salesPrice: 110,
+>>>>>>> Adds latest build
                     imgPath: '/uploads/xray_grid/pink_vest.jpg',
                     xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
                 } %}
                 {% for i in 0..3 %}
                     <div class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
                         <div class="product-grid__header">
                             {{ product.title }}
                         </div>
+=======
+                        <div class="product-grid__details">
+                            <div class="product-grid__product-title">
+                                {{ product.title }}
+                            </div>
+                            <div class="product-grid__price {{ product.salesPrice ? 'product-grid__price--sales-price' }}">
+                                ${{ product.salesPrice ? product.salesPrice : product.price }}
+                            </div>
+                            {% if product.salesPrice %}
+                                <div class="product-grid__was-price">
+                                    was <del>${{ product.price }}</del>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <button class="product-grid__quick-view-btn"></button>
+>>>>>>> Adds latest build
                         <div class="xray-img">
                             <img src="{{ product.imgPath }}" alt="">
                             <img src="{{ product.xrayImgPath }}" alt="">
@@ -30,7 +58,13 @@
     </div>
     <div class="product-grid__more row">
         <div class="small-12 columns text-center">
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
             <a href="#">View all products</a>
+=======
+            <a href="#">Shop All</a>
+            <a href="#">Shop Men</a>
+            <a href="#">Shop Women</a>
+>>>>>>> Adds latest build
         </div>
     </div>
 </div>

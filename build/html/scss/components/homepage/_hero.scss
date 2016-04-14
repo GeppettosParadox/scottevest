@@ -45,3 +45,41 @@
     z-index: 0;
     transform:rotate(360deg);
 }
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
+=======
+
+.homepage-hero__talk-btn {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    display: inline-block;
+    padding: 0 15px;
+    background-color: $red;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color .2s ease-in-out;
+    &:hover {
+        background-color: scale-color($red, $lightness: -15%);
+    }
+    span {
+        position: relative;
+        padding-left: 36px;
+        &:before {
+            content: "";
+            display: block;
+            width: 22px;
+            height: 21px;
+            background: transparent url("../images/chat.svg") no-repeat left center;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -9px;
+        }
+    }
+    @include breakpoint(medium) {
+        right: 20px;
+    }
+}
+>>>>>>> Adds latest build

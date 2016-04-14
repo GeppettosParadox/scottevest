@@ -74,6 +74,19 @@ $(document).ready(function () {
         var $index = $(this).attr('data-slick-index');
         $whats_inside_icons.slick('slickGoTo', $index, false);
     });
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
+=======
+
+    $(window).scroll(function() {
+        var $navBar = $('.nav-bar');
+        if ($(this).scrollTop() > 45){
+            $navBar.addClass("sticky");
+            $navBar.slideDown(500);
+        } else {
+            $navBar.removeClass("sticky");
+        }
+    });
+>>>>>>> Adds latest build
 });
 
 $(window).load(function(){

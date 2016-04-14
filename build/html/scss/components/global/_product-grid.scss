@@ -41,13 +41,47 @@
 }
 
 .product-grid__more {
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
     margin-top: 2em;
     a {
         color: $green;
+=======
+    margin-top: 3em;
+    margin-bottom: 5em;
+    a {
+        color: $green;
+        white-space: nowrap;
+        font-size: 30px;
+        font-weight: bold;
+        padding-right: 20px;
+        margin: 0 30px 30px 30px;
+        position: relative;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 5px;
+            background: transparent url("../images/btn-arrow-green.svg") no-repeat left center;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -3px;
+        }
+>>>>>>> Adds latest build
     }
 }
 
 .product-grid__product {
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
+=======
+    position: relative;
+>>>>>>> Adds latest build
     @include breakpoint(medium) {
         padding: 0 10%;
         &:nth-of-type(n+3) {
@@ -55,3 +89,37 @@
         }
     }
 }
+<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
+=======
+
+.product-grid__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    line-height: 15px;
+    .product-grid__product-title {
+
+    }
+    .product-grid__price {
+        &--sales-price {
+            color: $red;
+            font-weight: bold;
+        }
+    }
+    .product-grid__was-price {
+        color: #9c9c9c;
+    }
+}
+
+.product-grid__quick-view-btn {
+    display: block;
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent url("../images/quick-view.svg") no-repeat left center;
+
+}
+>>>>>>> Adds latest build
