@@ -133,6 +133,15 @@ header {
 
         }
 
+        @include breakpoint(small only) {
+            .columns {
+                padding-top: 1.1em;
+            }
+            .centered-logo {
+                top: 10px;
+            }
+        }
+
     }
     .icon-telephone {
         color: $green;
