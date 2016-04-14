@@ -4085,6 +4085,9 @@ header {
   @media screen and (min-width: 40em) {
     .whats-inside {
       margin-bottom: 20%; } }
+  @media screen and (min-width: 64em) {
+    .whats-inside {
+      margin-bottom: 13%; } }
 
 .whats-inside__overlay {
   position: absolute;

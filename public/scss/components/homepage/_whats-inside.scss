@@ -5,6 +5,9 @@
     @include breakpoint(medium) {
         margin-bottom: 20%;
     }
+    @include breakpoint(large) {
+        margin-bottom: 13%;
+    }
 }
 
 .whats-inside__overlay {

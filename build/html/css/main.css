@@ -4055,8 +4055,8 @@ header {
     width: 100%;
     max-width: none; }
   .quote__container .homepage-hero-angle {
-    transform: scaleX(-1);
-    width: 105%; }
+    transform: scale(-1.08, 1.08);
+    width: 100%; }
 
 .quote__text {
   position: absolute;
@@ -4085,6 +4085,9 @@ header {
   @media screen and (min-width: 40em) {
     .whats-inside {
       margin-bottom: 20%; } }
+  @media screen and (min-width: 64em) {
+    .whats-inside {
+      margin-bottom: 13%; } }
 
 .whats-inside__overlay {
   position: absolute;
