@@ -42,13 +42,14 @@
 
 .product-grid__more {
     margin-top: 3em;
-    margin-bottom: 6em;
+    margin-bottom: 5em;
     a {
         color: $green;
+        white-space: nowrap;
         font-size: 30px;
         font-weight: bold;
         padding-right: 20px;
-        margin: 0 30px;
+        margin: 0 30px 30px 30px;
         position: relative;
         &:first-child {
             margin-left: 0;

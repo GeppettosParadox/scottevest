@@ -3442,13 +3442,14 @@ table.hover tr:nth-of-type(even):hover {
   font-weight: bold; }
 
 .site-footer {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 50px 0;
   text-align: center;
   background: #f4f4f4;
   color: #7a7a7a; }
   .site-footer a {
     color: #7a7a7a; }
+    .site-footer a:hover {
+      color: #606c82; }
 
 .site-footer__shop-nav ul,
 .site-footer__site-nav ul {
@@ -3456,6 +3457,30 @@ table.hover tr:nth-of-type(even):hover {
   .site-footer__shop-nav ul > li,
   .site-footer__site-nav ul > li {
     display: inline-block; }
+
+.site-footer__shop-nav {
+  margin-bottom: 20px; }
+  .site-footer__shop-nav a {
+    font-size: 20px;
+    margin: 0 27px; }
+
+.site-footer__site-nav {
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin: 0 auto; }
+  .site-footer__site-nav a {
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0 20px; }
+
+.site-footer__social-buttons {
+  margin-bottom: 30px; }
+
+.site-footer__logo {
+  margin-bottom: 30px; }
+
+.site-footer__copyright {
+  font-size: 12px; }
 
 .offer-bar {
   background: #c9f908;
@@ -3631,13 +3656,14 @@ header {
 
 .product-grid__more {
   margin-top: 3em;
-  margin-bottom: 6em; }
+  margin-bottom: 5em; }
   .product-grid__more a {
     color: #5ec26a;
+    white-space: nowrap;
     font-size: 30px;
     font-weight: bold;
     padding-right: 20px;
-    margin: 0 30px;
+    margin: 0 30px 30px 30px;
     position: relative; }
     .product-grid__more a:first-child {
       margin-left: 0; }

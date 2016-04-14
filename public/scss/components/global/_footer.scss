@@ -1,11 +1,13 @@
 .site-footer {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 50px 0;
     text-align: center;
     background: #f4f4f4;
     color: #7a7a7a;
     a {
         color: #7a7a7a;
+        &:hover {
+            color: #606c82;
+        }
     }
 }
 
@@ -20,23 +22,38 @@
 
 }
 .site-footer__shop-nav {
+    margin-bottom: 20px;
+    a {
+        font-size: 20px;
+        margin: 0 27px;
+    }
+    @include breakpoint(medium) {
 
+    }
 }
 
 .site-footer__site-nav {
-
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    a {
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0 20px;
+    }
 }
 
 .site-footer__social-buttons {
-
+    margin-bottom: 30px;
 }
 
 .site-footer__logo {
+    margin-bottom: 30px;
     img {
 
     }
 }
 
 .site-footer__copyright {
-
+    font-size: 12px;
 }
