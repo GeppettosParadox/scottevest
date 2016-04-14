@@ -3,33 +3,15 @@
   "devDependencies": {
     "compression": "^1.3.0",
     "express": "~4.9.0",
-<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
-<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
-<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
+<<<<<<< ab22598085d68e8935c75bf54d49675023a74725
+<<<<<<< e8df664ae9f2780580e7c1aa1ae9805ccd645420
     "grunt": "^1.0.1",
 =======
     "grunt": "^0.4.5",
->>>>>>> Adds latest build
-=======
-=======
-<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
->>>>>>> Adds latest build
-<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
-    "grunt": "^0.4.5",
+>>>>>>> Adds start of sticky header
 =======
     "grunt": "^1.0.1",
->>>>>>> Adding build folder
-<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
->>>>>>> Adding build folder
-=======
-=======
-<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
-    "grunt": "^1.0.1",
-=======
-    "grunt": "^0.4.5",
->>>>>>> Adds latest build
->>>>>>> Adds latest build
->>>>>>> Adds latest build
+>>>>>>> Compiled version added to git
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.6.0",
@@ -42,9 +24,6 @@
     "grunt-twig-renderer": "^1.0.0",
     "load-grunt-tasks": "^3.4.1",
     "twig": "~0.8.8"
-<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
-<<<<<<< d1a06fbe2672821ce61c6fced6baed3bdc58046f
-<<<<<<< d4c43ec8ec47174d3bbcb0da21a0bc87e60d2dd1
   },
   "scripts": {
     "start": "node server.js"
@@ -58,41 +37,4 @@
   },
   "author": "",
   "license": "ISC"
-=======
-  }
->>>>>>> Adds latest build
-=======
-=======
-<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
->>>>>>> Adds latest build
-<<<<<<< 705758db9d72c8e0afabe0f45433b7e087677264
-  }
-=======
-=======
-<<<<<<< 0ff859e55752ad821cf8d66bed0af366894ad9ab
->>>>>>> Adds latest build
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "description": "## Compilation Steps",
-  "version": "1.0.0",
-  "main": "Gruntfile.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com//bostoninteractive/scottevest.git"
-  },
-  "author": "",
-  "license": "ISC"
-<<<<<<< fec46c701e6ec55dfea36dfe751e886bf24df275
->>>>>>> Adding build folder
-<<<<<<< 946988f3b28ba14131cd5a98e15977259cb8ed8d
->>>>>>> Adding build folder
-=======
-=======
-=======
-  }
->>>>>>> Adds latest build
->>>>>>> Adds latest build
->>>>>>> Adds latest build
 }
