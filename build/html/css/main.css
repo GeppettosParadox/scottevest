@@ -3464,6 +3464,29 @@ a.green-more {
     top: 50%;
     margin-top: -3px; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?y813ce");
+  src: url("../fonts/icomoon.eot?y813ce#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?y813ce") format("truetype"), url("../fonts/icomoon.woff?y813ce") format("woff"), url("../fonts/icomoon.svg?y813ce#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow:before {
+  content: "\e900"; }
+
 .site-footer {
   padding: 50px 0;
   text-align: center;
@@ -3542,6 +3565,26 @@ a.green-more {
   background: rgba(0, 0, 0, 0.1); }
   .offer-bar__btn:hover {
     background: rgba(0, 0, 0, 0.15); }
+  .offer-bar__btn .icon-arrow {
+    font-size: 5px;
+    position: relative;
+    bottom: 1px; }
+
+.top-bar.intl-bar {
+  background: #fff;
+  padding-top: .5em !important;
+  padding-bottom: .5em !important; }
+  .top-bar.intl-bar strong {
+    display: block;
+    font-size: 1.28rem; }
+  @media screen and (min-width: 40em) {
+    .top-bar.intl-bar {
+      padding-top: 2.14em !important;
+      padding-bottom: 2.14em !important; }
+      .top-bar.intl-bar strong, .top-bar.intl-bar span {
+        display: inline-block; }
+      .top-bar.intl-bar span {
+        margin-left: 1em; } }
 
 header {
   position: relative;
@@ -3551,6 +3594,7 @@ header {
   position: relative;
   z-index: 10;
   background: transparent;
+  margin-top: .5em;
   padding: 0.5em 0 0;
   color: #fff; }
   .nav-bar ul {
@@ -3584,7 +3628,8 @@ header {
   width: 129px;
   height: 54px;
   left: 50%;
-  transform: translate(-50%, 5px); }
+  transform: translate(-50%, 5px);
+  background-size: 129px auto; }
   @media screen and (min-width: 40em) {
     .centered-logo {
       width: 183px;
