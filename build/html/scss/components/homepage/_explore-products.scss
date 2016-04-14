@@ -79,6 +79,9 @@
             }
         }
     }
+    &--hidden {
+        display: none;
+    }
 }
 
 @include breakpoint(medium) {

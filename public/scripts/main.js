@@ -75,6 +75,11 @@ $(document).ready(function () {
         $whats_inside_icons.slick('slickGoTo', $index, false);
     });
 
+    $('.explore-product--more button').on('click', function() {
+        $('.explore-product--hidden').removeClass('explore-product--hidden');
+        $(this).closest('.explore-product--more').remove();
+    });
+
     $(window).scroll(function() {
         var $navBar = $('.nav-bar');
         if ($(this).scrollTop() > 45){

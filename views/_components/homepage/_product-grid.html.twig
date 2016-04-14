@@ -20,6 +20,11 @@
                 } %}
                 {% for i in 0..3 %}
                     <div class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
+                        <button class="product-grid__quick-view-btn"></button>
+                        <div class="xray-img">
+                            <img src="{{ product.imgPath }}" alt="">
+                            <img src="{{ product.xrayImgPath }}" alt="">
+                        </div>
                         <div class="product-grid__details">
                             <div class="product-grid__product-title">
                                 {{ product.title }}
@@ -32,11 +37,6 @@
                                     was <del>${{ product.price }}</del>
                                 </div>
                             {% endif %}
-                        </div>
-                        <button class="product-grid__quick-view-btn"></button>
-                        <div class="xray-img">
-                            <img src="{{ product.imgPath }}" alt="">
-                            <img src="{{ product.xrayImgPath }}" alt="">
                         </div>
                     </div>
                 {% endfor %}

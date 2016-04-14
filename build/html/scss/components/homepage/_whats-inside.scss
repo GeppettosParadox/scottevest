@@ -1,7 +1,10 @@
 .whats-inside {
     margin-top: 3em;
-    margin-bottom: 120px;
+    margin-bottom: 30%;
     position: relative;
+    @include breakpoint(medium) {
+        margin-bottom: 20%;
+    }
 }
 
 .whats-inside__overlay {
@@ -10,7 +13,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    padding-top: 60%;
+    padding-top: 16%;
     color: #fff;
     h2 {
         font-size: 27px;
@@ -61,5 +64,4 @@
     position: relative;
     margin-top: -3em;
     text-align: center;
-    z-index: 10;
 }

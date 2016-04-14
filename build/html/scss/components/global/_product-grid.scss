@@ -59,7 +59,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100;
     line-height: 15px;
     .product-grid__product-title {
 
@@ -77,11 +76,16 @@
 
 .product-grid__quick-view-btn {
     display: block;
-    width: 59px;
-    height: 59px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
     background: transparent url("../images/quick-view.svg") no-repeat left center;
-
+    background-size: 40px 40px;
+    @include breakpoint(large) {
+        width: 59px;
+        height: 59px;
+        background-size: 59px 59px;
+    }
 }
