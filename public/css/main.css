@@ -3445,7 +3445,17 @@ table.hover tr:nth-of-type(even):hover {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  color: #7a7a7a; }
+  .site-footer a {
+    color: #7a7a7a; }
+
+.site-footer__shop-nav ul,
+.site-footer__site-nav ul {
+  list-style-type: none; }
+  .site-footer__shop-nav ul > li,
+  .site-footer__site-nav ul > li {
+    display: inline-block; }
 
 .offer-bar {
   background: #c9f908;
