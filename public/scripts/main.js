@@ -82,7 +82,7 @@ $(document).ready(function () {
 
     $(window).scroll(function() {
         var $navBar = $('.nav-bar');
-        if ($(this).scrollTop() > 45){
+        if ($(this).scrollTop() > 131){
             $navBar.addClass("sticky");
             $navBar.slideDown(500);
         } else {

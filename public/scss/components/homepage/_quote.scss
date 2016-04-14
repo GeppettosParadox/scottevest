@@ -20,6 +20,13 @@
 
 @include breakpoint(medium) {
     .quote__text {
+        font-size: 18px;
+    }
+    .quote__source {
+        font-size: 16px;
+    }
+}@include breakpoint(large) {
+    .quote__text {
         font-size: 24px;
     }
     .quote__source {

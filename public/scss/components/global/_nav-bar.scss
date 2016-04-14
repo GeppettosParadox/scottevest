@@ -120,9 +120,19 @@ header {
         .nav-bar__cart-btn {
             background-image: url("../images/cart-icon-black.svg");
         }
+
         @include breakpoint(medium) {
+                    .top-bar-left {
+            position: relative;
+            top: 7px;
+        }
+        .top-bar-right {
+            position: relative;
+            top: 13px;
+        }
 
         }
+
     }
     .icon-telephone {
         color: $green;
@@ -131,6 +141,45 @@ header {
     .menu > li > a {
         padding-left: .3em;
         padding-right: .3em;
+        @include breakpoint(large) {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+}
+
+@include breakpoint(medium) {
+    .nav-bar.sticky {
+    .cart-button-wrap {
+        margin-left: 2em;
+    }
+    }
+    .nav-bar:not(.sticky) {
+    ul.menu {
+        margin-right: 92px;
+    }
+    .cart-button-wrap {
+        margin-left: 2em;
+        display: inline-block;
+        width: 92px;
+        height: 92px;
+        position: absolute;
+        top: -21px;
+        right: 0;
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);        }
+        &:hover {
+            background-color: $green;
+        }
+    }
+    }
+
+    .cart-num {
+        position: relative;
+        bottom: 4px;
     }
 }
 
