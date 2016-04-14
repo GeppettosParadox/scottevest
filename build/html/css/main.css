@@ -3864,7 +3864,9 @@ header {
   z-index: 0;
   top: -58px; }
   .homepage-hero picture, .homepage-hero img {
-    width: 1000%; }
+    width: 100%; }
+  .homepage-hero .homepage-hero-angle {
+    transform: scale(1.05, 1.05); }
 
 .homepage-hero__overlay {
   position: absolute;

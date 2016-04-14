@@ -3,7 +3,10 @@
     z-index: 0;
     top: -58px;
     picture, img {
-        width: 1000%;
+        width: 100%;
+    }
+    .homepage-hero-angle {
+        transform: scale(1.05, 1.05);
     }
 }
 
