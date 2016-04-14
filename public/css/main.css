@@ -3441,6 +3441,12 @@ table.hover tr:nth-of-type(even):hover {
   color: #606c82;
   font-weight: bold; }
 
+.site-footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  background: #f4f4f4; }
+
 .offer-bar {
   background: #c9f908;
   padding: 0;
@@ -3815,8 +3821,13 @@ header {
     float: right;
     width: 59.5833333%; } }
 
+.quote {
+  margin-top: 2em;
+  margin-bottom: 4em; }
+
 .whats-inside {
   margin-top: 3em;
+  margin-bottom: 120px;
   position: relative; }
 
 .whats-inside__overlay {
