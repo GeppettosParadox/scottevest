@@ -3,4 +3,40 @@
     padding-bottom: 2em;
     text-align: center;
     background: #f4f4f4;
+    color: #7a7a7a;
+    a {
+        color: #7a7a7a;
+    }
+}
+
+.site-footer__shop-nav,
+.site-footer__site-nav {
+    ul {
+        list-style-type: none;
+        > li {
+            display: inline-block;
+        }
+    }
+
+}
+.site-footer__shop-nav {
+
+}
+
+.site-footer__site-nav {
+
+}
+
+.site-footer__social-buttons {
+
+}
+
+.site-footer__logo {
+    img {
+
+    }
+}
+
+.site-footer__copyright {
+
 }
