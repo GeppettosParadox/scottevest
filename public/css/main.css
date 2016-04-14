@@ -3469,8 +3469,8 @@ a.green-more {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?y813ce");
-  src: url("../fonts/icomoon.eot?y813ce#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?y813ce") format("truetype"), url("../fonts/icomoon.woff?y813ce") format("woff"), url("../fonts/icomoon.svg?y813ce#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?n5gwqx");
+  src: url("../fonts/icomoon.eot?n5gwqx#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?n5gwqx") format("truetype"), url("../fonts/icomoon.woff?n5gwqx") format("woff"), url("../fonts/icomoon.svg?n5gwqx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -3486,6 +3486,9 @@ a.green-more {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-telephone:before {
+  content: "\e901"; }
 
 .icon-arrow:before {
   content: "\e900"; }
@@ -3689,6 +3692,14 @@ header {
     top: 0; }
   .nav-bar.sticky .nav-bar__cart-btn {
     background-image: url("../images/cart-icon-black.svg"); }
+
+.nav-bar .icon-telephone {
+  color: #5ec26a;
+  margin-right: .3em; }
+
+.nav-bar .menu > li > a {
+  padding-left: .3em;
+  padding-right: .3em; }
 
 .off-canvas {
   background: transparent;
