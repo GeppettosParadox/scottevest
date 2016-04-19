@@ -4192,6 +4192,12 @@ ul.tab-picker {
     .whats-inside__overlay {
       padding-top: 44.4444444%; } }
 
+.whats-inside--small .whats-inside__overlay {
+  padding-top: 5%; }
+  @media screen and (min-width: 40em) {
+    .whats-inside--small .whats-inside__overlay {
+      padding-top: 5%; } }
+
 .whats-inside__icon {
   display: inline-block;
   transition: all .5s ease-in-out;
