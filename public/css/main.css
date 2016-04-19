@@ -3719,6 +3719,9 @@ header {
 .top-bar {
   padding-top: 0 !important; }
 
+body.sticky-navbar {
+  padding-top: 86px; }
+
 .nav-bar.sticky {
   z-index: 10000;
   position: fixed;
@@ -3769,6 +3772,7 @@ header {
 
 .nav-bar .icon-telephone {
   color: #5ec26a;
+  vertical-align: middle;
   margin-right: .3em; }
 
 .nav-bar .menu > li > a {
@@ -4320,7 +4324,8 @@ ul.tab-picker {
     box-sizing: content-box;
     width: 21px;
     height: 21px;
-    border-radius: 21px; }
+    border-radius: 21px;
+    border: 1px solid rgba(242, 242, 242, 0); }
     .color-options button:focus {
       outline: 0; }
     .color-options button.active {
