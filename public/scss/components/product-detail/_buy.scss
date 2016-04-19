@@ -85,6 +85,9 @@
     height: 36px;
     line-height: 36px;
     color: $green;
+    img {
+        margin: -2px 6px 0 0;
+    }
     &:hover {
         color: $green;
     }
@@ -157,5 +160,15 @@
     }
     .add-wishlist {
         border-right: 1px solid #e6e6e6;
+    }
+    @include breakpoint(medium) {
+        .buy-btn {
+            margin-bottom: 20px;
+        }
+        .link,
+        .columns {
+            height: 63px;
+            line-height: 63px;
+        }
     }
 }

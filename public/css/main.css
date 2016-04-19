@@ -4309,6 +4309,8 @@ ul.tab-picker {
   height: 36px;
   line-height: 36px;
   color: #5ec26a; }
+  .size-chart-link img {
+    margin: -2px 6px 0 0; }
   .size-chart-link:hover {
     color: #5ec26a; }
 
@@ -4364,6 +4366,13 @@ ul.tab-picker {
       color: #5ec26a; }
   .buy-bar .add-wishlist {
     border-right: 1px solid #e6e6e6; }
+  @media screen and (min-width: 40em) {
+    .buy-bar .buy-btn {
+      margin-bottom: 20px; }
+    .buy-bar .link,
+    .buy-bar .columns {
+      height: 63px;
+      line-height: 63px; } }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   content: " ";
