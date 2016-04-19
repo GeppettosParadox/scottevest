@@ -27,6 +27,16 @@
     }
 }
 
+.whats-inside--small {
+
+    .whats-inside__overlay {
+        padding-top: 5%;
+        @include breakpoint(medium) {
+            padding-top: 5%;
+        }
+    }
+}
+
 .whats-inside__icon {
     display: inline-block;
     transition: all .5s ease-in-out;
