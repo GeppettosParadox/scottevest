@@ -132,11 +132,21 @@ $(document).ready(function () {
 
     $(window).scroll(function() {
         var $navBar = $('.nav-bar');
-        if ($(this).scrollTop() > 131){
+        var $topBars = $('.top-bar');
+        var topBarsHeight = 0;
+        $topBars.each(function() {
+            if (!$(this).hasClass('nav-bar')) {
+                topBarsHeight = topBarsHeight + $(this).outerHeight();
+            }
+        });
+        var $body = $('body');
+        if ($(this).scrollTop() > topBarsHeight){
             $navBar.addClass("sticky");
-            $navBar.slideDown(500);
+            $body.addClass("sticky-navbar");
+            $navBar.show();
         } else {
             $navBar.removeClass("sticky");
+            $body.removeClass("sticky-navbar");
         }
     });
 });
