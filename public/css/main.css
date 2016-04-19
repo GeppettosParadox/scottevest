@@ -3865,7 +3865,7 @@ header {
 .product-grid__details {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
   line-height: 15px; }
   .product-grid__details .product-grid__price--sales-price {
     color: #f90808;
@@ -3896,7 +3896,8 @@ header {
 .related-products {
   margin-bottom: 110px; }
   .related-products .section-heading {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    color: #000; }
 
 .related-products__product {
   position: relative;
