@@ -3441,11 +3441,24 @@ table.hover tr:nth-of-type(even):hover {
   color: #606c82;
   font-weight: bold; }
 
+a.share {
+  position: relative;
+  padding-left: 26px; }
+  a.share:before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 18px;
+    background: transparent url("../images/share.svg") no-repeat left center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -11px; }
+
 a.green-more {
   color: #5ec26a;
   white-space: nowrap;
   font-size: 16px;
-  font-weight: bold;
   padding-right: 20px;
   margin: 0 20px 30px 20px;
   position: relative; }
@@ -3466,6 +3479,9 @@ a.green-more {
     right: 0;
     top: 50%;
     margin-top: -3px; }
+
+.bold {
+  font-weight: bold; }
 
 @font-face {
   font-family: 'icomoon';
@@ -4309,6 +4325,9 @@ ul.tab-picker {
 
 .buy-bar {
   margin-top: 2em; }
+  .buy-bar button,
+  .buy-bar a {
+    font-size: 18px; }
   .buy-bar .buy-btn {
     display: block; }
     .buy-bar .buy-btn button {
@@ -4322,6 +4341,8 @@ ul.tab-picker {
     .buy-bar .add-wishlist a,
     .buy-bar .share a {
       color: #5ec26a; }
+  .buy-bar .add-wishlist {
+    border-right: 1px solid #e6e6e6; }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   content: " ";

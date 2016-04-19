@@ -135,6 +135,10 @@
 
 .buy-bar {
     margin-top: 2em;
+    button,
+    a {
+        font-size: 18px;
+    }
     .buy-btn {
         display: block;
         button {
@@ -150,5 +154,8 @@
         a {
             color: $green;
         }
+    }
+    .add-wishlist {
+        border-right: 1px solid #e6e6e6;
     }
 }
