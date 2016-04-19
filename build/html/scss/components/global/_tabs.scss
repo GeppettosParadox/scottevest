@@ -32,6 +32,11 @@ ul.tab-picker {
             outline: 0;
         }
     }
+    @include breakpoint(small) {
+        &--product-specs {
+            margin-top: 40px;
+        }
+    }
 }
 .tabs-content,
 .tabs-panel {
