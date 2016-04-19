@@ -3963,6 +3963,8 @@ ul.tab-picker {
         transform: scaleX(1.5) translateX(33%); }
     ul.tab-picker li:focus {
       outline: 0; }
+  ul.tab-picker--product-specs {
+    margin-top: 40px; }
 
 .tabs-content,
 .tabs-panel {
