@@ -17,12 +17,15 @@
 @import "components/global/offcanvas-nav";
 @import "components/global/product-grid";
 @import "components/global/live-chat";
+@import "components/global/tabs";
 
 @import "components/homepage/hero";
 @import "components/homepage/explore-products";
 @import "components/homepage/quote";
 @import "components/homepage/whats-inside";
 @import "components/homepage/logos";
+
+@import "components/product-detail/_buy.scss";
 
 // Twentytwenty
 @import "vendor/twentytwenty";

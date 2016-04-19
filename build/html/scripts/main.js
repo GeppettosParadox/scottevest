@@ -18,7 +18,7 @@ function setWhatsInsideIcons(slider, nextSlide) {
 }
 
 $(document).ready(function () {
-    $('.product-grid__filters button').on('click', function() {
+    $('.tab-picker button').on('click', function() {
         var $button = $(this);
         var $category = $(this).attr('data-productcat');
         var $products = $button.closest('.product-grid').find('.product-grid__product');
@@ -106,6 +106,28 @@ $(document).ready(function () {
             .css('display', '')
             .removeClass('explore-product--hidden')
         ;
+    });
+
+    $('.size-options button').on('click', function() {
+        $(this).siblings().andSelf().removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.color-options button').on('click', function() {
+        $(this).siblings().andSelf().removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.qty-options button').on('click', function() {
+        var qty = $(this).siblings('input')[0];
+        var $qty_value = parseInt($(qty).val());
+        if ($(this).hasClass('add')) {
+            $qty_value = $qty_value + 1;
+        }
+        if ($(this).hasClass('sub') && $qty_value > 1) {
+            $qty_value = $qty_value - 1;
+        }
+        $(qty).val($qty_value).attr('value', $qty_value);
     });
 
     $(window).scroll(function() {
