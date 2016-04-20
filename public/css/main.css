@@ -3979,6 +3979,9 @@ ul.tab-picker {
   .tabs-panel .more-link button {
     color: #5ec26a; }
 
+ul.tab-picker--product-specs {
+  margin-top: 10px; }
+
 .homepage-hero {
   position: relative;
   z-index: 0;

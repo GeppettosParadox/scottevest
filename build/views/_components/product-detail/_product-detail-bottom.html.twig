@@ -1,6 +1,6 @@
 <div class="container product-detail__bottom">
-    <div class="row">
-        <div class="small-12 large-7 columns">
+    <div class="row" data-equalizer data-equalize-on="large">
+        <div class="small-12 large-7 columns" data-equalizer-watch>
 
             <div class="product-detail__thumbs">
                 <div class="product-detail__thumbs__left">
@@ -20,12 +20,15 @@
                 </div>
             </div>
         </div>
-        <div class="small-12 large-5 columns">
+        <div class="small-12 large-5 columns"  data-equalizer-watch>
 
-            {% include "_components/product-detail/_tab-box.html.twig" %}
+            <div id="stick-kit__buy">
 
-            <div class="scroll-back-btn">
-                <button type="button" class="button buy" disabled>Buy Now</button>
+                {% include "_tab-box.html.twig" %}
+
+                <div class="scroll-back-btn">
+                    <button type="button" class="button buy" disabled>Buy Now</button>
+                </div>
             </div>
 
         </div>

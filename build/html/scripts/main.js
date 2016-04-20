@@ -185,9 +185,14 @@ $(document).ready(function () {
             }
         }
     });
+
     $('.more-link button').on('click', function (e) {
         $(this).closest('.tabs-panel').find('.hidable').toggleClass('show-for-sr');
         $(this).remove();
+    });
+
+    $('#stick-kit__buy').stick_in_parent({
+        offset_top: 100
     });
 });
 
