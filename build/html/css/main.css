@@ -3515,6 +3515,10 @@ a.green-more {
 .icon-arrow:before {
   content: "\e900"; }
 
+.site-header {
+  position: relative;
+  z-index: 100; }
+
 .site-footer {
   padding: 50px 0;
   text-align: center;
@@ -3901,6 +3905,8 @@ body.sticky-navbar {
     background-size: 40px 40px; }
 
 .related-products {
+  position: relative;
+  z-index: 10;
   margin-bottom: 110px; }
   .related-products .section-heading {
     margin-bottom: 50px;
