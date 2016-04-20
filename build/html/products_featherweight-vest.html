@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title> | SCOTTeVEST</title>
+    <title>Featherweight Vest | SCOTTeVEST</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://vjs.zencdn.net/5.9.2/video-js.css" rel="stylesheet">
     <script>
         // Picture element HTML5 shiv
         document.createElement("picture");
@@ -110,7 +111,7 @@
                 <div class="product-detail__top">
                     <div class="container">
                         <div class="row">
-                            <div class="small-12 large-7 columns product-detail__bg">
+                            <div class="small-12 large-7 columns product-detail__bg text-center">
                                 <img src="uploads/product_bg/product.jpg" alt="">
                                 <div class="bottom-angle">
                                     <img src="images/bottom-angle.svg" alt="">
@@ -170,51 +171,12 @@
                         <img src="images/bottom-angle.svg" alt="">
                     </div>
                 </div>
-                <div class="container product-detail__bottom">
-                    <div class="row">
-                        <div class="small-12 large-7 columns">
-                            <img src="images/example-product.png" alt="">
-
-                        </div>
-                        <div class="small-12 large-5 columns">
-                            <ul class="tabs tab-picker tab-picker--product-specs" data-tabs="" id="example-tabs">
-                                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Product Info</a></li>
-                                <li class="tabs-title"><a href="#panel2">Reviews</a></li>
-                                <li class="tabs-title"><a href="#panel3">Shipping &amp; Returns</a></li>
-                            </ul>
-                            <div class="tabs-content" data-tabs-content="example-tabs">
-                                <div class="tabs-panel is-active" id="panel1">
-                                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum
-                                        feugiat nisl ut dapibus.</p>
-                                    <p class="more-link">
-                                        <a href="#">Read more</a>
-                                    </p>
-                                </div>
-                                <div class="tabs-panel" id="panel2">
-                                    <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu tellus rhoncus
-                                        ut eleifend nibh porttitor.</p>
-                                    <p class="more-link">
-                                        <a href="#">Read more</a>
-                                    </p>
-                                </div>
-                                <div class="tabs-panel" id="panel3">
-                                    <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu tellus rhoncus
-                                        ut eleifend nibh porttitor.</p>
-                                    <p class="more-link">
-                                        <a href="#">Read more</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
                 <div class="whats-inside container whats-inside--small">
 
                     <picture class="whats-inside__bg">
                         <!--[if IE 9]><video style="display: none;"><![endif]-->
                         <source srcset="/uploads/features_bg/features_bg_small.jpg" media="(min-width: 1025px)"></source>
-                        <source srcset="/uploads/features_bg/features_bg_small_1024.jpg" media="(min-width: 481px)"></source>
+                        <source srcset="/uploads/features_bg/features_bg_small_1024.jpg" media="(min-width: 600px)"></source>
                         <!--[if IE 9]></video><![endif]-->
                         <img src="uploads/features_bg/features_bg_small_480.jpg" srcset="/uploads/features_bg/features_bg_small_480.jpg" alt="">
                     </picture>
@@ -256,8 +218,8 @@
                                 </div>
                             </div>
                             <div class="whats-inside__media row">
-                                <div class="small-12 medium-8 medium-offset-2 columns">
-                                    <img src="http://placehold.it/600x338" alt="">
+                                <div class="small-12 medium-8 medium-offset-2 large-10 large-offset-1 columns">
+                                    <img src="http://placehold.it/1200x676" alt="">
                                 </div>
                             </div>
                         </div>
@@ -265,79 +227,87 @@
 
                 </div>
                 <div class="related-products product-grid container">
-                    <h2 class="related-products__heading section-heading">
-        Customers who bought this item also bought
-    </h2>
-                    <div class="row related-products__products">
-                        <div class="medium-6 large-3 column related-products__product" data-productcat="men">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
+                    <div class="row">
+                        <h2 class="related-products__heading section-heading small-12 columns">
+            Customers who bought this item also bought
+        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 columns related-products__products">
+                            <div class="medium-6 large-3 column related-products__product" data-productcat="men">
+                                <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                                <div class="xray-img">
+                                    <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                                    <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
                                 </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was <del>$120</del>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="medium-6 large-3 column related-products__product" data-productcat="men">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
-                                </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was <del>$120</del>
+                                <div class="product-grid__details">
+                                    <div class="product-grid__product-title">
+                                        SeV Susie Qzip
+                                    </div>
+                                    <div class="product-grid__price product-grid__price--sales-price">
+                                        $110
+                                    </div>
+                                    <div class="product-grid__was-price">
+                                        was
+                                        <del>$120</del>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="medium-6 large-3 column related-products__product" data-productcat="men">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                            <div class="medium-6 large-3 column related-products__product" data-productcat="men">
+                                <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                                <div class="xray-img">
+                                    <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                                    <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                                </div>
+                                <div class="product-grid__details">
+                                    <div class="product-grid__product-title">
+                                        SeV Susie Qzip
+                                    </div>
+                                    <div class="product-grid__price product-grid__price--sales-price">
+                                        $110
+                                    </div>
+                                    <div class="product-grid__was-price">
+                                        was
+                                        <del>$120</del>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
+                            <div class="medium-6 large-3 column related-products__product" data-productcat="men">
+                                <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                                <div class="xray-img">
+                                    <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                                    <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
                                 </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was <del>$120</del>
+                                <div class="product-grid__details">
+                                    <div class="product-grid__product-title">
+                                        SeV Susie Qzip
+                                    </div>
+                                    <div class="product-grid__price product-grid__price--sales-price">
+                                        $110
+                                    </div>
+                                    <div class="product-grid__was-price">
+                                        was
+                                        <del>$120</del>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="medium-6 large-3 column related-products__product" data-productcat="women">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
+                            <div class="medium-6 large-3 column related-products__product" data-productcat="women">
+                                <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                                <div class="xray-img">
+                                    <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                                    <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
                                 </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was <del>$120</del>
+                                <div class="product-grid__details">
+                                    <div class="product-grid__product-title">
+                                        SeV Susie Qzip
+                                    </div>
+                                    <div class="product-grid__price product-grid__price--sales-price">
+                                        $110
+                                    </div>
+                                    <div class="product-grid__was-price">
+                                        was
+                                        <del>$120</del>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -395,6 +365,7 @@
     <span>Talk to Online Personal Shopper</span>
 </button>
 
+    <script src="https://vjs.zencdn.net/5.9.2/video.js"></script>
     <script type="text/javascript" data-main="scripts/jquery.js" src="vendor/jquery/dist/jquery.js"></script>
     <script type="text/javascript" data-main="scripts/vendor/twentytwenty/jquery.event.move.js" src="vendor/twentytwenty/js/jquery.event.move.js"></script>
     <script type="text/javascript" data-main="scripts/vendor/twentytwenty/jquery.twentytwenty.js" src="vendor/twentytwenty/js/jquery.twentytwenty.js"></script>

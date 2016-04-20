@@ -158,6 +158,26 @@
     }
 }
 
+.scroll-back-btn {
+    margin-top: 2em;
+    button {
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        display: block;
+        width: 100%;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+        font-size: 18px;
+        &:after {
+            transform: rotate(-45deg) !important;
+        }
+    }
+    @include breakpoint(medium down) {
+        display: none;
+    }
+}
+
+
 .buy-bar {
     margin-top: 2em;
     button,

@@ -1,4 +1,4 @@
-$.fn.isOnScreen = function(){
+$.fn.isOnScreen = function () {
     var element = this.get(0);
     var bounds = element.getBoundingClientRect();
     return bounds.top < window.innerHeight && bounds.bottom > 84;
@@ -24,7 +24,7 @@ function setWhatsInsideIcons(slider, nextSlide) {
 }
 
 $(document).ready(function () {
-    $('.tab-picker button').on('click', function() {
+    $('.tab-picker button').on('click', function () {
         var $button = $(this);
         var $category = $(this).attr('data-productcat');
         var $products = $button.closest('.product-grid').find('.product-grid__product');
@@ -72,16 +72,16 @@ $(document).ready(function () {
 
     setWhatsInsideIcons($whats_inside_icons, 0);
 
-    $whats_inside_icons.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $whats_inside_icons.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         setWhatsInsideIcons(this, nextSlide);
     });
 
-    $('.whats-inside__icon', $whats_inside_icons).on('click', function() {
+    $('.whats-inside__icon', $whats_inside_icons).on('click', function () {
         var $index = $(this).attr('data-slick-index');
         $whats_inside_icons.slick('slickGoTo', $index, false);
     });
 
-    $('.explore-product--more button').on('click', function() {
+    $('.explore-product--more button').on('click', function () {
         $('.explore-product--hidable')
             .css('display', 'block')
             .delay(330)
@@ -99,7 +99,7 @@ $(document).ready(function () {
         ;
     });
 
-    $('.explore-product--less button').on('click', function() {
+    $('.explore-product--less button').on('click', function () {
         $('.explore-product--hidable')
             .addClass('explore-product--hidden')
             .css('display', 'none')
@@ -114,17 +114,17 @@ $(document).ready(function () {
         ;
     });
 
-    $('.size-options button').on('click', function() {
+    $('.size-options button').on('click', function () {
         $(this).siblings().andSelf().removeClass('active');
         $(this).addClass('active');
     });
 
-    $('.color-options button').on('click', function() {
+    $('.color-options button').on('click', function () {
         $(this).siblings().andSelf().removeClass('active');
         $(this).addClass('active');
     });
 
-    $('.qty-options button').on('click', function() {
+    $('.qty-options button').on('click', function () {
         var qty = $(this).siblings('input')[0];
         var $qty_value = parseInt($(qty).val());
         if ($(this).hasClass('add')) {
@@ -141,18 +141,32 @@ $(document).ready(function () {
     window.topBarsHeight = 0;
     window.body = $('body');
     window.buy_btn = $('.buy-bar .buy-btn button');
+    window.scroll_btn = $('.scroll-back-btn button');
 
-    $(window).scroll(function() {
-
+    window.scroll_btn.on('click', function (e) {
+        e.preventDefault();
         window.topBarsHeight = 0;
-
-        window.topBars.each(function() {
+        window.topBars.each(function () {
             if (!$(this).hasClass('nav-bar')) {
                 window.topBarsHeight = window.topBarsHeight + $(this).outerHeight();
             }
         });
 
-        if ($(this).scrollTop() > topBarsHeight){
+        $("html, body").animate({scrollTop: window.topBarsHeight}, "slow");
+        return false;
+    });
+
+    $(window).scroll(function () {
+
+        window.topBarsHeight = 0;
+
+        window.topBars.each(function () {
+            if (!$(this).hasClass('nav-bar')) {
+                window.topBarsHeight = window.topBarsHeight + $(this).outerHeight();
+            }
+        });
+
+        if ($(this).scrollTop() > topBarsHeight) {
             window.navBar.addClass("sticky");
             window.body.addClass("sticky-navbar");
             window.navBar.show();
@@ -164,16 +178,22 @@ $(document).ready(function () {
         if (window.buy_btn.length > 0) {
             if (window.buy_btn.isOnScreen()) {
                 window.body.removeClass('buy-btn-offscreen');
+                window.scroll_btn.css('opacity', '0').attr('disabled', '');
             } else {
                 window.body.addClass('buy-btn-offscreen');
+                window.scroll_btn.css('opacity', '1').removeAttr('disabled');
             }
         }
     });
+    $('.more-link button').on('click', function (e) {
+        $(this).closest('.tabs-panel').find('.hidable').toggleClass('show-for-sr');
+        $(this).remove();
+    });
 });
 
-$(window).load(function(){
-  $(".xray-img").twentytwenty({
-    default_offset_pct: 0.5, // How much of the before image is visible when the page loads
-    orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
-  });
+$(window).load(function () {
+    $(".xray-img").twentytwenty({
+        default_offset_pct: 0.5, // How much of the before image is visible when the page loads
+        orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
+    });
 });

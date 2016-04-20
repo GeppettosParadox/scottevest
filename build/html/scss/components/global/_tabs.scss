@@ -45,8 +45,7 @@ ul.tab-picker {
     font-size: 14px;
     line-height: 21px;
     .more-link {
-        text-align: right;
-        a {
+        button {
             color: $green;
         }
     }

@@ -3440,6 +3440,9 @@ table.hover tr:nth-of-type(even):hover {
   font-size: 36px;
   color: #606c82;
   font-weight: bold; }
+  @media screen and (max-width: 39.9375em) {
+    .section-heading {
+      font-size: 24px; } }
 
 a.share {
   position: relative;
@@ -3652,7 +3655,7 @@ header {
   position: relative;
   z-index: 10;
   background: transparent;
-  margin-top: .5em;
+  margin-top: 0;
   padding: 0.5em 0 0;
   color: #fff; }
   .nav-bar ul {
@@ -3972,12 +3975,9 @@ ul.tab-picker {
   padding: 0;
   font-size: 14px;
   line-height: 21px; }
-  .tabs-content .more-link,
-  .tabs-panel .more-link {
-    text-align: right; }
-    .tabs-content .more-link a,
-    .tabs-panel .more-link a {
-      color: #5ec26a; }
+  .tabs-content .more-link button,
+  .tabs-panel .more-link button {
+    color: #5ec26a; }
 
 .homepage-hero {
   position: relative;
@@ -4181,7 +4181,17 @@ ul.tab-picker {
       margin-bottom: 20%; } }
   @media screen and (min-width: 64em) {
     .whats-inside {
-      margin-bottom: 13%; } }
+      margin-bottom: 25%; } }
+  @media screen and (min-width: 75em) {
+    .whats-inside {
+      margin-bottom: 20%; } }
+  @media screen and (min-width: 90em) {
+    .whats-inside {
+      margin-bottom: 10%; } }
+  .whats-inside--small .whats-inside__bg {
+    width: 100%; }
+    .whats-inside--small .whats-inside__bg source, .whats-inside--small .whats-inside__bg img {
+      width: 100%; }
 
 .whats-inside__overlay {
   position: absolute;
@@ -4368,6 +4378,22 @@ ul.tab-picker {
   font-size: 700;
   background: #f2f2f2; }
 
+.scroll-back-btn {
+  margin-top: 2em; }
+  .scroll-back-btn button {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    display: block;
+    width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    font-size: 18px; }
+    .scroll-back-btn button:after {
+      transform: rotate(-45deg) !important; }
+  @media screen and (max-width: 63.9375em) {
+    .scroll-back-btn {
+      display: none; } }
+
 .buy-bar {
   margin-top: 2em; }
   .buy-bar button,
@@ -4395,6 +4421,68 @@ ul.tab-picker {
     .buy-bar .columns {
       height: 63px;
       line-height: 63px; } }
+
+.product-detail__thumbs img {
+  width: 100%; }
+
+.product-detail__thumbs img, .product-detail__thumbs video {
+  display: block; }
+
+@media screen and (min-width: 40em) {
+  .product-detail__thumbs__left {
+    width: 50%;
+    float: left; }
+  .product-detail__thumbs__right {
+    width: 50%;
+    float: right; } }
+
+/*
+  Player Skin Designer for Video.js
+  http://videojs.com
+
+  To customize the player skin edit
+  the CSS below. Click "details"
+  below to add comments or questions.
+  This file uses some SCSS. Learn more
+  at http://sass-lang.com/guide)
+
+  This designer can be linked to at:
+  http://codepen.io/heff/pen/EarCt/left/?editors=010
+*/
+.video-js {
+  /* The base font size controls the size of everything, not just text.
+     All dimensions use em-based sizes so that the scale along with the font size.
+     Try increasing it to 15px and see what happens. */
+  font-size: 10px;
+  /* The main font color changes the ICON COLORS as well as the text */
+  color: #fff; }
+
+/* The "Big Play Button" is the play button that shows before the video plays.
+   To center it set the align values to center and middle. The typical location
+   of the button is the center, but there is trend towards moving it to a corner
+   where it gets out of the way of valuable content in the poster image.*/
+.vjs-default-skin .vjs-big-play-button {
+  /* The font size is what makes the big play button...big.
+     All width/height values use ems, which are a multiple of the font size.
+     If the .video-js font-size is 10px, then 3em equals 30px.*/
+  font-size: 4.6em !important;
+  /* We're using SCSS vars here because the values are used in multiple places.
+     Now that font size is set, the following em values will be a multiple of the
+     new font size. If the font-size is 3em (30px), then setting any of
+     the following values to 3em would equal 30px. 3 * font-size. */
+  /* 1.5em = 45px default */
+  line-height: 4em !important;
+  height: 4em !important;
+  width: 4em !important;
+  /* 0.06666em = 2px default */
+  /* 0.3em = 9px default */
+  background: transparent !important;
+  border: 0 !important;
+  /* Align center */
+  left: 50% !important;
+  top: 50% !important;
+  margin-left: -2em !important;
+  margin-top: -2em !important; }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   content: " ";

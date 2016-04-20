@@ -17,6 +17,9 @@
     font-size: 36px;
     color: #606c82;
     font-weight: bold;
+    @include breakpoint(small only) {
+        font-size: 24px;
+    }
 }
 
 a.share {

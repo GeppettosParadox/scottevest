@@ -1,43 +1,10 @@
 {% extends "../_layouts/layout.html.twig" %}
 
+{% set title = "Featherweight Vest" %}
+
 {% block content %}
     {% include '../_components/product-detail/_product-detail-top.html.twig' %}
-    <div class="container product-detail__bottom">
-        <div class="row">
-            <div class="small-12 large-7 columns">
-                <img src="/images/example-product.png" alt="">
-
-            </div>
-            <div class="small-12 large-5 columns">
-                <ul class="tabs tab-picker tab-picker--product-specs" data-tabs id="example-tabs">
-                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Product Info</a></li>
-                    <li class="tabs-title"><a href="#panel2">Reviews</a></li>
-                    <li class="tabs-title"><a href="#panel3">Shipping &amp; Returns</a></li>
-                </ul>
-                <div class="tabs-content" data-tabs-content="example-tabs">
-                    <div class="tabs-panel is-active" id="panel1">
-                        <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-                        <p class="more-link">
-                            <a href="#">Read more</a>
-                        </p>
-                    </div>
-                    <div class="tabs-panel" id="panel2">
-                        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                        <p class="more-link">
-                            <a href="#">Read more</a>
-                        </p>
-                    </div>
-                    <div class="tabs-panel" id="panel3">
-                        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                        <p class="more-link">
-                            <a href="#">Read more</a>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    {% include '../_components/product-detail/_product-detail-bottom.html.twig' %}
     {% include '../_components/global/_whats-inside.html.twig' with {
         'size': 'small'
     } only %}
