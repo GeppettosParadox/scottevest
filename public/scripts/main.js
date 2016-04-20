@@ -1,3 +1,9 @@
+$.fn.isOnScreen = function(){
+    var element = this.get(0);
+    var bounds = element.getBoundingClientRect();
+    return bounds.top < window.innerHeight && bounds.bottom > 84;
+};
+
 function setWhatsInsideIcons(slider, nextSlide) {
     $('.whats-inside__icon', slider)
         .css('transform', 'scale(0.66, 0.66)')
@@ -130,23 +136,37 @@ $(document).ready(function () {
         $(qty).val($qty_value).attr('value', $qty_value);
     });
 
+    window.navBar = $('.nav-bar');
+    window.topBars = $('.top-bar');
+    window.topBarsHeight = 0;
+    window.body = $('body');
+    window.buy_btn = $('.buy-bar .buy-btn button');
+
     $(window).scroll(function() {
-        var $navBar = $('.nav-bar');
-        var $topBars = $('.top-bar');
-        var topBarsHeight = 0;
-        $topBars.each(function() {
+
+        window.topBarsHeight = 0;
+
+        window.topBars.each(function() {
             if (!$(this).hasClass('nav-bar')) {
-                topBarsHeight = topBarsHeight + $(this).outerHeight();
+                window.topBarsHeight = window.topBarsHeight + $(this).outerHeight();
             }
         });
-        var $body = $('body');
+
         if ($(this).scrollTop() > topBarsHeight){
-            $navBar.addClass("sticky");
-            $body.addClass("sticky-navbar");
-            $navBar.show();
+            window.navBar.addClass("sticky");
+            window.body.addClass("sticky-navbar");
+            window.navBar.show();
         } else {
-            $navBar.removeClass("sticky");
-            $body.removeClass("sticky-navbar");
+            window.navBar.removeClass("sticky");
+            window.body.removeClass("sticky-navbar");
+        }
+
+        if (window.buy_btn.length > 0) {
+            if (window.buy_btn.isOnScreen()) {
+                window.body.removeClass('buy-btn-offscreen');
+            } else {
+                window.body.addClass('buy-btn-offscreen');
+            }
         }
     });
 });

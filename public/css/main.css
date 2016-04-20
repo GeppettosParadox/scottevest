@@ -4277,6 +4277,11 @@ ul.tab-picker {
     @media screen and (min-width: 64em) {
       .product-detail__bg .bottom-angle {
         display: none; } }
+  .product-detail__bg img {
+    transition: opacity .5s ease-in-out; }
+  @media screen and (min-width: 64em) {
+    body.sticky-navbar .product-detail__bg img {
+      opacity: .5; } }
 
 .product-detail__top-buy {
   background: #fff;
@@ -4315,6 +4320,11 @@ ul.tab-picker {
     color: rgba(0, 0, 0, 0.3); }
   .size-options button + button {
     margin-left: .5em; }
+  @media screen and (max-width: 39.9375em) {
+    .size-options button {
+      width: 28px;
+      height: 28px;
+      font-size: 16px; } }
 
 .size-chart-link {
   height: 36px;
