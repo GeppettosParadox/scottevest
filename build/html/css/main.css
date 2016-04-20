@@ -3911,10 +3911,18 @@ body.sticky-navbar {
   .related-products .section-heading {
     margin-bottom: 50px;
     color: #000; }
+  @media screen and (min-width: 64em) {
+    .related-products .product-grid__quick-view-btn,
+    .related-products .product-grid__details {
+      top: auto;
+      bottom: 100%; } }
 
 .related-products__product {
   position: relative;
   margin-bottom: 40px; }
+
+.related-products__product-row {
+  margin-top: 2em; }
 
 .live-chat-btn {
   position: fixed;
