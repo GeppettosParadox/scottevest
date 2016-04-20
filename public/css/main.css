@@ -3912,9 +3912,17 @@ body.sticky-navbar {
     margin-bottom: 50px;
     color: #000; }
 
+.product-grid__quick-view-btn,
+.product-grid__details {
+  top: auto;
+  bottom: 100%; }
+
 .related-products__product {
   position: relative;
   margin-bottom: 40px; }
+
+.related-products__product-row {
+  margin-top: 2em; }
 
 .live-chat-btn {
   position: fixed;
