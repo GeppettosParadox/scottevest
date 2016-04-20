@@ -8,7 +8,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        transform: scale(1.05, 1.05);
+        transform: scale(-1.05, 1.05);
         img {
             display: block;
         }
@@ -26,7 +26,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        transform: scale(1.05, 1.05);
+        transform: scale(-1.05, 1.05);
         img {
             display: block;
         }
@@ -38,12 +38,17 @@
 
 .product-detail__top-buy {
     background: #fff;
+    padding-top: 2em;
     @include breakpoint(large) {
         background: #f2f2f2;
     }
     h1 {
+        font-size: 2.142857143rem;
         margin-top: 1em;
         font-weight: 700;
+    }
+    h2 {
+        font-size: 2.571428571rem;
     }
     .size-options,
     .size-chart-link {
@@ -52,6 +57,7 @@
 }
 
 .icon-star {
+    font-size: 15px;
     color: #d0d0d0;
     &--fill {
         color: #eeb111;
