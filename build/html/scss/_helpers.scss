@@ -1,9 +1,7 @@
 .button {
     &.buy {
-        &:after {
-            content: url('../images/btn-arrow.svg');
-            display: inline;
-            padding-left: .5em;
+        .icon-arrow {
+            font-size: 6px;
         }
     }
 }

@@ -3427,10 +3427,8 @@ table.hover tr:nth-of-type(even):hover {
 .clearfix::after {
   clear: both; }
 
-.button.buy:after {
-  content: url("../images/btn-arrow.svg");
-  display: inline;
-  padding-left: .5em; }
+.button.buy .icon-arrow {
+  font-size: 6px; }
 
 .off-canvas-wrapper {
   overflow-y: hidden; }
@@ -4405,8 +4403,10 @@ ul.tab-picker--product-specs {
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     font-size: 18px; }
-    .scroll-back-btn button:after {
-      transform: rotate(-45deg) !important; }
+    .scroll-back-btn button .icon-arrow {
+      transform: rotate(-90deg) !important;
+      position: relative;
+      top: -5px; }
   @media screen and (max-width: 63.9375em) {
     .scroll-back-btn {
       display: none; } }
