@@ -3900,6 +3900,9 @@ body.sticky-navbar {
     color: #000;
     line-height: 1.3; }
 
+.product-grid .tab-picker {
+  padding-bottom: 4em; }
+
 .tab-picker .button {
   display: inline-block;
   float: none;
