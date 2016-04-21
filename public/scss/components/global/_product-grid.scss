@@ -95,11 +95,6 @@
     z-index: 100;
     background: transparent url("../images/quick-view.svg") no-repeat left center;
     background-size: 40px 40px;
-    @include breakpoint(large) {
-        width: 59px;
-        height: 59px;
-        background-size: 59px 59px;
-    }
     &--small {
         width: 40px;
         height: 40px;
@@ -117,6 +112,20 @@
             font-size: 12px;
             line-height: 13px;
             color: #8d8d8d;
+        }
+    }
+    @include breakpoint(large) {
+        width: 59px;
+        height: 59px;
+        background-size: 59px 59px;
+        &:hover {
+            &:after {
+                position: absolute;
+                top: 66px;
+                width: 59px;
+                font-size: 14px;
+                line-height: 15px;
+            }
         }
     }
 }

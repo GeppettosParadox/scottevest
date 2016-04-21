@@ -3964,11 +3964,6 @@ body.sticky-navbar {
   z-index: 100;
   background: transparent url("../images/quick-view.svg") no-repeat left center;
   background-size: 40px 40px; }
-  @media screen and (min-width: 64em) {
-    .product-grid__quick-view-btn {
-      width: 59px;
-      height: 59px;
-      background-size: 59px 59px; } }
   .product-grid__quick-view-btn--small {
     width: 40px;
     height: 40px;
@@ -3985,6 +3980,17 @@ body.sticky-navbar {
       font-size: 12px;
       line-height: 13px;
       color: #8d8d8d; }
+  @media screen and (min-width: 64em) {
+    .product-grid__quick-view-btn {
+      width: 59px;
+      height: 59px;
+      background-size: 59px 59px; }
+      .product-grid__quick-view-btn:hover:after {
+        position: absolute;
+        top: 66px;
+        width: 59px;
+        font-size: 14px;
+        line-height: 15px; } }
 
 .product-grid__colors {
   position: absolute;
