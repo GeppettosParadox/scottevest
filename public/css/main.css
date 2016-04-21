@@ -3573,6 +3573,7 @@ a.green-more {
 
 .category__product {
   position: relative;
+  padding-top: 30px;
   margin-bottom: 50px; }
   .category__product .product-grid__details,
   .category__product .product-grid__quick-view-btn {
