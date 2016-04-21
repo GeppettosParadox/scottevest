@@ -6,11 +6,22 @@
     width: 100%;
     min-height: 200px;
     padding-top: 40px;
-    &__items {
-
-    }
     &__top-row,
     &__item {
+        &__title {
+            button {
+                outline: none;
+                display: none;
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+                margin: -2px 0 0 4px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
     }
     &__top-row {
         margin-bottom: 20px;
@@ -22,13 +33,15 @@
             padding: 0 15px;
         }
     }
+    .cart__col__inner {
+        padding: 0 15px;
+    }
     &__item {
         .cart__col {
             height: 80px;
             position: relative;
             &__inner {
                 position: absolute;
-                padding: 0 15px;
                 top: 50%;
                 left: 0;
                 transform: translate(0, -50%);
@@ -71,6 +84,120 @@
         background: $green;
         border: 0;
         margin: 20px 0;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__total {
+        height: 90px;
+        line-height: 90px;
+        .promo-code-link {
+            font-size: 16px;
+            color: $green;
+        }
+    }
+    &__total-label {
+        text-align: right;
+        font-size: 24px;
+        color: #b1b0b0;
+    }
+    &__total-amount {
+        font-size: 24px;
+    }
+    &__checkout-button {
+        padding: 0;
+        position: relative;
+        button {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            width: calc((100vw - 960px)/2);
+            height: 90px;
+            background: #9b9b9b;
+            color: #fff;
+        }
+    }
+    &__buttons {
+        display: block;
+        width: 100%;
+        background: #f6f5f5;
+        height: 90px;
+        text-align: right;
+        button {
+            display: inline-block;
+            background: $green;
+            color: #fff;
+            height: 90px;
+            width: 195px;
+            line-height: 90px;
+            border: 0;
+            margin: 0;
+            position: relative;
+            .icon-arrow {
+                font-size: 6px;
+                vertical-align: middle;
+                margin-top: -2px;
+            }
+            &:before {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 90px;
+                position: absolute;
+                background: #fff;
+                top: 0;
+                left: 0;
+            }
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        &__credit-card {
+        }
+        &__amazon {
+            img {
+                width: 60px;
+                height: 18px;
+                margin-bottom: -6px;
+            }
+        }
+        &__paypal {
+            img {
+                width: 60px;
+                height: 16px;
+            }
+        }
+    }
+    @include breakpoint(medium down) {
+        padding-top: 30px;
+        .cart__col-6 {
+            display: none;
+        }
+        &__item {
+            &__title {
+                button {
+                    display: inline;
+                }
+            }
+        }
+        &__buttons {
+            button {
+                width: 33.33333%;
+            }
+        }
+    }
+    @include breakpoint(small down) {
+        padding-top: 20px;
+        .cart__top-row {
+            .cart__col-1 {
+                margin-bottom: 15px;
+            }
+        }
+
     }
 }
 
