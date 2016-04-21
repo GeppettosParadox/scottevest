@@ -3586,6 +3586,67 @@ a.green-more {
   position: relative;
   z-index: 100; }
 
+.product-filter {
+  position: relative;
+  margin-bottom: 40px; }
+  .product-filter .container {
+    padding: 0 15px; }
+  .product-filter__toggle {
+    display: block;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px 0; }
+    .product-filter__toggle a {
+      font-size: 16px;
+      color: #8d8d8d; }
+  .product-filter__toggle-button {
+    position: relative; }
+    .product-filter__toggle-button.active:after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url("/images/close-filter.svg") no-repeat;
+      background-size: 16px 16px;
+      position: absolute;
+      top: 0;
+      right: -30px; }
+  .product-filter__inner {
+    display: none; }
+  .product-filter__options {
+    margin-top: 30px; }
+  .product-filter__heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 0.75em 0; }
+  .product-filter__col {
+    padding: 0 20px 0 0; }
+    .product-filter__col:last-child {
+      padding-right: 0; }
+  .product-filter__colors button, .product-filter__sizes button {
+    display: inline-block;
+    width: 32px;
+    height: 54px;
+    margin: 0 1px 3px 0;
+    text-align: center;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0); }
+    .product-filter__colors button .size, .product-filter__sizes button .size {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 6px; }
+    .product-filter__colors button .circle, .product-filter__sizes button .circle {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 4px 4px 6px 4px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0); }
+      .product-filter__colors button .circle--has-border, .product-filter__sizes button .circle--has-border {
+        border: 1px solid #b4b4b4; }
+    .product-filter__colors button.active, .product-filter__sizes button.active {
+      border: 2px solid #5ec26a; }
+
 .site-footer {
   padding: 50px 0;
   text-align: center;
@@ -3909,7 +3970,7 @@ body.sticky-navbar {
 .page-hero-angle {
   position: absolute;
   bottom: -1px;
-  left: 0;
+  left: -15px;
   right: 0;
   width: 100%;
   z-index: 0;
