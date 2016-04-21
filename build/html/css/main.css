@@ -3900,6 +3900,21 @@ body.sticky-navbar {
     color: #000;
     line-height: 1.3; }
 
+.page-hero {
+  position: relative;
+  z-index: 0; }
+  .page-hero picture, .page-hero img {
+    width: 100%; }
+
+.page-hero-angle {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+  transform: rotate(360deg); }
+
 .product-grid .tab-picker {
   padding-bottom: 4em; }
 
