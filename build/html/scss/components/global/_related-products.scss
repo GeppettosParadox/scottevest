@@ -6,6 +6,13 @@
         margin-bottom: 50px;
         color: #000;
     }
+    @include breakpoint(large) {
+        .product-grid__quick-view-btn,
+        .product-grid__details {
+            top: auto;
+            bottom: 100%;
+        }
+    }
 }
 
 .product-grid__quick-view-btn,
