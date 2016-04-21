@@ -4,7 +4,7 @@
     .container {
         padding: 0 15px;
     }
-    &__toggle {
+    &__settings {
         display: block;
         border-bottom: 1px solid #f2f2f2;
         padding: 20px 0;
@@ -15,22 +15,47 @@
     }
     &__toggle-button {
         position: relative;
+        &:after {
+            content: "";
+            display: block;
+            width: 22px;
+            height: 12px;
+            background: url("/images/filter.svg") no-repeat;
+            background-size: 22px 12px;
+            position: absolute;
+            top: 50%;
+            right: -32px;
+            transform: translate(0, -50%);
+        }
         &.active {
             &:after {
-                content: "";
-                display: block;
                 width: 16px;
                 height: 16px;
                 background: url("/images/close-filter.svg") no-repeat;
                 background-size: 16px 16px;
-                position: absolute;
-                top: 0;
-                right: -30px;
+                right: -32px;
             }
+        }
+    }
+    &__sort {
+        margin-left: 100px;
+        font-size: 16px;
+        color: #8d8d8d;
+        select {
+            display: inline;
+            width: 200px;
+            margin-left: 12px;
+            border: 0;
+            font-weight: bold;
+            border-bottom: 1px solid #e5e5e5;
+
         }
     }
     &__inner {
         display: none;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #f2f2f2;
     }
     &__options {
         margin-top: 30px;
@@ -134,6 +159,7 @@
         }
     }
     .price-slider {
+        margin-top: 24px;
         height: 1px;
         .slider-handle {
             background: $green;
@@ -169,6 +195,52 @@
         }
         &__info-to {
             float: right;
+        }
+    }
+    &__buttons {
+        margin-top: 20px;
+        text-align: right;
+        button {
+            height: 64px;
+            line-height: 64px;
+            font-size: 18px;
+            padding: 0 70px;
+            position: relative;
+        }
+    }
+    &__reset {
+        color: $green;
+        span {
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                width: 25px;
+                height: 25px;
+                background: url("/images/reset.svg") no-repeat;
+                background-size: 25px 25px;
+                position: absolute;
+                left: -36px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+    &__apply {
+        .icon-arrow {
+            font-size: 6px;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+    }
+    @include breakpoint(medium only) {
+        .product-filter__col__sizes {
+            padding-right: 0;
+        }
+    }
+    @include breakpoint(small only) {
+        .product-filter__col {
+            padding-right: 0;
         }
     }
 }

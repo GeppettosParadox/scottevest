@@ -152,17 +152,21 @@ $(document).ready(function () {
         e.preventDefault();
         var $filtersContainer = $('.product-filter');
         var $filters = $('.product-filter__inner');
+        var $sort = $('.product-filter__sort');
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $filters.slideUp();
+            $sort.fadeIn();
         } else {
             $(this).addClass('active');
             $filters.slideDown();
+            $sort.fadeOut();
             Foundation.reInit($('.price-slider'));
         }
     });
 
-    $('.product-filter button').on('click', function () {
+    $('.product-filter button').on('click', function (e) {
+        e.preventDefault();
         $(this).toggleClass('active');
     });
 
@@ -172,6 +176,11 @@ $(document).ready(function () {
         var toValue = $('#priceSliderTo').val();
         $('.price-slider__info-to__value').html('$'+toValue);
     })
+
+    $('.error-bar__close-button').on('click', function (e) {
+        e.preventDefault();
+        $('.error-bar').hide();
+    });
 
     window.navBar = $('.nav-bar');
     window.topBars = $('.top-bar');

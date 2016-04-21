@@ -41,6 +41,16 @@
 </head>
 
 <body>
+
+    <div class="error-bar">
+        <div class="container">
+            OOPSY DAISY! <strong>YOU NEED A COLOR TO ADD TO CART.</strong> Please select one and you'll be all set!
+            <button type="button" class="error-bar__close-button">
+            <img src="images/close-error-bar.svg" alt="Close">
+        </button>
+        </div>
+    </div>
+
     <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
             <div class="off-canvas position-left" id="offCanvas" data-off-canvas="">
@@ -269,10 +279,19 @@
 
     <div class="product-filter">
         <div class="container">
-            <div class="row small-12 columns product-filter__toggle">
+            <div class="row small-12 columns product-filter__settings">
                 <a href="#" class="product-filter__toggle-button">
                 Filter
             </a>
+                <span class="product-filter__sort">
+                Sort by
+                <select>
+                    <option value="featured">Featured products</option>
+                    <option value="price">Price</option>
+                    <option value="za">Name A to Z</option>
+                    <option value="az">Name Z to A</option>
+                </select>
+            </span>
             </div>
             <form>
                 <div class="row small-12 columns product-filter__inner">
@@ -336,7 +355,7 @@
                             </span></div>
 
                         </div>
-                        <div class="product-filter__col small-12 medium-4 large-2 columns">
+                        <div class="product-filter__col product-filter__col__sizes small-12 medium-4 large-2 columns">
                             <h4 class="product-filter__heading">Size</h4>
                             <div class="product-filter__sizes">
                                 <button type="button" name="size" title="small" value="small">
@@ -428,291 +447,299 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row product-filter" <=""></div>
-            </div></form>
-            </div>
-            </div>
+                    <div class="row product-filter__buttons">
+                        <button type="button" class="product-filter__reset">
+                        <span>Reset</span>
+                    </button>
+                        <button type="button" class="button product-filter__apply">
+                        Apply <span class="icon-arrow"></span>
+                    </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-            <div class="category product-grid container">
-                <div class="row category__product-row">
-                    <div class="small-12 columns category__products">
-                        <div class="medium-6 large-4 column category__product" data-productcat="men">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
-                                </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was
-                                    <del>$120</del>
-                                </div>
-                            </div>
-                            <div class="product-grid__colors">
-                                <div class="color-options">
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="red" value="red" style="background: #f90808;">
+    <div class="category product-grid container">
+        <div class="row category__product-row">
+            <div class="small-12 columns category__products">
+                <div class="medium-6 large-4 column category__product" data-productcat="men">
+                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                    <div class="xray-img">
+                        <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                        <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                    </div>
+                    <div class="product-grid__details">
+                        <div class="product-grid__product-title">
+                            SeV Susie Qzip
+                        </div>
+                        <div class="product-grid__price product-grid__price--sales-price">
+                            $110
+                        </div>
+                        <div class="product-grid__was-price">
+                            was
+                            <del>$120</del>
+                        </div>
+                    </div>
+                    <div class="product-grid__colors">
+                        <div class="color-options">
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="red" value="red" style="background: #f90808;">
                                         <span class="show-for-sr">Order in Red</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
                                         <span class="show-for-sr">Order in Gray</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
                                         <span class="show-for-sr">Order in Blue</span>
                                     </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="medium-6 large-4 column category__product" data-productcat="men">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
-                                </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was
-                                    <del>$120</del>
-                                </div>
-                            </div>
-                            <div class="product-grid__colors">
-                                <div class="color-options">
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="red" value="red" style="background: #f90808;">
+                    </div>
+                </div>
+                <div class="medium-6 large-4 column category__product" data-productcat="men">
+                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                    <div class="xray-img">
+                        <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                        <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                    </div>
+                    <div class="product-grid__details">
+                        <div class="product-grid__product-title">
+                            SeV Susie Qzip
+                        </div>
+                        <div class="product-grid__price product-grid__price--sales-price">
+                            $110
+                        </div>
+                        <div class="product-grid__was-price">
+                            was
+                            <del>$120</del>
+                        </div>
+                    </div>
+                    <div class="product-grid__colors">
+                        <div class="color-options">
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="red" value="red" style="background: #f90808;">
                                         <span class="show-for-sr">Order in Red</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
                                         <span class="show-for-sr">Order in Gray</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
                                         <span class="show-for-sr">Order in Blue</span>
                                     </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="medium-6 large-4 column category__product" data-productcat="men">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
-                                </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was
-                                    <del>$120</del>
-                                </div>
-                            </div>
-                            <div class="product-grid__colors">
-                                <div class="color-options">
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="red" value="red" style="background: #f90808;">
+                    </div>
+                </div>
+                <div class="medium-6 large-4 column category__product" data-productcat="men">
+                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                    <div class="xray-img">
+                        <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                        <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                    </div>
+                    <div class="product-grid__details">
+                        <div class="product-grid__product-title">
+                            SeV Susie Qzip
+                        </div>
+                        <div class="product-grid__price product-grid__price--sales-price">
+                            $110
+                        </div>
+                        <div class="product-grid__was-price">
+                            was
+                            <del>$120</del>
+                        </div>
+                    </div>
+                    <div class="product-grid__colors">
+                        <div class="color-options">
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="red" value="red" style="background: #f90808;">
                                         <span class="show-for-sr">Order in Red</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
                                         <span class="show-for-sr">Order in Gray</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
                                         <span class="show-for-sr">Order in Blue</span>
                                     </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="medium-6 large-4 column category__product" data-productcat="women">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
-                                </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was
-                                    <del>$120</del>
-                                </div>
-                            </div>
-                            <div class="product-grid__colors">
-                                <div class="color-options">
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="red" value="red" style="background: #f90808;">
+                    </div>
+                </div>
+                <div class="medium-6 large-4 column category__product" data-productcat="women">
+                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                    <div class="xray-img">
+                        <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                        <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                    </div>
+                    <div class="product-grid__details">
+                        <div class="product-grid__product-title">
+                            SeV Susie Qzip
+                        </div>
+                        <div class="product-grid__price product-grid__price--sales-price">
+                            $110
+                        </div>
+                        <div class="product-grid__was-price">
+                            was
+                            <del>$120</del>
+                        </div>
+                    </div>
+                    <div class="product-grid__colors">
+                        <div class="color-options">
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="red" value="red" style="background: #f90808;">
                                         <span class="show-for-sr">Order in Red</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
                                         <span class="show-for-sr">Order in Gray</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
                                         <span class="show-for-sr">Order in Blue</span>
                                     </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="medium-6 large-4 column category__product" data-productcat="women">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
-                                </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was
-                                    <del>$120</del>
-                                </div>
-                            </div>
-                            <div class="product-grid__colors">
-                                <div class="color-options">
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="red" value="red" style="background: #f90808;">
+                    </div>
+                </div>
+                <div class="medium-6 large-4 column category__product" data-productcat="women">
+                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                    <div class="xray-img">
+                        <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                        <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                    </div>
+                    <div class="product-grid__details">
+                        <div class="product-grid__product-title">
+                            SeV Susie Qzip
+                        </div>
+                        <div class="product-grid__price product-grid__price--sales-price">
+                            $110
+                        </div>
+                        <div class="product-grid__was-price">
+                            was
+                            <del>$120</del>
+                        </div>
+                    </div>
+                    <div class="product-grid__colors">
+                        <div class="color-options">
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="red" value="red" style="background: #f90808;">
                                         <span class="show-for-sr">Order in Red</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
                                         <span class="show-for-sr">Order in Gray</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
                                         <span class="show-for-sr">Order in Blue</span>
                                     </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="medium-6 large-4 column category__product" data-productcat="women">
-                            <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                            <div class="xray-img">
-                                <img src="uploads/xray_grid/pink_vest.jpg" alt="">
-                                <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
-                            </div>
-                            <div class="product-grid__details">
-                                <div class="product-grid__product-title">
-                                    SeV Susie Qzip
-                                </div>
-                                <div class="product-grid__price product-grid__price--sales-price">
-                                    $110
-                                </div>
-                                <div class="product-grid__was-price">
-                                    was
-                                    <del>$120</del>
-                                </div>
-                            </div>
-                            <div class="product-grid__colors">
-                                <div class="color-options">
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="red" value="red" style="background: #f90808;">
+                    </div>
+                </div>
+                <div class="medium-6 large-4 column category__product" data-productcat="women">
+                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                    <div class="xray-img">
+                        <img src="uploads/xray_grid/pink_vest.jpg" alt="">
+                        <img src="uploads/xray_grid/pink_vest-xray.jpg" alt="">
+                    </div>
+                    <div class="product-grid__details">
+                        <div class="product-grid__product-title">
+                            SeV Susie Qzip
+                        </div>
+                        <div class="product-grid__price product-grid__price--sales-price">
+                            $110
+                        </div>
+                        <div class="product-grid__was-price">
+                            was
+                            <del>$120</del>
+                        </div>
+                    </div>
+                    <div class="product-grid__colors">
+                        <div class="color-options">
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="red" value="red" style="background: #f90808;">
                                         <span class="show-for-sr">Order in Red</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
                                         <span class="show-for-sr">Order in Gray</span>
                                     </button>
-                                    </div>
-                                    <div class="color-options__row">
-                                        <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
+                            </div>
+                            <div class="color-options__row">
+                                <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
                                         <span class="show-for-sr">Order in Blue</span>
                                     </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <footer class="site-footer">
-                <nav class="site-footer__shop-nav">
-                    <ul>
-                        <li><a href="#">All Products</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Daily Sale</a></li>
-                        <li><a href="#">Outlet</a></li>
-                    </ul>
-                </nav>
-                <nav class="site-footer__site-nav">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Join Our List</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Press Kit</a></li>
-                        <li><a href="#">Wholesale</a></li>
-                        <li><a href="#">Corporate Gifts</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Store Locator</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Shipping Information</a></li>
-                        <li><a href="#">Request RMA</a></li>
-                    </ul>
-                </nav>
-                <div class="site-footer__social-buttons">
-                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-                <div class="site-footer__logo">
-                    <a href="index.html">
-                        <img src="images/logo-blue.svg" alt="SCOTTeVEST">
-                    </a>
-                </div>
-                <div class="site-footer__copyright">
-                    &copy;2016. SCOTTeVEST. All Rights Reserved.
-                </div>
-
-            </footer>
         </div>
+    </div>
+
+    <footer class="site-footer">
+        <nav class="site-footer__shop-nav">
+            <ul>
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Daily Sale</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
+        <nav class="site-footer__site-nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Join Our List</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Press Kit</a></li>
+                <li><a href="#">Wholesale</a></li>
+                <li><a href="#">Corporate Gifts</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">Request RMA</a></li>
+            </ul>
+        </nav>
+        <div class="site-footer__social-buttons">
+            <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="site-footer__logo">
+            <a href="index.html">
+                <img src="images/logo-blue.svg" alt="SCOTTeVEST">
+            </a>
+        </div>
+        <div class="site-footer__copyright">
+            &copy;2016. SCOTTeVEST. All Rights Reserved.
+        </div>
+
+    </footer>
+    </div>
     </div>
     
 

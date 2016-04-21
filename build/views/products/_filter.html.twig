@@ -1,9 +1,18 @@
 <div class="product-filter">
     <div class="container">
-        <div class="row small-12 columns product-filter__toggle">
+        <div class="row small-12 columns product-filter__settings">
             <a href="#" class="product-filter__toggle-button">
                 Filter
             </a>
+            <span class="product-filter__sort">
+                Sort by
+                <select>
+                    <option value="featured">Featured products</option>
+                    <option value="price">Price</option>
+                    <option value="za">Name A to Z</option>
+                    <option value="az">Name Z to A</option>
+                </select>
+            </span>
         </div>
         <form>
             <div class="row small-12 columns product-filter__inner">
@@ -67,7 +76,7 @@
                         </div>
 
                     </div>
-                    <div class="product-filter__col small-12 medium-4 large-2 columns">
+                    <div class="product-filter__col product-filter__col__sizes small-12 medium-4 large-2 columns">
                         <h4 class="product-filter__heading">Size</h4>
                         <div class="product-filter__sizes">
                             <button type="button" name="size" title="small" value="small">
@@ -159,7 +168,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row product-filter"
+                <div class="row product-filter__buttons">
+                    <button type="button" class="product-filter__reset">
+                        <span>Reset</span>
+                    </button>
+                    <button type="button" class="button product-filter__apply">
+                        Apply <span class="icon-arrow"></span>
+                    </button>
+                </div>
             </div>
         </form>
     </div>
