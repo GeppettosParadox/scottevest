@@ -14,7 +14,7 @@
         margin: 0 auto;
         max-width: 870px;
         position: relative;
-        padding: 0 15px 0 15px;
+        padding-right: 55px;
     }
     &__close-button {
         display: block;
@@ -22,7 +22,7 @@
         height: 24px;
         position: absolute;
         top: 50%;
-        right: 0;
+        right: 15px;
         transform: translate(0, -50%);
     }
 }

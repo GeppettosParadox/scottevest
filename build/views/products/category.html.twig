@@ -16,10 +16,32 @@
                  srcset="/uploads/page_hero/hero_480.jpg" alt=""
             >
         </picture>
+        <div class="page-hero__overlay row columns small-12">
+            <nav class="page-hero__nav">
+                <ul>
+                    <li class="is-active"><a href="#">women</a></li>
+                    <li><a href="#">men</a></li>
+                </ul>
+            </nav>
+        </div>
         <img class="page-hero-angle" src="/images/bottom-angle.svg" alt="">
     </div>
 
     {% include '../products/_filter.html.twig' %}
+
+    <nav class="categories-nav">
+        <div class="row columns small-12 container">
+            <ul>
+                <li class="is-active"><a href="#">All</a></li>
+                <li><a href="#">Vests</a></li>
+                <li><a href="#">Jackets</a></li>
+                <li><a href="#">Hoodies</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="category product-grid container">
         <div class="row category__product-row">

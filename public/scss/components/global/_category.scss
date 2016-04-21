@@ -17,3 +17,53 @@
 .category__product-row {
     margin-top: 2em;
 }
+
+.categories-nav {
+    margin-top: 25px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin-right: 55px;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-size: 28px;
+                font-weight: bold;
+                color: #000;
+                text-decoration: none;
+            }
+            &.is-active {
+                a {
+                    color: $green;
+                    background: none;
+                    &:after {
+                        content: '_';
+                        display: inline-block;
+                        transform: scaleX(1.5) translateX(33%);
+                    }
+                }
+            }
+        }
+        @include breakpoint(medium only) {
+            li {
+                margin-right: 45px;
+                a {
+                    font-size: 22px;
+                }
+            }
+        }
+        @include breakpoint(small only) {
+            li {
+                margin-right: 30px;
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
