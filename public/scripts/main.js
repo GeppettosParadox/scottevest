@@ -161,11 +161,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.product-filter__colors button').on('click', function () {
-        $(this).toggleClass('active');
-    });
-
-    $('.product-filter__sizes button').on('click', function () {
+    $('.product-filter button').on('click', function () {
         $(this).toggleClass('active');
     });
 
