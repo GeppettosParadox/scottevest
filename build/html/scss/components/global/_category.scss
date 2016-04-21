@@ -36,6 +36,9 @@
                 font-weight: bold;
                 color: #000;
                 text-decoration: none;
+                &:hover {
+                    color: $green;
+                }
             }
             &.is-active {
                 a {

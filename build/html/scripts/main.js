@@ -159,8 +159,8 @@ $(document).ready(function () {
             $sort.fadeIn();
         } else {
             $(this).addClass('active');
-            $filters.slideDown();
             $sort.fadeOut();
+            $filters.slideDown();
             Foundation.reInit($('.price-slider'));
         }
     });
@@ -180,6 +180,12 @@ $(document).ready(function () {
     $('.error-bar__close-button').on('click', function (e) {
         e.preventDefault();
         $('.error-bar').hide();
+    });
+
+    $("select").selectBoxIt({
+        autoWidth: false,
+        native: true,
+        copyClasses: "container"
     });
 
     window.navBar = $('.nav-bar');

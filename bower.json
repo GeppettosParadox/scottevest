@@ -10,7 +10,9 @@
     "foundation-sites": "~6.2.0",
     "motion-ui": "~1.2.2",
     "jquery": "~2.2.0",
-    "requirejs": "~2.1.16"
+    "jquery-ui": "~1.11.4",
+    "requirejs": "~2.1.16",
+    "jquery-selectboxit": "3.8.1"
   },
   "ignore": [
     "**/.*",
