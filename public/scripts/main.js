@@ -158,6 +158,7 @@ $(document).ready(function () {
         } else {
             $(this).addClass('active');
             $filters.slideDown();
+            Foundation.reInit($('.price-slider'));
         }
     });
 
