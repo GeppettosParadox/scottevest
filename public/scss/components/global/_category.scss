@@ -1,0 +1,18 @@
+.category {
+    position: relative;
+    z-index: 10;
+    margin: 40px 0 100px 0;
+}
+
+.category__product {
+    position: relative;
+    margin-bottom: 50px;
+    .product-grid__details,
+    .product-grid__quick-view-btn {
+        top: 0 !important;
+    }
+}
+
+.category__product-row {
+    margin-top: 2em;
+}
