@@ -3611,7 +3611,7 @@ a.green-more {
       top: 0;
       right: -30px; }
   .product-filter__inner {
-    display: block; }
+    display: none; }
   .product-filter__options {
     margin-top: 30px; }
   .product-filter__heading {
@@ -3698,6 +3698,25 @@ a.green-more {
       background: #5ec26a;
       height: 3px;
       margin-top: -1px; }
+    .product-filter .price-slider__info {
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: -8px;
+      color: #8d8d8d; }
+      .product-filter .price-slider__info .value {
+        color: #000; }
+    .product-filter .price-slider__input {
+      display: inline;
+      border: 0;
+      padding: 0;
+      margin: 0 0 0 6px;
+      font-size: 14px;
+      line-height: 14px;
+      width: 60px; }
+    .product-filter .price-slider__info-from {
+      float: left; }
+    .product-filter .price-slider__info-to {
+      float: right; }
 
 .site-footer {
   padding: 50px 0;

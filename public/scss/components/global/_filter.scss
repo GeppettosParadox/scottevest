@@ -30,7 +30,7 @@
         }
     }
     &__inner {
-        display: block;
+        display: none;
     }
     &__options {
         margin-top: 30px;
@@ -145,6 +145,30 @@
             background: $green;
             height: 3px;
             margin-top: -1px;
+        }
+        &__info {
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: -8px;
+            color: #8d8d8d;
+            .value {
+                color: #000;
+            }
+        }
+        &__input {
+            display: inline;
+            border: 0;
+            padding: 0;
+            margin: 0 0 0 6px;
+            font-size: 14px;
+            line-height: 14px;
+            width: 60px;
+        }
+        &__info-from {
+            float: left;
+        }
+        &__info-to {
+            float: right;
         }
     }
 }

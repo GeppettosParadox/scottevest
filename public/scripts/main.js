@@ -165,6 +165,13 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+    $('.price-slider').on('moved.zf.slider', function () {
+        var fromValue = $('#priceSliderFrom').val();
+        $('.price-slider__info-from__value').html('$'+fromValue);
+        var toValue = $('#priceSliderTo').val();
+        $('.price-slider__info-to__value').html('$'+toValue);
+    })
+
     window.navBar = $('.nav-bar');
     window.topBars = $('.top-bar');
     window.topBarsHeight = 0;

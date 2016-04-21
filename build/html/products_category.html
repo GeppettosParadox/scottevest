@@ -319,31 +319,31 @@
                         </div>
                         <div class="product-filter__col small-12 medium-4 large-2 columns">
                             <h4 class="product-filter__heading">Price</h4>
-                            <div class="slider price-slider" data-slider="" data-start="0" data-initial-start="70" data-end="300" data-initial-end="220">
-                                <span class="slider-handle" data-slider-handle="" role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+                            <div class="slider price-slider" data-slider="" data-start="0" data-initial-start="30" data-end="250" data-initial-end="220">
+                                <span class="slider-handle" data-slider-handle="" role="slider" tabindex="1" aria-controls="priceSliderFrom"></span>
                                 <span class="slider-fill" data-slider-fill=""></span>
-                                <span class="slider-handle" data-slider-handle="" role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
-                                <input type="hidden">
-                                <input type="hidden">
+                                <span class="slider-handle" data-slider-handle="" role="slider" tabindex="1" aria-controls="priceSliderTo"></span>
+                                <input type="hidden" id="priceSliderFrom">
+                                <input type="hidden" id="priceSliderTo">
                             </div>
                             <div class="price-slider__info">
                                 <span class="price-slider__info-from">
-                                from <input type="number" id="sliderOutput1">
-                            </span>
+                                from <span class="value price-slider__info-from__value">$30</span>
+                                </span>
                                 <span class="price-slider__info-to">
-                                to <input type="number" id="sliderOutput2">
+                                to <span class="value price-slider__info-to__value">$250</span>
 
-                        </span></div>
+                            </span></div>
 
-                    </div>
-                    <div class="product-filter__col small-12 medium-4 large-2 columns">
-                        <h4 class="product-filter__heading">Size</h4>
-                        <div class="product-filter__sizes">
-                            <button type="button" name="size" title="small" value="small">
+                        </div>
+                        <div class="product-filter__col small-12 medium-4 large-2 columns">
+                            <h4 class="product-filter__heading">Size</h4>
+                            <div class="product-filter__sizes">
+                                <button type="button" name="size" title="small" value="small">
                                 <span class="size">S</span>
                                 <span class="num">2</span>
                                 <span class="show-for-sr">Filter Small</span>
-                                </button>
+                            </button>
                                 <button type="button" name="size" title="medium" value="medium">
                                 <span class="size">M</span>
                                 <span class="num">31</span>
