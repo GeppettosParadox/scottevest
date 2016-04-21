@@ -43,18 +43,9 @@
         color: #8d8d8d;
         white-space: nowrap;
         .selectboxit-container {
-            margin: -4px 0 0 12px;
+            margin: -2px 0 0 12px;
+            color: #000 !important;
         }
-        /*
-        select {
-            display: inline;
-            width: 200px;
-            margin-left: 12px;
-            border: 0;
-            font-weight: bold;
-            border-bottom: 1px solid #e5e5e5;
-        }
-        */
     }
     &__inner {
         display: none;
@@ -252,6 +243,11 @@
         }
         &__sort {
             @include clearfix;
+            &:before {
+                content: "";
+                display: block;
+                height: 15px;
+            }
         }
     }
 }
