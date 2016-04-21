@@ -3705,14 +3705,14 @@ a.green-more {
 .top-bar.intl-bar {
   background: #fff;
   padding-top: .5em !important;
-  padding-bottom: .5em !important; }
+  padding-bottom: .5em !important;
+  border-bottom: 1px solid #ccc; }
   .top-bar.intl-bar strong {
     display: block;
     font-size: 1.28rem; }
   @media screen and (min-width: 40em) {
     .top-bar.intl-bar {
-      padding-top: 2.14em !important;
-      padding-bottom: 2.14em !important; }
+      height: 45px; }
       .top-bar.intl-bar strong, .top-bar.intl-bar span {
         display: inline-block; }
       .top-bar.intl-bar span {

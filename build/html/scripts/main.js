@@ -136,6 +136,17 @@ $(document).ready(function () {
         $(qty).val($qty_value).attr('value', $qty_value);
     });
 
+    $('.nav-bar__cart-btn').on('click', function () {
+        var $cart = $('.cart');
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $cart.hide();
+        } else {
+            $(this).addClass('active');
+            $cart.show();
+        }
+    });
+
     window.navBar = $('.nav-bar');
     window.topBars = $('.top-bar');
     window.topBarsHeight = 0;
