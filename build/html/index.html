@@ -111,30 +111,78 @@
                         </div>
                     </nav>
 
-                    <div class="cart">
-                        <div class="container">
-                            <div class="row small-12 columns">
-                                <div class="cart__items">
-                                    <div class="cart__top-row row">
-                                        <div class="small-12 medium-6 large-5 columns cart__col cart__col-1">
-                                            2 Items
+                    <form>
+                        <div class="cart">
+                            <div class="container">
+                                <div class="row small-12 columns">
+                                    <div class="cart__items">
+                                        <div class="cart__top-row row">
+                                            <div class="small-12 medium-6 large-5 columns cart__col cart__col-1">
+                                                2 Items
+                                            </div>
+                                            <div class="small-3 medium-1 large-1 columns cart__col cart__col-2">
+                                                Color
+                                            </div>
+                                            <div class="small-3 medium-1 large-1 columns cart__col cart__col-3">
+                                                Size
+                                            </div>
+                                            <div class="small-3 medium-2 large-2 columns cart__col cart__col-4">
+                                                Qty
+                                            </div>
+                                            <div class="small-3 medium-2 large-2 columns cart__col cart__col-5">
+                                                Price
+                                            </div>
+                                            <div class="small-3 medium-1 large-1 columns cart__col cart__col-6 show-for-large-only">
+                                                &nbsp;
+                                            </div>
                                         </div>
-                                        <div class="small-3 medium-1 large-1 columns cart__col cart__col-2">
-                                            Color
+                                        <div class="cart__item row">
+                                            <div class="small-12 medium-6 large-5 columns cart__col cart__col-1">
+                                                <span class="cart__col__inner">
+                                <a href="#">
+                                    <img src="uploads/product_thumbs/cart-product.png" alt="">
+                                    <span class="cart__item__title">
+                                        Sterling Jacket for Men
+                                        <button type="button" class="delete delete--small">Remove</button>
+                                    </span>
+                                                </a>
+                                                </span>
+                                            </div>
+                                            <div class="small-3 medium-1 large-1 columns cart__col cart__col-2">
+                                                <span class="cart__col__inner">
+                                <div class="color-options">
+                                    <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
+                                        <span class="show-for-sr">Order in Blue</span>
+                                                </button>
+                                            </div>
+                                            </span>
                                         </div>
                                         <div class="small-3 medium-1 large-1 columns cart__col cart__col-3">
-                                            Size
+                                            <span class="cart__col__inner">
+                                M
+                            </span>
                                         </div>
                                         <div class="small-3 medium-2 large-2 columns cart__col cart__col-4">
-                                            Qty
+                                            <span class="cart__col__inner">
+                                <div class="qty-options">
+                                    <button type="button" class="sub">-</button>
+                                    <input type="text" name="qty" title="Quantity" value="1">
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </span>
                                         </div>
                                         <div class="small-3 medium-2 large-2 columns cart__col cart__col-5">
-                                            Price
+                                            <span class="cart__col__inner">
+                                $195
+                            </span>
                                         </div>
-                                        <div class="small-3 medium-1 large-1 columns cart__col cart__col-6 show-for-large-only">
-                                            &nbsp;
+                                        <div class="large-1 columns cart__col cart__col-6">
+                                            <span class="cart__col__inner">
+                                <button type="button" class="delete delete--large">Remove</button>
+                            </span>
                                         </div>
                                     </div>
+                                    <hr class="cart__horizontal-line">
                                     <div class="cart__item row">
                                         <div class="small-12 medium-6 large-5 columns cart__col cart__col-1">
                                             <span class="cart__col__inner">
@@ -142,9 +190,7 @@
                                     <img src="uploads/product_thumbs/cart-product.png" alt="">
                                     <span class="cart__item__title">
                                         Sterling Jacket for Men
-                                        <button type="button" class="delete">
-                                            <img src="images/cart-x.svg" alt="Delete">
-                                        </button>
+                                        <button type="button" class="delete delete--small">Remove</button>
                                     </span>
                                             </a>
                                             </span>
@@ -179,105 +225,52 @@
                                     </div>
                                     <div class="large-1 columns cart__col cart__col-6">
                                         <span class="cart__col__inner">
-                                <button type="button" class="delete">
-                                    <img src="images/cart-x.svg" alt="Delete">
-                                </button>
+                                <button type="button" class="delete delete--large">Remove</button>
                             </span>
                                     </div>
                                 </div>
-                                <hr class="cart__horizontal-line last">
-                                <div class="cart__item row">
-                                    <div class="small-12 medium-6 large-5 columns cart__col cart__col-1">
-                                        <span class="cart__col__inner">
-                                <a href="#">
-                                    <img src="uploads/product_thumbs/cart-product.png" alt="">
-                                    <span class="cart__item__title">
-                                        Sterling Jacket for Men
-                                        <button type="button" class="delete">
-                                            <img src="images/cart-x.svg" alt="Delete">
-                                        </button>
-                                    </span>
-                                        </a>
-                                        </span>
-                                    </div>
-                                    <div class="small-3 medium-1 large-1 columns cart__col cart__col-2">
-                                        <span class="cart__col__inner">
-                                <div class="color-options">
-                                    <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
-                                        <span class="show-for-sr">Order in Blue</span>
-                                        </button>
-                                    </div>
-                                    </span>
-                                </div>
-                                <div class="small-3 medium-1 large-1 columns cart__col cart__col-3">
-                                    <span class="cart__col__inner">
-                                M
-                            </span>
-                                </div>
-                                <div class="small-3 medium-2 large-2 columns cart__col cart__col-4">
-                                    <span class="cart__col__inner">
-                                <div class="qty-options">
-                                    <button type="button" class="sub">-</button>
-                                    <input type="text" name="qty" title="Quantity" value="1">
-                                    <button type="button" class="add">+</button>
-                                </div>
-                            </span>
-                                </div>
-                                <div class="small-3 medium-2 large-2 columns cart__col cart__col-5">
-                                    <span class="cart__col__inner">
-                                $195
-                            </span>
-                                </div>
-                                <div class="large-1 columns cart__col cart__col-6">
-                                    <span class="cart__col__inner">
-                                <button type="button" class="delete">
-                                    <img src="images/cart-x.svg" alt="Delete">
-                                </button>
-                            </span>
-                                </div>
+                                <hr class="cart__horizontal-line">
                             </div>
-                            <hr class="cart__horizontal-line last">
-                        </div>
-                        <div class="cart__total row small-12">
-                            <div class="cart__col small-7 columns">
-                                <span class="cart__col__inner">
-                        <a href="#" class="promo-code-link">
-                            Enter promo code here
-                        </a>
+                            <div class="cart__total row small-12">
+                                <div class="cart__col small-7 columns">
+                                    <span class="cart__col__inner">
+                        <a href="#" class="promo-code-toggle">Enter promo code here</a>
+                        <input type="text" class="promo-code-input" name="promoCode" placeholder="Enter promo code here">
                     </span>
-                            </div>
-                            <div class="cart__col cart__total-label columns small-2">
-                                <span class="cart__col__inner">
+                                </div>
+                                <div class="cart__col cart__total-label columns small-2">
+                                    <span class="cart__col__inner">
                         Total
                     </span>
-                            </div>
-                            <div class="cart__col cart__total-amount columns small-2">
-                                <span class="cart__col__inner">
+                                </div>
+                                <div class="cart__col cart__total-amount columns small-2">
+                                    <span class="cart__col__inner">
                         $323
                     </span>
-                            </div>
-                            <div class="cart__col cart__checkout-button columns small-1">
-                                <button type="button">
-                        Checkout >
+                                </div>
+                                <div class="cart__col cart__checkout-button columns small-1">
+                                    <button type="button" class="toggle-checkout-buttons">
+                        Checkout <span class="icon-arrow"></span>
                     </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cart__buttons">
-                        <button type="button" class="cart__buttons__credit-card">
+                        <div class="cart__buttons">
+                            <button type="button" class="button cart__buttons__credit-card">
                 Credit Card <span class="icon-arrow"></span>
             </button>
-                        <!--
-            --><button type="button" class="cart__buttons__amazon">
+                            <!--
+            --><button type="button" class="button cart__buttons__amazon">
                 <img src="images/logo-amazon.svg" alt="Amazon"> <span class="icon-arrow"></span>
             </button>
-                        <!--
-            --><button type="button" class="cart__buttons__paypal">
+                            <!--
+            --><button type="button" class="button cart__buttons__paypal">
                 <img src="images/logo-paypal.svg" alt="PayPal"> <span class="icon-arrow"></span>
             </button>
-                    </div>
+                        </div>
             </div>
         </div>
+        </form>
         </header>
         <article class="homepage-hero container">
             <picture>

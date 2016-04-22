@@ -1,3 +1,4 @@
+<form>
 <div class="cart">
     <div class="container">
         <div class="row small-12 columns">
@@ -30,9 +31,7 @@
                                     <img src="/uploads/product_thumbs/cart-product.png" alt="">
                                     <span class="cart__item__title">
                                         Sterling Jacket for Men
-                                        <button type="button" class="delete">
-                                            <img src="/images/cart-x.svg" alt="Delete">
-                                        </button>
+                                        <button type="button" class="delete delete--small">Remove</button>
                                     </span>
                                 </a>
                             </span>
@@ -67,21 +66,18 @@
                         </div>
                         <div class="large-1 columns cart__col cart__col-6">
                             <span class="cart__col__inner">
-                                <button type="button" class="delete">
-                                    <img src="/images/cart-x.svg" alt="Delete">
-                                </button>
+                                <button type="button" class="delete delete--large">Remove</button>
                             </span>
                         </div>
                     </div>
-                    <hr class="cart__horizontal-line {{ loop.last ? 'last' }}">
+                    <hr class="cart__horizontal-line">
                 {% endfor %}
             </div>
             <div class="cart__total row small-12">
                 <div class="cart__col small-7 columns">
                     <span class="cart__col__inner">
-                        <a href="#" class="promo-code-link">
-                            Enter promo code here
-                        </a>
+                        <a href="#" class="promo-code-toggle">Enter promo code here</a>
+                        <input type="text" class="promo-code-input" name="promoCode" placeholder="Enter promo code here">
                     </span>
                 </div>
                 <div class="cart__col cart__total-label columns small-2">
@@ -95,22 +91,23 @@
                     </span>
                 </div>
                 <div class="cart__col cart__checkout-button columns small-1">
-                    <button type="button">
-                        Checkout >
+                    <button type="button" class="toggle-checkout-buttons">
+                        Checkout <span class="icon-arrow"></span>
                     </button>
                 </div>
             </div>
         </div>
         <div class="cart__buttons">
-            <button type="button" class="cart__buttons__credit-card">
+            <button type="button" class="button cart__buttons__credit-card">
                 Credit Card <span class="icon-arrow"></span>
             </button><!--
-            --><button type="button" class="cart__buttons__amazon">
+            --><button type="button" class="button cart__buttons__amazon">
                 <img src="/images/logo-amazon.svg" alt="Amazon"> <span class="icon-arrow"></span>
             </button><!--
-            --><button type="button" class="cart__buttons__paypal">
+            --><button type="button" class="button cart__buttons__paypal">
                 <img src="/images/logo-paypal.svg" alt="PayPal"> <span class="icon-arrow"></span>
             </button>
         </div>
     </div>
 </div>
+</form>
