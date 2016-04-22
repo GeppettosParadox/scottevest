@@ -16,7 +16,7 @@
             {% for i in 0..3 %}
                 <div class="medium-6 large-3 column related-products__product"
                      data-productcat="{{ i < 3 ? 'men' : 'women' }}">
-                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
+                    <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small" data-toggle="quickview"></button>
                     <div class="xray-img">
                         <img src="{{ product.imgPath }}" alt="">
                         <img src="{{ product.xrayImgPath }}" alt="">

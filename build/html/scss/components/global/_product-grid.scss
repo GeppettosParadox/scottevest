@@ -41,13 +41,11 @@
 }
 
 .xray-img {
+    position: relative;
     img {
         left: auto;
         right: auto;
         width: 100%;
-        @include breakpoint(medium) {
-            //width: 70%;
-        }
     }
 }
 

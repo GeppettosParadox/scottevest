@@ -2851,7 +2851,7 @@ body.is-reveal-open {
   left: 0;
   right: 0;
   z-index: 1005;
-  background-color: rgba(10, 10, 10, 0.45);
+  background-color: rgba(254, 254, 254, 0.45);
   overflow-y: scroll; }
 
 .reveal {
@@ -4334,10 +4334,12 @@ body.sticky-navbar {
   .product-grid .column + .column, .product-grid .columns + .column, .product-grid .column + .columns, .product-grid .columns + .columns {
     margin-top: 3em; } }
 
-.xray-img img {
-  left: auto;
-  right: auto;
-  width: 100%; }
+.xray-img {
+  position: relative; }
+  .xray-img img {
+    left: auto;
+    right: auto;
+    width: 100%; }
 
 .product-grid__more {
   margin-top: 3em;
@@ -4510,6 +4512,82 @@ ul.tab-picker {
 
 ul.tab-picker--product-specs {
   margin-top: 10px; }
+
+#quickview {
+  padding-top: 5em; }
+  #quickview:focus {
+    outline: 0; }
+  #quickview .product-grid__details {
+    padding-top: 1em;
+    bottom: 100%;
+    top: auto; }
+  #quickview .close-button {
+    border: 1px solid #5ec26a;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    color: #5ec26a; }
+  #quickview .product-grid__colors {
+    top: 20px; }
+  @media screen and (min-width: 40em) {
+    #quickview {
+      width: 35%; } }
+
+.reveal-container {
+  position: relative; }
+
+.pocket-count {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  background: url("/images/pocket-icon.png") no-repeat;
+  width: 40px;
+  text-align: center;
+  z-index: 100; }
+  .pocket-count strong {
+    display: block;
+    line-height: 34px;
+    color: #f90807;
+    text-align: center; }
+  .pocket-count span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #a4a4a4; }
+
+.available-sizes {
+  margin-top: 1em; }
+  .available-sizes h2 {
+    font-size: 12px; }
+  .available-sizes .size-options {
+    padding-left: 0; }
+
+.color-options__graphical-carousel__wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 40px; }
+
+.quick-view-buy-now {
+  background: #5ec26a;
+  color: #fff;
+  width: 33%;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.quick-view-details {
+  height: 45px;
+  line-height: 45px; }
+  .quick-view-details a {
+    color: #5ec26a; }
+
+.quick-view-details .icon-arrow,
+.quick-view-buy-now .icon-arrow {
+  font-size: 6px;
+  position: relative;
+  bottom: 1px; }
 
 .homepage-hero {
   position: relative;

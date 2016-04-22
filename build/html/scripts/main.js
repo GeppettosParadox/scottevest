@@ -172,9 +172,9 @@ $(document).ready(function () {
 
     $('.price-slider').on('moved.zf.slider', function () {
         var fromValue = $('#priceSliderFrom').val();
-        $('.price-slider__info-from__value').html('$'+fromValue);
+        $('.price-slider__info-from__value').html('$' + fromValue);
         var toValue = $('#priceSliderTo').val();
-        $('.price-slider__info-to__value').html('$'+toValue);
+        $('.price-slider__info-to__value').html('$' + toValue);
     })
 
     $('.error-bar__close-button').on('click', function (e) {
@@ -252,5 +252,22 @@ $(window).load(function () {
     $(".xray-img").twentytwenty({
         default_offset_pct: 0.5, // How much of the before image is visible when the page loads
         orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
+    });
+});
+
+$('[data-reveal]').bind('open.zf.reveal', function () {
+    $(".xray-img").twentytwenty({
+        default_offset_pct: 0.5, // How much of the before image is visible when the page loads
+        orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
+    });
+    $('.color-options__graphical-carousel').slick({
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        respondTo: 'slider',
+        centerMode: true,
+        variableWidth: true,
+        appendArrows: '#quickviewArrows'
     });
 });

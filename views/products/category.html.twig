@@ -6,7 +6,8 @@
 
     <div class="page-hero container">
         <picture>
-            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <!--[if IE 9]>
+            <video style="display: none;"><![endif]-->
             <source srcset="/uploads/page_hero/hero.jpg" media="(min-width: 1025px)">
             <source srcset="/uploads/page_hero/hero_1024.jpg" media="(min-width: 481px)">
             <!--[if IE 9]></video><![endif]-->
@@ -44,54 +45,10 @@
     <div class="category product-grid container">
         <div class="row category__product-row">
             <div class="small-12 columns category__products">
-                {% set product = {
-                title: 'SeV Susie Qzip',
-                price: 120,
-                salesPrice: 110,
-                imgPath: '/uploads/xray_grid/pink_vest.jpg',
-                xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
-                } %}
                 {% for i in 0..5 %}
                     <div class="medium-6 large-4 column category__product"
                          data-productcat="{{ i < 3 ? 'men' : 'women' }}">
-                        <button class="product-grid__quick-view-btn product-grid__quick-view-btn--small"></button>
-                        <div class="xray-img">
-                            <img src="{{ product.imgPath }}" alt="">
-                            <img src="{{ product.xrayImgPath }}" alt="">
-                        </div>
-                        <div class="product-grid__details">
-                            <div class="product-grid__product-title">
-                                {{ product.title }}
-                            </div>
-                            <div class="product-grid__price {{ product.salesPrice ? 'product-grid__price--sales-price' }}">
-                                ${{ product.salesPrice ? product.salesPrice : product.price }}
-                            </div>
-                            {% if product.salesPrice %}
-                                <div class="product-grid__was-price">
-                                    was
-                                    <del>${{ product.price }}</del>
-                                </div>
-                            {% endif %}
-                        </div>
-                        <div class="product-grid__colors">
-                            <div class="color-options">
-                                <div class="color-options__row">
-                                    <button type="button" name="color" title="red" value="red" style="background: #f90808;">
-                                        <span class="show-for-sr">Order in Red</span>
-                                    </button>
-                                </div>
-                                <div class="color-options__row">
-                                    <button type="button" name="color" title="gray" value="gray" style="background: #606c82;">
-                                        <span class="show-for-sr">Order in Gray</span>
-                                    </button>
-                                </div>
-                                <div class="color-options__row">
-                                    <button type="button" name="color" title="blue" value="blue" style="background: #50b3cf;">
-                                        <span class="show-for-sr">Order in Blue</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        {% include '../products/_product-category.html.twig' %}
                     </div>
                 {% endfor %}
             </div>
