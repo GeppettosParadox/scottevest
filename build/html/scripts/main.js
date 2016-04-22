@@ -27,7 +27,12 @@ $(document).ready(function () {
     $('.tab-picker button').on('click', function () {
         var $button = $(this);
         var $category = $(this).attr('data-productcat');
-        var $products = $button.closest('.product-grid').find('.product-grid__product');
+        var $productGrid = $button.closest('.product-grid');
+        if ($productGrid.hasClass('category')) {
+            var $products = $productGrid.find('.category__product');
+        } else {
+            var $products = $productGrid.find('.product-grid__product');
+        }
         $button
             .siblings()
             .addBack()
@@ -36,13 +41,17 @@ $(document).ready(function () {
         $button
             .addClass('active')
         ;
-        $products.addClass('hide');
-        if ($category !== '') {
-            $products.filter('[data-productcat="' + $category + '"]')
-                .removeClass('hide')
-            ;
-        } else {
+        if ($category == 'all') {
             $products.removeClass('hide');
+        } else {
+            $products.addClass('hide');
+            if ($category !== '') {
+                $products.filter('[data-productcat="' + $category + '"]')
+                    .removeClass('hide')
+                ;
+            } else {
+                $products.removeClass('hide');
+            }
         }
     });
 
@@ -284,6 +293,7 @@ $('[data-reveal]').bind('open.zf.reveal', function () {
         default_offset_pct: 0.5, // How much of the before image is visible when the page loads
         orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
     });
+    var $arrowsContainer = $('.color-options__carousel-nav');
     $('.color-options__graphical-carousel').slick({
         arrows: true,
         infinite: true,
@@ -292,6 +302,6 @@ $('[data-reveal]').bind('open.zf.reveal', function () {
         respondTo: 'slider',
         centerMode: true,
         variableWidth: true,
-        appendArrows: '#quickviewArrows'
+        appendArrows: $arrowsContainer
     });
 });

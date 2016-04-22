@@ -20,53 +20,21 @@
 
 .categories-nav {
     margin-top: 25px;
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        li {
-            display: inline-block;
-            margin-right: 55px;
-            margin-bottom: 10px;
-            &:last-child {
-                margin-right: 0;
-            }
-            a {
-                font-size: 28px;
-                font-weight: bold;
-                color: #000;
-                text-decoration: none;
-                &:hover {
-                    color: $green;
-                }
-            }
-            &.is-active {
-                a {
-                    color: $green;
-                    background: none;
-                    &:after {
-                        content: '_';
-                        display: inline-block;
-                        transform: scaleX(1.5) translateX(33%);
-                    }
-                }
-            }
+    .button-group {
+        text-align: left !important;
+    }
+    button {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    @include breakpoint(medium only) {
+        button {
+            font-size: 22px;
         }
-        @include breakpoint(medium only) {
-            li {
-                margin-right: 45px;
-                a {
-                    font-size: 22px;
-                }
-            }
-        }
-        @include breakpoint(small only) {
-            li {
-                margin-right: 30px;
-                a {
-                    font-size: 18px;
-                }
-            }
+    }
+    @include breakpoint(small only) {
+        button {
+            font-size: 18px;
         }
     }
 }

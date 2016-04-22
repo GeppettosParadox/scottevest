@@ -21,6 +21,9 @@
         top: 20px;
     }
     @include breakpoint(medium) {
+        width: 48%;
+    }
+    @include breakpoint(large) {
         width: 35%;
     }
 }
@@ -64,6 +67,12 @@
 .color-options__graphical-carousel__wrapper {
     padding-top: 1.5em;
     padding-bottom: 40px;
+}
+
+.color-options__carousel-nav {
+    display: block;
+    height: 36px;
+    text-align: right;
 }
 
 .quick-view-buy-now {

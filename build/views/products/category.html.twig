@@ -28,26 +28,30 @@
 
     {% include '../products/_filter.html.twig' %}
 
-    <nav class="categories-nav">
-        <div class="row columns small-12 container">
-            <ul>
-                <li class="is-active"><a href="#">All</a></li>
-                <li><a href="#">Vests</a></li>
-                <li><a href="#">Jackets</a></li>
-                <li><a href="#">Hoodies</a></li>
-                <li><a href="#">Pants</a></li>
-                <li><a href="#">Shirts</a></li>
-                <li><a href="#">Accessories</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <div class="category product-grid container">
+        <div class="tab-picker row categories-nav">
+            <div class="button-group text-center">
+                <button class="button active" data-productcat="all">All</button>
+                <button class="button" data-productcat="vests">Vests</button>
+                <button class="button" data-productcat="jackets">Jackets</button>
+                <button class="button" data-productcat="hoodies">Hoodies</button>
+                <button class="button" data-productcat="pants">Pants</button>
+                <button class="button" data-productcat="shirts">Shirts</button>
+                <button class="button" data-productcat="accessories">Accessories</button>
+            </div>
+        </div>
         <div class="row category__product-row">
             <div class="small-12 columns category__products">
-                {% for i in 0..5 %}
+                {% for i in 0..14 %}
+                    {% set cat = "" %}
+                    {% if i == 0 %}{% set cat = "vests" %}{% endif %}
+                    {% if i >= 1 and i <= 2 %}{% set cat = "jackets" %}{% endif %}
+                    {% if i >= 3 and i <= 5 %}{% set cat = "hoodies" %}{% endif %}
+                    {% if i >= 6 and i <= 9 %}{% set cat = "pants" %}{% endif %}
+                    {% if i >= 10 and i <= 12 %}{% set cat = "shirts" %}{% endif %}
+                    {% if i >= 13 and i <= 13 %}{% set cat = "accessories" %}{% endif %}
                     <div class="medium-6 large-4 column category__product"
-                         data-productcat="{{ i < 3 ? 'men' : 'women' }}">
+                         data-productcat="{{ cat }}">
                         {% include '../products/_product-category.html.twig' %}
                     </div>
                 {% endfor %}

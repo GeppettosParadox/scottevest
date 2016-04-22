@@ -27,7 +27,12 @@ $(document).ready(function () {
     $('.tab-picker button').on('click', function () {
         var $button = $(this);
         var $category = $(this).attr('data-productcat');
-        var $products = $button.closest('.product-grid').find('.product-grid__product');
+        var $productGrid = $button.closest('.product-grid');
+        if ($productGrid.hasClass('category')) {
+            var $products = $productGrid.find('.category__product');
+        } else {
+            var $products = $productGrid.find('.product-grid__product');
+        }
         $button
             .siblings()
             .addBack()
@@ -36,13 +41,17 @@ $(document).ready(function () {
         $button
             .addClass('active')
         ;
-        $products.addClass('hide');
-        if ($category !== '') {
-            $products.filter('[data-productcat="' + $category + '"]')
-                .removeClass('hide')
-            ;
-        } else {
+        if ($category == 'all') {
             $products.removeClass('hide');
+        } else {
+            $products.addClass('hide');
+            if ($category !== '') {
+                $products.filter('[data-productcat="' + $category + '"]')
+                    .removeClass('hide')
+                ;
+            } else {
+                $products.removeClass('hide');
+            }
         }
     });
 
