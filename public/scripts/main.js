@@ -284,6 +284,7 @@ $('[data-reveal]').bind('open.zf.reveal', function () {
         default_offset_pct: 0.5, // How much of the before image is visible when the page loads
         orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
     });
+    var $arrowsContainer = $('.color-options__carousel-nav');
     $('.color-options__graphical-carousel').slick({
         arrows: true,
         infinite: true,
@@ -292,6 +293,6 @@ $('[data-reveal]').bind('open.zf.reveal', function () {
         respondTo: 'slider',
         centerMode: true,
         variableWidth: true,
-        appendArrows: '#quickviewArrows'
+        appendArrows: $arrowsContainer
     });
 });

@@ -4567,6 +4567,9 @@ ul.tab-picker--product-specs {
     top: 20px; }
   @media screen and (min-width: 40em) {
     #quickview {
+      width: 48%; } }
+  @media screen and (min-width: 64em) {
+    #quickview {
       width: 35%; } }
 
 .reveal-container {
@@ -4601,6 +4604,11 @@ ul.tab-picker--product-specs {
 .color-options__graphical-carousel__wrapper {
   padding-top: 1.5em;
   padding-bottom: 40px; }
+
+.color-options__carousel-nav {
+  display: block;
+  height: 36px;
+  text-align: right; }
 
 .quick-view-buy-now {
   background: #5ec26a;
