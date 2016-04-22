@@ -165,10 +165,10 @@ $(document).ready(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $filters.slideUp();
-            $sort.fadeIn();
+            $sort.show();
         } else {
             $(this).addClass('active');
-            $sort.fadeOut();
+            $sort.hide();
             $filters.slideDown();
             Foundation.reInit($('.price-slider'));
         }

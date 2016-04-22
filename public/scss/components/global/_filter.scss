@@ -206,6 +206,7 @@
     }
     &__reset {
         color: $green;
+        background: #fff;
         span {
             position: relative;
             &:before {
@@ -220,6 +221,12 @@
                 top: 50%;
                 transform: translate(0, -50%);
             }
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            color: $green;
+            background: #fff;
         }
     }
     &__apply {
