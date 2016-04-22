@@ -19,7 +19,7 @@
                     xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
                 } %}
                 {% for i in 0..3 %}
-                    <div class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
+                    <a href="/products_featherweight-vest.html" class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
                         <button class="product-grid__quick-view-btn" data-toggle="quickview"></button>
                         <div class="xray-img">
                             <img src="{{ product.imgPath }}" alt="">
@@ -38,7 +38,7 @@
                                 </div>
                             {% endif %}
                         </div>
-                    </div>
+                    </a>
                 {% endfor %}
             </div>
         </div>

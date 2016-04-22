@@ -50,10 +50,10 @@
                     {% if i >= 6 and i <= 9 %}{% set cat = "pants" %}{% endif %}
                     {% if i >= 10 and i <= 12 %}{% set cat = "shirts" %}{% endif %}
                     {% if i >= 13 and i <= 13 %}{% set cat = "accessories" %}{% endif %}
-                    <div class="medium-6 large-4 column category__product"
+                    <a href="/products_featherweight-vest.html" class="medium-6 large-4 column category__product"
                          data-productcat="{{ cat }}">
                         {% include '../products/_product-category.html.twig' %}
-                    </div>
+                    </a>
                 {% endfor %}
             </div>
         </div>

@@ -11,6 +11,9 @@ ul.tab-picker {
             font-weight: bold;
             border: 0;
             padding: 0 0 0 30px;
+            &:hover {
+                color: $green;
+            }
         }
         &:first-child {
             a {
@@ -20,6 +23,9 @@ ul.tab-picker {
         &.is-active {
             a {
                 color: $green;
+                &:hover {
+                    color: #009900;
+                }
                 background: none;
                 &:after {
                     content: '_';

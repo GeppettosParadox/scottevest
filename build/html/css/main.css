@@ -3463,6 +3463,8 @@ a.green-more {
   padding-right: 20px;
   margin: 0 20px 30px 20px;
   position: relative; }
+  a.green-more:hover {
+    color: #009900; }
   @media screen and (min-width: 40em) {
     a.green-more {
       font-size: 30px; } }
@@ -3700,7 +3702,9 @@ a.green-more {
         .cart__total .promo-code-toggle {
           line-height: 80px; }
         .cart__total .promo-code-input {
-          width: 100%; } }
+          width: 100%; }
+      .cart__horizontal-line {
+        margin: -10px 0 10px 0; } }
   @media screen and (min-width: 1350px) {
     .cart__buttons {
       display: none; } }
@@ -3716,9 +3720,14 @@ a.green-more {
   margin: 0 0 100px 0; }
 
 .category__product {
+  display: block;
+  color: #000;
+  text-decoration: none;
   position: relative;
   padding-top: 30px;
   margin-bottom: 50px; }
+  .category__product:hover {
+    color: #000; }
   .category__product .product-grid__details,
   .category__product .product-grid__quick-view-btn {
     top: 0 !important; }
@@ -4354,8 +4363,12 @@ body.sticky-navbar {
   color: #000;
   font-size: 21px;
   background: none; }
+  .tab-picker .button:hover {
+    color: #5ec26a; }
   .tab-picker .button.active {
     color: #5ec26a; }
+    .tab-picker .button.active:hover {
+      color: #009900; }
     .tab-picker .button.active:after {
       content: '_';
       display: inline-block;
@@ -4383,7 +4396,12 @@ body.sticky-navbar {
   margin-bottom: 5em; }
 
 .product-grid__product {
+  display: block;
+  color: #000;
+  text-decoration: none;
   position: relative; }
+  .product-grid__product:hover {
+    color: #000; }
   @media screen and (min-width: 40em) {
     .product-grid__product {
       padding: 0 10%; }
@@ -4523,11 +4541,15 @@ ul.tab-picker {
       font-weight: bold;
       border: 0;
       padding: 0 0 0 30px; }
+      ul.tab-picker li a:hover {
+        color: #5ec26a; }
     ul.tab-picker li:first-child a {
       padding-left: 0; }
     ul.tab-picker li.is-active a {
       color: #5ec26a;
       background: none; }
+      ul.tab-picker li.is-active a:hover {
+        color: #009900; }
       ul.tab-picker li.is-active a:after {
         content: '_';
         display: inline-block;
