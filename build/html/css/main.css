@@ -4431,7 +4431,8 @@ body.sticky-navbar {
   right: 20px;
   z-index: 100;
   background: transparent url("../images/quick-view.svg") no-repeat left center;
-  background-size: 40px 40px; }
+  background-size: 40px 40px;
+  transition: background 0.15s ease-in; }
   .product-grid__quick-view-btn--small {
     width: 40px;
     height: 40px;
