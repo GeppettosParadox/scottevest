@@ -197,6 +197,10 @@ $(document).ready(function () {
         copyClasses: "container"
     });
 
+    $('.product-grid__quick-view-btn').on('click', function (e) {
+        e.preventDefault();
+    });
+
     $('.toggle-checkout-buttons').on('click', function (e) {
         e.preventDefault();
         var $cartButtons = $('.cart__buttons');
@@ -285,6 +289,9 @@ $(window).load(function () {
     $(".xray-img").twentytwenty({
         default_offset_pct: 0.5, // How much of the before image is visible when the page loads
         orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
+    });
+    $('.twentytwenty-handle').on('click', function (e) {
+        e.preventDefault();
     });
 });
 

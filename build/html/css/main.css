@@ -3577,7 +3577,8 @@ a.green-more {
     .cart__total .promo-code-toggle {
       line-height: 90px;
       display: none;
-      color: #5ec26a; }
+      color: #5ec26a;
+      text-transform: uppercase; }
     .cart__total .promo-code-input {
       margin: 0;
       font-size: 16px;
