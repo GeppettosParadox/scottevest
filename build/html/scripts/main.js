@@ -188,6 +188,30 @@ $(document).ready(function () {
         copyClasses: "container"
     });
 
+    $('.toggle-checkout-buttons').on('click', function (e) {
+        e.preventDefault();
+        var $cartButtons = $('.cart__buttons');
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $cartButtons.slideUp();
+        } else {
+            $(this).addClass('active');
+            $cartButtons.slideDown();
+        }
+    });
+
+    var $promoCodeToggle = $('.promo-code-toggle');
+    var $promoCodeInput = $('.promo-code-input');
+    $promoCodeInput.hide();
+    $promoCodeToggle
+        .show()
+        .on('click', function (e) {
+            e.preventDefault();
+            $promoCodeInput.show().focus();
+            $promoCodeToggle.hide();
+        });
+
+
     window.navBar = $('.nav-bar');
     window.topBars = $('.top-bar');
     window.topBarsHeight = 0;
