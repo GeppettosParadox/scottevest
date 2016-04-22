@@ -153,6 +153,9 @@ $(document).ready(function () {
             $cart.hide();
         } else {
             $(this).addClass('active');
+            window.navBar.addClass("sticky");
+            window.body.addClass("sticky-navbar");
+            window.navBar.show();
             $cart.show();
         }
     });
@@ -260,8 +263,10 @@ $(document).ready(function () {
             window.body.addClass("sticky-navbar");
             window.navBar.show();
         } else {
-            window.navBar.removeClass("sticky");
-            window.body.removeClass("sticky-navbar");
+            if (!$('.nav-bar__cart-btn').hasClass('active')) {
+                window.navBar.removeClass("sticky");
+                window.body.removeClass("sticky-navbar");
+            }
         }
 
         if (window.buy_btn.length > 0) {

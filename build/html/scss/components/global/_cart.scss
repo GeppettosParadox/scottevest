@@ -1,7 +1,9 @@
 .cart {
     display: none;
-    position: relative;
-    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 86px;
+    z-index: 10001;
     background: #f6f5f5;
     width: 100%;
     min-height: 200px;
