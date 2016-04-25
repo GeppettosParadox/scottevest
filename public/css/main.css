@@ -4170,19 +4170,24 @@ header {
   @media screen and (max-width: 39.9375em) {
     .nav-bar {
       margin-top: .5em; } }
-  .nav-bar .columns {
-    position: relative;
-    top: 14px; }
+  @media screen and (min-width: 40em) {
+    .nav-bar .columns {
+      position: relative;
+      top: 14px; } }
 
 .launch-nav-btn {
-  height: 15px;
-  margin-left: 5px;
-  margin-top: 22px;
-  padding-left: 30px;
+  height: 44px;
+  padding-left: 56px;
   background: transparent url("../images/nav-icon.svg") no-repeat left center;
-  background-size: auto 15px;
+  background-size: 40px 30px;
   font-size: 14px;
-  line-height: 15px; }
+  line-height: 44px; }
+  @media screen and (min-width: 40em) {
+    .launch-nav-btn {
+      height: 15px;
+      padding-left: 30px;
+      background-size: auto 15px;
+      line-height: 15px; } }
 
 .centered-logo {
   position: absolute;
@@ -4212,10 +4217,15 @@ header {
   text-align: right; }
 
 .nav-bar__cart-btn {
-  width: 28px;
-  height: 25px;
+  width: 50px;
+  height: 44px;
   background: transparent url("../images/cart-icon.svg") no-repeat center center;
-  background-size: auto 25px; }
+  background-size: auto 44px; }
+  @media screen and (min-width: 40em) {
+    .nav-bar__cart-btn {
+      width: 28px;
+      height: 25px;
+      background-size: auto 25px; } }
 
 .nav-bar__close-cart-btn {
   display: none; }
@@ -4248,14 +4258,14 @@ body.sticky-navbar {
   .nav-bar.nav-bar--interior a, .nav-bar.sticky a {
     color: #000; }
   .nav-bar.nav-bar--interior .launch-nav-btn, .nav-bar.sticky .launch-nav-btn {
-    height: 44px;
-    margin: 0 0 0 8px;
-    padding-left: 30px;
     background-image: url("../images/nav-icon-black.svg"); }
   .nav-bar.nav-bar--interior .centered-logo, .nav-bar.sticky .centered-logo {
     background-image: url("../images/logo-black.svg"); }
   .nav-bar.nav-bar--interior .nav-bar__cart-btn, .nav-bar.sticky .nav-bar__cart-btn {
     background-image: url("../images/cart-icon-black.svg"); }
+  .nav-bar.nav-bar--interior .launch-nav-btn, .nav-bar.sticky .launch-nav-btn {
+    height: 44px;
+    padding-left: 30px; }
   .nav-bar.nav-bar--interior .centered-logo, .nav-bar.sticky .centered-logo {
     width: 110px;
     height: 46px;
@@ -4272,7 +4282,7 @@ body.sticky-navbar {
     .nav-bar.nav-bar--interior .columns, .nav-bar.sticky .columns {
       padding-top: 1.1em; }
     .nav-bar.nav-bar--interior .centered-logo, .nav-bar.sticky .centered-logo {
-      top: 0; } }
+      top: 10px; } }
 
 .nav-bar .icon-telephone {
   color: #5ec26a;
