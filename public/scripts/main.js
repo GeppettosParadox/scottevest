@@ -151,11 +151,21 @@ $(document).ready(function () {
     var $cartWrapper = $('.cart-button-wrap');
     $cartBtn.on('click', function (e) {
         $cartWrapper.addClass('active');
+        if (!window.body.hasClass('sticky-navbar')) {
+            window.body.addClass("temp-sticky-navbar");
+        }
+        window.navBar.addClass("sticky");
+        window.body.addClass("sticky-navbar");
+        window.navBar.show();
         $cart.show();
     });
 
     $cartCloseBtn.on('click', function (e) {
         $cartWrapper.removeClass('active');
+        if (window.body.hasClass('temp-sticky-navbar')) {
+            window.navBar.removeClass("sticky");
+            window.body.removeClass("sticky-navbar");
+        }
         $cart.hide();
     });
 
