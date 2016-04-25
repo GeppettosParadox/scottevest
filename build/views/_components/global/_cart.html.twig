@@ -4,70 +4,95 @@
             <div class="row small-12 columns">
                 <div class="cart__items">
                     <div class="cart__top-row row">
-                        <div class="small-12 medium-4 columns cart__col cart__col-1">
+                        <div class="small-12 medium-3 large-3 columns cart__col cart__col-1">
                             2 Items
                         </div>
-                        <div class="small-2 medium-2 columns cart__col cart__col-3">
+                         <div class="small-4 columns cart__col cart__col-3 show-for-small-only">
+                            Product
+                        </div>
+                        <div class="small-2 medium-1 large-1 columns cart__col cart__col-3">
                             Size
                         </div>
                         <div class="small-3 medium-2 large-2 columns cart__col cart__col-4">
                             Qty
                         </div>
-                        <div class="small-2 medium-2 columns cart__col cart__col-2">
+                        <div class="medium-4 large-3 columns cart__col cart__col-2 show-for-medium">
                             More
                         </div>
-                        <div class="small-2 medium-2 large-2 columns cart__col cart__col-5">
+                        <div class="small-3 medium-2 large-2 columns cart__col cart__col-5">
                             Price
                         </div>
-                        <div class="small-2 large-1 columns cart__col cart__col-6 show-for-large-only">
+                        <div class="large-1 columns cart__col cart__col-6 show-for-large-only">
                             &nbsp;
                         </div>
                     </div>
                     {% for i in 0..1 %}
-                        <div class="cart__item row">
-                            <div class="small-4 medium-4 columns cart__col cart__col-1">
-                            <span class="cart__col__inner">
+                        <div class="cart__title-row row hide-for-large">
+                            <div class="small-12 cart__col columns">
                                 <a href="#">
-                                    <img src="/uploads/product_thumbs/cart-product.png" alt="">
-                                    <span class="cart__item__title">
-                                        Sterling Jacket for Men
-                                        <button type="button" class="delete delete--small">Remove</button>
-                                    </span>
+                                    Sterling Jacket for Men
+                                    <button type="button" class="delete delete--small">Remove</button>
                                 </a>
-                            </span>
+                            </div>
+                        </div>
+                        <div class="cart__item row">
+                            <div class="small-4 medium-3 large-3 columns cart__col cart__col-1">
+                                <span class="cart__col__inner">
+                                    <a href="#">
+                                        <img src="/uploads/product_thumbs/cart-product.png" alt="">
+                                        <span class="cart__item__title show-for-large">
+                                            Sterling Jacket for Men
+                                            <button type="button" class="delete delete--small">Remove</button>
+                                        </span>
+                                    </a>
+                                </span>
                             </div>
                             <div class="small-2 medium-1 large-1 columns cart__col cart__col-3">
-                            <span class="cart__col__inner">
-                                M
-                            </span>
+                                <span class="cart__col__inner">
+                                    M
+                                </span>
                             </div>
                             <div class="small-3 medium-2 large-2 columns cart__col cart__col-4">
-                            <span class="cart__col__inner">
-                                <div class="qty-options">
-                                    <button type="button" class="sub">-</button>
-                                    <input type="text" name="qty" title="Quantity" value="1"/>
-                                    <button type="button" class="add">+</button>
-                                </div>
-                            </span>
+                                <span class="cart__col__inner">
+                                    <div class="qty-options">
+                                        <button type="button" class="sub">-</button>
+                                        <input type="text" name="qty" title="Quantity" value="1"/>
+                                        <button type="button" class="add">+</button>
+                                    </div>
+                                </span>
                             </div>
-                            <div class="small-2 medium-1 large-1 columns cart__col cart__col-2">
-                            <span class="cart__col__inner">
-                                <fieldset class="large-6 columns">
-                                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                                    <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-                                </fieldset>
-                            </span>
+                            <div class="small-3 cart__col cart__col-6 columns show-for-small-only">
+                                <span class="cart__col__inner">
+                                    $195
+                                </span>
                             </div>
-                            <div class="small-2 medium-2 large-2 columns cart__col cart__col-5">
-                            <span class="cart__col__inner">
-                                $195
-                            </span>
+                            <div class="small-12 medium-4 large-3 columns cart__col cart__col-5">
+                                <span class="cart__col__inner">
+                                    <fieldset class="checkboxes">
+                                        <div class="checkbox-row">
+                                            <input id="checkbox-{{ i }}-1" type="checkbox">
+                                            <label for="checkbox-{{ i }}-1">
+                                                Gift Box <span class="gray">(+$10)</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-row">
+                                            <input id="checkbox-{{ i }}-2" type="checkbox">
+                                            <label for="checkbox-{{ i }}-2">
+                                                Warranty <span class="gray">(+$10)</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </span>
                             </div>
-                            <div class="small-2 large-1 columns cart__col cart__col-6">
-                            <span class="cart__col__inner">
-                                <button type="button" class="delete delete--large">Remove</button>
-                            </span>
+                            <div class="small-3 medium-2 large-2 columns cart__col cart__col-6 show-for-medium">
+                                <span class="cart__col__inner">
+                                    $195
+                                </span>
+                            </div>
+                            <div class="large-1 columns cart__col cart__col-7">
+                                <span class="cart__col__inner">
+                                    <button type="button" class="delete delete--large">Remove</button>
+                                </span>
                             </div>
                         </div>
                         <hr class="cart__horizontal-line">
@@ -98,17 +123,13 @@
                     </div>
                 </div>
             </div>
-            <div class="cart__buttons">
-                <button type="button" class="button cart__buttons__credit-card">
+            <div class="cart__buttons"><button type="button" class="button cart__buttons__credit-card">
                     Credit Card <span class="icon-arrow"></span>
-                </button>
-                <button type="button" class="button cart__buttons__amazon">
+                </button><button type="button" class="button cart__buttons__amazon">
                     <img src="/images/logo-amazon.svg" alt="Amazon"> <span class="icon-arrow"></span>
-                </button>
-                <button type="button" class="button cart__buttons__paypal">
+                </button><button type="button" class="button cart__buttons__paypal">
                     <img src="/images/logo-paypal.svg" alt="PayPal"> <span class="icon-arrow"></span>
-                </button>
-            </div>
+                </button></div>
         </div>
     </div>
 </form>

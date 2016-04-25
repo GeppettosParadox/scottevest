@@ -11,8 +11,7 @@
     &__top-row {
         margin-bottom: 20px;
         .cart__col {
-            color: #433f44;
-            opacity: 0.6;
+            color: #8c8a8d;
             font-size: 14px;
             text-align: left;
             padding: 0 15px;
@@ -20,6 +19,17 @@
     }
     .cart__col__inner {
         padding: 0 15px;
+    }
+    &__title-row {
+        margin-bottom: 8px;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        .cart__col {
+            font-size: 16px;
+            padding: 0 15px;
+        }
     }
     &__item {
         &__title {
@@ -47,14 +57,24 @@
         }
         .cart__col-3,
         .cart__col-4,
-        .cart__col-5 {
+        .cart__col-6 {
             font-size: 18px;
+        }
+        .cart__col-5 {
+            .checkbox-row {
+                white-space: nowrap;
+                line-height: 14px;
+            }
+            input[type="checkbox"] {
+                margin: 0;
+            }
         }
         .cart__col-4 {
             .qty-options {
                 display: block;
                 height: 20px;
                 margin-top: -15px;
+                white-space: nowrap;
                 button, input {
                     font-size: 18px;
                 }
@@ -75,6 +95,9 @@
         &:last-of-type {
             margin-bottom: 0;
         }
+    }
+    .gray {
+        color: #8c8a8d;
     }
     &__total {
         height: 90px;
@@ -156,7 +179,7 @@
             width: 195px;
             line-height: 90px;
             border: 0;
-            margin: 0;
+            margin: 0 !important;
             padding: 0;
             position: relative;
             .icon-arrow {
@@ -207,6 +230,7 @@
         outline: none;
         &:hover {
             background: url("/images/cart-x-hover.svg") no-repeat;
+            background-size: 27px 27px;
         }
         &--small {
             display: none;
@@ -215,11 +239,14 @@
             width: 20px;
             height: 20px;
             background-size: 20px 20px;
+            &:hover {
+                background-size: 20px 20px;
+            }
         }
     }
     @include breakpoint(medium down) {
         padding-top: 30px;
-        .cart__col-6 {
+        .cart__col-7 {
             display: none;
         }
         .delete--small {
@@ -233,12 +260,30 @@
     }
     @include breakpoint(small down) {
         padding-top: 20px;
-        .cart__top-row {
+        &__top-row {
             .cart__col-1 {
                 margin-bottom: 15px;
             }
         }
-        .cart__col__promo-code {
+        &__item {
+            .cart__col-4 {
+                .qty-options {
+                    input {
+                        width: 25px;
+                        background: #f6f5f5;
+                    }
+                }
+            }
+            .cart__col-5 {
+                .checkboxes {
+                    @include clearfix;
+                    display: block;
+                    padding-top: 6px;
+                    margin: 6px 0 !important;
+                }
+            }
+        }
+        &__col__promo-code {
             height: 80px;
             margin-bottom: -20px;
         }
@@ -252,7 +297,7 @@
             }
         }
         &__horizontal-line {
-            margin: -10px 0 10px 0;
+            margin: 10px 0;
         }
     }
     @media screen and (min-width: 1350px) {
