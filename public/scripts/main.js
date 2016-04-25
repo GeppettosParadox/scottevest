@@ -145,26 +145,18 @@ $(document).ready(function () {
         $(qty).val($qty_value).attr('value', $qty_value);
     });
 
-    $('.nav-bar__cart-btn').on('click', function (e) {
-        e.preventDefault();
-        var $cart = $('.cart');
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-            if (window.body.hasClass('temp-sticky-navbar')) {
-                window.navBar.removeClass("sticky");
-                window.body.removeClass("sticky-navbar");
-            }
-            $cart.hide();
-        } else {
-            $(this).addClass('active');
-            if (!window.body.hasClass('sticky-navbar')) {
-                window.body.addClass("temp-sticky-navbar");
-            }
-            window.navBar.addClass("sticky");
-            window.body.addClass("sticky-navbar");
-            window.navBar.show();
-            $cart.show();
-        }
+    var $cart = $('.cart');
+    var $cartBtn = $('.nav-bar__cart-btn');
+    var $cartCloseBtn = $('.nav-bar__close-cart-btn');
+    var $cartWrapper = $('.cart-button-wrap');
+    $cartBtn.on('click', function (e) {
+        $cartWrapper.addClass('active');
+        $cart.show();
+    });
+
+    $cartCloseBtn.on('click', function (e) {
+        $cartWrapper.removeClass('active');
+        $cart.hide();
     });
 
     $('.product-filter__toggle-button').on('click', function (e) {
@@ -270,7 +262,7 @@ $(document).ready(function () {
             window.body.addClass("sticky-navbar");
             window.navBar.show();
         } else {
-            if (!$('.nav-bar__cart-btn').hasClass('active')) {
+            if (!$('.cart-button-wrap').hasClass('active')) {
                 window.navBar.removeClass("sticky");
                 window.body.removeClass("sticky-navbar");
             }
