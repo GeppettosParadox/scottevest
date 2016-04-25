@@ -3659,6 +3659,8 @@ a.green-more {
         left: 0; }
       .cart__buttons button:first-child:before {
         display: none; }
+    .cart__buttons__credit-card {
+      font-weight: 700; }
     .cart__buttons__amazon img {
       width: 60px;
       height: 18px;
@@ -4133,6 +4135,9 @@ header {
     background: transparent; }
   .nav-bar a {
     color: #fff; }
+  @media screen and (max-width: 39.9375em) {
+    .nav-bar {
+      margin-top: .5em; } }
   @media screen and (min-width: 40em) {
     .nav-bar .columns {
       position: relative;
@@ -4268,7 +4273,7 @@ body.sticky-navbar {
     width: 92px;
     height: 92px;
     position: absolute;
-    top: -21px;
+    top: -14px;
     right: 0; }
     .nav-bar:not(.sticky):not(.nav-bar--interior) .cart-button-wrap button {
       position: absolute;
@@ -4357,8 +4362,11 @@ body.sticky-navbar {
     .page-hero__nav ul li a {
       font-size: 26px; } }
 
-.product-grid .tab-picker {
-  padding-bottom: 4em; }
+.product-grid {
+  position: relative;
+  z-index: 99; }
+  .product-grid .tab-picker {
+    padding-bottom: 4em; }
 
 .tab-picker .button {
   display: inline-block;

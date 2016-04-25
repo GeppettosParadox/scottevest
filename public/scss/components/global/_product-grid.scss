@@ -2,6 +2,8 @@
     .tab-picker {
         padding-bottom: 4em;
     }
+    position: relative;
+    z-index: 99;
 }
 .tab-picker {
     .button {

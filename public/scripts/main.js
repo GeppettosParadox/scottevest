@@ -150,9 +150,16 @@ $(document).ready(function () {
         var $cart = $('.cart');
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
+            if (window.body.hasClass('temp-sticky-navbar')) {
+                window.navBar.removeClass("sticky");
+                window.body.removeClass("sticky-navbar");
+            }
             $cart.hide();
         } else {
             $(this).addClass('active');
+            if (!window.body.hasClass('sticky-navbar')) {
+                window.body.addClass("temp-sticky-navbar");
+            }
             window.navBar.addClass("sticky");
             window.body.addClass("sticky-navbar");
             window.navBar.show();
