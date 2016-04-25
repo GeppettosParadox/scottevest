@@ -14,9 +14,12 @@
     &:hover {
         background-color: scale-color($red, $lightness: -15%);
     }
-    span {
+    span.live-chat-btn__text {
         position: relative;
         padding-left: 36px;
+        @include breakpoint(small only) {
+            padding-left: 21px;
+        }
         &:before {
             content: "";
             display: block;
@@ -27,6 +30,11 @@
             left: 0;
             top: 50%;
             margin-top: -9px;
+        }
+        span {
+            @include breakpoint(small only) {
+                display: none;
+            }
         }
     }
     @include breakpoint(medium) {

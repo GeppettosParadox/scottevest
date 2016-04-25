@@ -4555,10 +4555,13 @@ body.sticky-navbar {
   transition: background-color .2s ease-in-out; }
   .live-chat-btn:hover {
     background-color: #d50505; }
-  .live-chat-btn span {
+  .live-chat-btn span.live-chat-btn__text {
     position: relative;
     padding-left: 36px; }
-    .live-chat-btn span:before {
+    @media screen and (max-width: 39.9375em) {
+      .live-chat-btn span.live-chat-btn__text {
+        padding-left: 21px; } }
+    .live-chat-btn span.live-chat-btn__text:before {
       content: "";
       display: block;
       width: 22px;
@@ -4568,6 +4571,9 @@ body.sticky-navbar {
       left: 0;
       top: 50%;
       margin-top: -9px; }
+    @media screen and (max-width: 39.9375em) {
+      .live-chat-btn span.live-chat-btn__text span {
+        display: none; } }
   @media screen and (min-width: 40em) {
     .live-chat-btn {
       right: 20px; } }
