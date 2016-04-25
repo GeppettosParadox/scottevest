@@ -3571,7 +3571,8 @@ a.green-more {
   .cart__item .cart__col-4 .qty-options {
     display: block;
     height: 20px;
-    margin-top: -15px; }
+    margin-top: -15px;
+    white-space: nowrap; }
     .cart__item .cart__col-4 .qty-options button, .cart__item .cart__col-4 .qty-options input {
       font-size: 18px; }
     .cart__item .cart__col-4 .qty-options input {
