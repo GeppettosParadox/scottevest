@@ -4370,6 +4370,9 @@ body.sticky-navbar {
     color: #000;
     line-height: 1.3; }
 
+.js-off-canvas-exit {
+  z-index: 100; }
+
 .page-hero {
   position: relative;
   z-index: 0; }
