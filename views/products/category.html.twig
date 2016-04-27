@@ -37,7 +37,7 @@
                 <button class="button" data-productcat="hoodies">Hoodies</button>
                 <button class="button" data-productcat="pants">Pants</button>
                 <button class="button" data-productcat="shirts">Shirts</button>
-                <button class="button" data-productcat="accessories">Accessories</button>
+                <button class="button" data-productcat="other">Other</button>
             </div>
         </div>
         <div class="row category__product-row">
@@ -49,7 +49,7 @@
                     {% if i >= 3 and i <= 5 %}{% set cat = "hoodies" %}{% endif %}
                     {% if i >= 6 and i <= 9 %}{% set cat = "pants" %}{% endif %}
                     {% if i >= 10 and i <= 12 %}{% set cat = "shirts" %}{% endif %}
-                    {% if i >= 13 and i <= 13 %}{% set cat = "accessories" %}{% endif %}
+                    {% if i >= 13 and i <= 13 %}{% set cat = "other" %}{% endif %}
                     <a href="/products_featherweight-vest.html" class="medium-6 large-4 column category__product"
                          data-productcat="{{ cat }}">
                         {% include '../products/_product-category.html.twig' %}
