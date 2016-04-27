@@ -24,7 +24,7 @@ The following command can be run from the folder where this file is located - it
 web server using Express, a Node.js server application, and actively watch for any changes in the code's
 Twig, Sass, or JavaScript files, and automatically update the local server with those changes in real-time.
 
-To enable to development server, run the following in a terminal / command prompt, and leave it running:
+To enable the development server, run the following in a terminal / command prompt, and leave it running:
 
     grunt server
 
