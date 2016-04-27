@@ -1,6 +1,8 @@
 .cart {
     display: none;
-    position: fixed;
+    @include breakpoint(medium) {
+        position: fixed;
+    }
     left: 0;
     top: 86px;
     z-index: 10001;

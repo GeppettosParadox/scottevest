@@ -3517,7 +3517,6 @@ a.green-more {
 
 .cart {
   display: none;
-  position: fixed;
   left: 0;
   top: 86px;
   z-index: 10001;
@@ -3525,6 +3524,9 @@ a.green-more {
   width: 100%;
   min-height: 200px;
   padding-top: 40px; }
+  @media screen and (min-width: 40em) {
+    .cart {
+      position: fixed; } }
   .cart__top-row {
     margin-bottom: 20px; }
     .cart__top-row .cart__col {
@@ -4317,38 +4319,72 @@ body.sticky-navbar {
       transform: translate(-50%, -50%); }
     .nav-bar:not(.sticky):not(.nav-bar--interior) .cart-button-wrap:hover {
       background-color: #5ec26a; }
-  .nav-bar.sticky {
+  .nav-bar.sticky,
+  .sticky-navbar {
     padding-right: 86px; }
-    .nav-bar.sticky .cart-button-wrap {
+    .nav-bar.sticky .cart-button-wrap,
+    .sticky-navbar .cart-button-wrap {
       width: 86px;
       height: 86px;
       position: absolute;
       top: -27px;
       right: -101px; }
-      .nav-bar.sticky .cart-button-wrap .nav-bar__cart-btn {
+      .nav-bar.sticky .cart-button-wrap .nav-bar__cart-btn,
+      .sticky-navbar .cart-button-wrap .nav-bar__cart-btn {
         width: 86px;
         height: 86px; }
-        .nav-bar.sticky .cart-button-wrap .nav-bar__cart-btn:hover {
+        .nav-bar.sticky .cart-button-wrap .nav-bar__cart-btn:hover,
+        .sticky-navbar .cart-button-wrap .nav-bar__cart-btn:hover {
           color: #fff;
           background: #5ec26a url("../images/cart-icon.svg") no-repeat center center;
           background-size: auto 25px; }
-      .nav-bar.sticky .cart-button-wrap.active {
+      .nav-bar.sticky .cart-button-wrap.active,
+      .sticky-navbar .cart-button-wrap.active {
         background-color: #f6f5f5; }
-        .nav-bar.sticky .cart-button-wrap.active .nav-bar__cart-btn {
+        .nav-bar.sticky .cart-button-wrap.active .nav-bar__cart-btn,
+        .sticky-navbar .cart-button-wrap.active .nav-bar__cart-btn {
           display: none; }
-        .nav-bar.sticky .cart-button-wrap.active .nav-bar__close-cart-btn {
+        .nav-bar.sticky .cart-button-wrap.active .nav-bar__close-cart-btn,
+        .sticky-navbar .cart-button-wrap.active .nav-bar__close-cart-btn {
           display: block;
           width: 86px;
           height: 86px;
           background: transparent url("../images/close-cart.svg") no-repeat center center;
           background-size: 24px 24px; }
-        .nav-bar.sticky .cart-button-wrap.active:hover {
+        .nav-bar.sticky .cart-button-wrap.active:hover,
+        .sticky-navbar .cart-button-wrap.active:hover {
           background-color: #5ec26a; }
-          .nav-bar.sticky .cart-button-wrap.active:hover .nav-bar__close-cart-btn {
+          .nav-bar.sticky .cart-button-wrap.active:hover .nav-bar__close-cart-btn,
+          .sticky-navbar .cart-button-wrap.active:hover .nav-bar__close-cart-btn {
             background: transparent url("../images/close-cart-hover.svg") no-repeat center center;
             background-size: 24px 24px; }
   .cart-num {
     bottom: 4px; } }
+
+@media screen and (max-width: 39.9375em) {
+  .nav-bar.sticky .cart-button-wrap.active,
+  .sticky-navbar .cart-button-wrap.active {
+    position: relative;
+    top: -15px;
+    right: -10px;
+    background-color: #f6f5f5; }
+    .nav-bar.sticky .cart-button-wrap.active .nav-bar__cart-btn,
+    .sticky-navbar .cart-button-wrap.active .nav-bar__cart-btn {
+      display: none; }
+    .nav-bar.sticky .cart-button-wrap.active .nav-bar__close-cart-btn,
+    .sticky-navbar .cart-button-wrap.active .nav-bar__close-cart-btn {
+      display: block;
+      width: 86px;
+      height: 86px;
+      background: transparent url("../images/close-cart.svg") no-repeat center center;
+      background-size: 24px 24px; }
+    .nav-bar.sticky .cart-button-wrap.active:hover,
+    .sticky-navbar .cart-button-wrap.active:hover {
+      background-color: #5ec26a; }
+      .nav-bar.sticky .cart-button-wrap.active:hover .nav-bar__close-cart-btn,
+      .sticky-navbar .cart-button-wrap.active:hover .nav-bar__close-cart-btn {
+        background: transparent url("../images/close-cart-hover.svg") no-repeat center center;
+        background-size: 24px 24px; } }
 
 .cart-num {
   position: relative; }
