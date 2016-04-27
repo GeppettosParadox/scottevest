@@ -56,7 +56,7 @@ We have made extensive use of Foundation's grid system and some of its web compo
 A very small example of Foundation would include its classes - a developer can quickly direct Foundation
 as to how many columns wide an element should be on small, medium, and large screens with some simple classes:
 
-    <div class="small-12 medium-6 large-5">Some content.</div>
+    <div class="small-12 medium-6 large-5 columns end">Some content.</div>
 
 The above code would direct Foundation to set the element to occupy all 12 columns (the full screen) on mobile
 devices, six columns on medium-sized screens (so half the screen on tablets), and five columns on large screens
@@ -77,3 +77,11 @@ or component of the site, allowing for the volume of code to be far more managea
 
 A great guide to learning Sass is available on the Sass website (we are using the SCSS variant of Sass): [http://sass-lang.com/guide](http://sass-lang.com/guide)
 
+## Version Control
+
+Boston Interactive uses Git as its system for version control. Version control allows for changes to files to be tracked, commited,
+etc. Git can be run from the command line, or from an application such as the Github desktop app, or Tower for Mac.
+
+How to install Git: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+The basics of how to use Git: [https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)

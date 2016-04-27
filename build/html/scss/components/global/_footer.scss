@@ -58,13 +58,9 @@
         font-size: 20px;
         margin: 0 27px;
     }
-    @include breakpoint(medium) {
-
-    }
 }
 
 .site-footer__site-nav {
-    margin-bottom: 40px;
     max-width: 900px;
     margin: 0 auto;
     a {

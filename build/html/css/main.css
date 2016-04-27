@@ -3623,7 +3623,7 @@ a.green-more {
       top: 0;
       left: 0;
       text-align: center;
-      width: calc((100vw - 960px)/2);
+      width: calc((100vw - 960px) / 2);
       height: 90px;
       background: #9b9b9b;
       color: #fff; }
@@ -4072,7 +4072,6 @@ a.green-more {
     margin: 0 27px; }
 
 .site-footer__site-nav {
-  margin-bottom: 40px;
   max-width: 900px;
   margin: 0 auto; }
   .site-footer__site-nav a {
