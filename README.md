@@ -60,7 +60,7 @@ as to how many columns wide an element should be on small, medium, and large scr
 
 The above code would direct Foundation to set the element to occupy all 12 columns (the full screen) on mobile
 devices, six columns on medium-sized screens (so half the screen on tablets), and five columns on large screens
-(so 5/7's of the screen on screens larger than 1024px).
+(so 5/12's of the screen on screens larger than 1024px).
 
 Full documentation for using Foundation is available at [http://foundation.zurb.com/sites/docs/](http://foundation.zurb.com/sites/docs/)
 
