@@ -183,6 +183,7 @@ $(document).ready(function () {
             $sort.hide();
             $filters.slideDown();
             Foundation.reInit($('.price-slider'));
+            Foundation.reInit($('.pocket-slider'));
         }
     });
 
@@ -196,6 +197,13 @@ $(document).ready(function () {
         $('.price-slider__info-from__value').html('$' + fromValue);
         var toValue = $('#priceSliderTo').val();
         $('.price-slider__info-to__value').html('$' + toValue);
+    });
+
+    $('.pocket-slider').on('moved.zf.slider', function () {
+        var fromValue = $('#pocketSliderFrom').val();
+        $('.pocket-slider__info-from__value').html(fromValue);
+        var toValue = $('#pocketSliderTo').val();
+        $('.pocket-slider__info-to__value').html(toValue);
     })
 
     $('.error-bar__close-button').on('click', function (e) {

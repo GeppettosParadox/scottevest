@@ -3939,26 +3939,32 @@ a.green-more {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-  .product-filter .price-slider {
+  .product-filter .price-slider,
+  .product-filter .pocket-slider {
     margin-top: 24px;
     height: 1px; }
-    .product-filter .price-slider .slider-handle {
+    .product-filter .price-slider .slider-handle,
+    .product-filter .pocket-slider .slider-handle {
       background: #5ec26a;
       width: 11px;
       height: 11px;
       border-radius: 11px; }
-    .product-filter .price-slider .slider-fill {
+    .product-filter .price-slider .slider-fill,
+    .product-filter .pocket-slider .slider-fill {
       background: #5ec26a;
       height: 3px;
       margin-top: -1px; }
-    .product-filter .price-slider__info {
+    .product-filter .price-slider__info,
+    .product-filter .pocket-slider__info {
       font-size: 14px;
       line-height: 14px;
       margin-top: -8px;
       color: #8d8d8d; }
-      .product-filter .price-slider__info .value {
+      .product-filter .price-slider__info .value,
+      .product-filter .pocket-slider__info .value {
         color: #000; }
-    .product-filter .price-slider__input {
+    .product-filter .price-slider__input,
+    .product-filter .pocket-slider__input {
       display: inline;
       border: 0;
       padding: 0;
@@ -3966,9 +3972,11 @@ a.green-more {
       font-size: 14px;
       line-height: 14px;
       width: 60px; }
-    .product-filter .price-slider__info-from {
+    .product-filter .price-slider__info-from,
+    .product-filter .pocket-slider__info-from {
       float: left; }
-    .product-filter .price-slider__info-to {
+    .product-filter .price-slider__info-to,
+    .product-filter .pocket-slider__info-to {
       float: right; }
   .product-filter__buttons {
     margin-top: 20px;
