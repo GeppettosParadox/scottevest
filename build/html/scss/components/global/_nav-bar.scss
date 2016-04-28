@@ -212,7 +212,9 @@ body.sticky-navbar {
     }
     .nav-bar.sticky,
     .sticky-navbar {
-        padding-right: 86px;
+        .top-bar-right {
+            right: 86px;
+        }
         .cart-button-wrap {
             width: 86px;
             height: 86px;

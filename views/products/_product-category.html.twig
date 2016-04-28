@@ -13,12 +13,6 @@ xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
 <div class="xray-img">
     <img src="{{ product.imgPath }}" alt="">
     <img src="{{ product.xrayImgPath }}" alt="">
-    {% if show_pocket_count is defined %}
-        <div class="pocket-count">
-            <strong>43</strong>
-            <span>Pockets</span>
-        </div>
-    {% endif %}
 </div>
 <div class="product-grid__details">
     <div class="product-grid__product-title">
@@ -57,3 +51,9 @@ xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
         </div>
     </div>
 </div>
+{% if show_pocket_count is defined %}
+    <div class="pocket-count">
+        <strong>43</strong>
+        <span>Pockets</span>
+    </div>
+{% endif %}

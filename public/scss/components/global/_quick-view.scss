@@ -33,7 +33,7 @@
 }
 
 .pocket-count {
-    position: absolute;
+//    position: absolute;
     left: 10px;
     bottom: 0;
     background: url("/images/pocket-icon.png") no-repeat;
@@ -99,5 +99,20 @@
         font-size: 6px;
         position: relative;
         bottom: 1px;
+    }
+}
+
+#quickview {
+    .product-grid__details {
+        padding-top: 0;
+    }
+    .product-grid__price--sales-price,
+    .product-grid__was-price {
+        display: inline-block;
+        margin-top: .33em;
+    }
+    .xray-img {
+        width: 70%;
+        margin: 0 auto;
     }
 }
