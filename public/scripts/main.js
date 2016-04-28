@@ -204,7 +204,7 @@ $(document).ready(function () {
         $('.pocket-slider__info-from__value').html(fromValue);
         var toValue = $('#pocketSliderTo').val();
         $('.pocket-slider__info-to__value').html(toValue);
-    })
+    });
 
     $('.error-bar__close-button').on('click', function (e) {
         e.preventDefault();

@@ -4770,7 +4770,11 @@ ul.tab-picker--product-specs {
   height: 45px;
   position: absolute;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  transition: background-color .1s ease-in-out; }
+  .quick-view-buy-now:hover {
+    background-color: #43b250;
+    color: #fefefe; }
 
 .quick-view-details {
   height: 45px;
