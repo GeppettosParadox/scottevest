@@ -19,7 +19,7 @@
                     xrayImgPath: '/uploads/xray_grid/pink_vest-xray.jpg'
                 } %}
                 {% for i in 0..3 %}
-                    <a href="/products_featherweight-vest.html" class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
+                    <a href="/products/featherweight-vest" class="column product-grid__product" data-productcat="{{ i < 3 ? 'men' : 'women' }}">
                         <button class="product-grid__quick-view-btn" data-toggle="quickview"></button>
                         <div class="xray-img">
                             <img src="{{ product.imgPath }}" alt="">
@@ -45,9 +45,9 @@
     </div>
     <div class="product-grid__more row">
         <div class="small-12 columns text-center">
-            <a href="#" class="green-more bold">Shop All</a>
-            <a href="#" class="green-more bold">Shop Men</a>
-            <a href="#" class="green-more bold">Shop Women</a>
+            <a href="/products/category" class="green-more bold">Shop All</a>
+            <a href="/products/category" class="green-more bold">Shop Men</a>
+            <a href="/products/category" class="green-more bold">Shop Women</a>
         </div>
     </div>
 </div>
